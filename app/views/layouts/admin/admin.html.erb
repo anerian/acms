@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>RailsPress</title>
+  <%= stylesheet_link_tag 'admin/style', :media => 'screen' %>
+  <%= javascript_include_tag 'prototype'%>
+  <%= yield :head %>
+</head>
+<body>
+<!--[if IE]><div class="ie"><![endif]-->
+  <!--[if lt IE 7.]><div class="ie6"><![endif]-->
+  <div id="header">
+    <img title="Rails Press" alt="Rails Press" src="/images/admin/logo.png"/>
+    <h1><a href="/">Blog Title goes here<span>← Visit site</span></a></h1>
+  </div>
+  <div id="content">
+    <%= flash_display -%>
+    <div id="toolbar" class="container">
+      <ul>
+        <li><%= link_to 'Pages', admin_pages_path %></li>
+      </ul>
+    </div>
+    <div id="workspace">
+      <%= yield %>
+    </div>
+  </div>
+  <!--[if lt IE 7.]></div><![endif]-->
+<!--[if IE]></div><![endif]-->
+</body>
+</html>

@@ -1,0 +1,537 @@
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (6.2ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (4.9ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePages (20090408200846)
+  [4;36;1mSQL (3.2ms)[0m   [0;1mCREATE TABLE `pages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `author` varchar(255), `content` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090408200846')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `pages`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `pages`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DashController#index (for 127.0.0.1 at 2009-04-08 16:13:23) [GET]
+Rendering dash/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DashController#index (for 127.0.0.1 at 2009-04-08 16:16:00) [GET]
+Rendering template within layouts/application
+Rendering dash/index
+Completed in 19ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePages (20090408200846)
+Migrating to CreateOptions (20090408201656)
+  [4;35;1mSQL (5.6ms)[0m   [0mCREATE TABLE `options` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `key` varchar(32), `value` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (5.3ms)[0m   [0;1mCREATE INDEX `index_options_on_key` ON `options` (`key`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090408201656')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `options`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `options`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `options`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `pages`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `pages`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DashController#index (for 127.0.0.1 at 2009-04-08 16:29:18) [GET]
+Rendering template within layouts/application
+Rendering dash/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DashController#index (for 127.0.0.1 at 2009-04-08 16:29:44) [GET]
+Rendering template within layouts/application
+Rendering dash/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DashController#index (for 127.0.0.1 at 2009-04-08 16:32:30) [GET]
+Rendering template within layouts/application
+Rendering dash/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-08 16:33:23) [GET]
+
+ActionController::RoutingError (No route matches "/admin" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 16:33:27) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 17ms (View: 14, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 16:33:35) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 16:34:31) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 16:35:02) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 16:39:28) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 16:41:47) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 16:41:57) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 16:42:35) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 16:43:03) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 16:44:26) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 16:44:54) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 16:44:55) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 16:57:11) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 16:59:46) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:11:28) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 40ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:12:30) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:12:43) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:12:45) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:12:45) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:14:32) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:16:24) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:16:51) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:17:03) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:17:15) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:17:21) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:17:35) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:18:22) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:18:44) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:18:48) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:18:54) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:19:04) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:20:44) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:20:52) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:21:11) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:21:25) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:21:33) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:21:44) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 17:21:49) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:49:06) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:49:28) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:49:47) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:50:04) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:50:42) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:50:52) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:51:27) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:51:49) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:52:45) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:53:26) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:53:43) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:54:53) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:55:59) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:56:35) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:56:58) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:57:12) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:57:17) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:57:19) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:57:21) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:57:39) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:57:42) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:57:48) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:57:52) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:59:17) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 20:59:43) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 21:01:09) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 21:01:16) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-08 21:01:33) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/pages]

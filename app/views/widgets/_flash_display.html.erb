@@ -1,0 +1,14 @@
+<div id="status-notifier" class="<%= status %>">
+  <%= message %>
+  <div class="close">Close<span></span></div>
+</div>
+<script type="text/javascript">//<![CDATA[
+  var statusTimer = null;
+  function dismiss() { new Effect.Fade('status-notifier'); if(statusTimer) {clearTimeout(statusTimer);} }
+  document.observe("dom:loaded", function() {
+    var notifier = $('status-notifier');
+    notifier.observe('click', dismiss);
+    if( notifier.hasClassName('error') ){ return; } 
+    statusTimer = setTimeout( dismiss, 3000 ); // fade out in 3 seconds
+  } );
+//]]></script>
