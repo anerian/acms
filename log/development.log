@@ -571,3 +571,3272 @@ Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 08:55:29) [
 Rendering template within layouts/admin/admin
 Rendering admin/pages/index
 Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-09 15:02:51) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 15:02:54) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 15:03:20) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DashController#index (for 127.0.0.1 at 2009-04-09 15:03:22) [GET]
+Rendering template within layouts/application
+Rendering dash/index
+Completed in 63ms (View: 61, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:03:46) [GET]
+
+ActionView::MissingTemplate (Missing template admin/dash/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:04:01) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:04:16) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:05:09) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:05:31) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:05:56) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:08:00) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+
+ActionView::TemplateError (undefined local variable or method `general_admin_options_path' for #<ActionView::Base:0x27cd880>) on line #28 of app/views/layouts/admin/admin.html.erb:
+25:         </li>
+26:         <li><h2><%= link_to 'Settings', admin_options_path %></h2>
+27:           <ul>
+28:             <li><%= link_to 'General', general_admin_options_path %></li>
+29:             <li><%= link_to 'Writing', writing_admin_options_path %></li>
+30:             <li><%= link_to 'Reading', reading_admin_options_path %></li>
+31:           </ul>
+
+    app/views/layouts/admin/admin.html.erb:28
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:08:48) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:10:39) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+
+ActionView::TemplateError (undefined local variable or method `admin_tools_path' for #<ActionView::Base:0x23cea40>) on line #26 of app/views/layouts/admin/admin.html.erb:
+23:             <li><%= link_to 'New', new_admin_page_path %></li>
+24:           </ul>
+25:         </li>
+26:         <li><h2><%= link_to 'Tools', admin_tools_path %></h2>
+27:           <ul>
+28:             <li><%= link_to 'Import', import_admin_tools_path %></li>
+29:             <li><%= link_to 'Export', export_admin_tools_path %></li>
+
+    app/views/layouts/admin/admin.html.erb:26
+
+Rendered rescues/_trace (43.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:11:00) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+
+ActionView::TemplateError (undefined local variable or method `import_admin_tools_path' for #<ActionView::Base:0x247c5dc>) on line #28 of app/views/layouts/admin/admin.html.erb:
+25:         </li>
+26:         <li><h2><%= link_to 'Tools', admin_tools_path %></h2>
+27:           <ul>
+28:             <li><%= link_to 'Import', import_admin_tools_path %></li>
+29:             <li><%= link_to 'Export', export_admin_tools_path %></li>
+30:           </ul>
+31:         </li>
+
+    app/views/layouts/admin/admin.html.erb:28
+
+Rendered rescues/_trace (108.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:11:37) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+
+ActionView::TemplateError (undefined local variable or method `import_admin_tools_path' for #<ActionView::Base:0x25f6908>) on line #28 of app/views/layouts/admin/admin.html.erb:
+25:         </li>
+26:         <li><h2><%= link_to 'Tools', admin_tools_path %></h2>
+27:           <ul>
+28:             <li><%= link_to 'Import', import_admin_tools_path %></li>
+29:             <li><%= link_to 'Export', export_admin_tools_path %></li>
+30:           </ul>
+31:         </li>
+
+    app/views/layouts/admin/admin.html.erb:28
+
+Rendered rescues/_trace (39.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:12:08) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+
+ActionView::TemplateError (undefined local variable or method `import_admin_tools_path' for #<ActionView::Base:0x27d0a6c>) on line #28 of app/views/layouts/admin/admin.html.erb:
+25:         </li>
+26:         <li><h2><%= link_to 'Tools', admin_tools_path %></h2>
+27:           <ul>
+28:             <li><%= link_to 'Import', import_admin_tools_path %></li>
+29:             <li><%= link_to 'Export', export_admin_tools_path %></li>
+30:           </ul>
+31:         </li>
+
+    app/views/layouts/admin/admin.html.erb:28
+
+Rendered rescues/_trace (39.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:12:31) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:12:45) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:14:29) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:15:52) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+
+ActionView::TemplateError (admin_page_url failed to generate from {:controller=>"admin/pages", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["admin", "pages", :id] - are they all satisfied?) on line #23 of app/views/layouts/admin/admin.html.erb:
+20:       <ul>
+21:         <li><h2><%= link_to 'Pages', admin_pages_path %></h2>
+22:           <ul>
+23:             <li><%= link_to 'Browse', admin_page_path %></li>
+24:             <li><%= link_to 'New', new_admin_page_path %></li>
+25:             <li><%= link_to 'Categories', admin_categories_path %></li>
+26:             <li><%= link_to 'Tags', admin_tags_path %></li>
+
+    (eval):16:in `admin_page_path'
+    app/views/layouts/admin/admin.html.erb:23
+
+Rendered rescues/_trace (43.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:16:01) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+
+ActionView::TemplateError (admin_asset_url failed to generate from {:controller=>"admin/assets", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["admin", "assets", :id] - are they all satisfied?) on line #31 of app/views/layouts/admin/admin.html.erb:
+28:         </li>
+29:         <li><h2><%= link_to 'Media', admin_assets_path %></h2>
+30:           <ul>
+31:             <li><%= link_to 'Browse', admin_asset_path %></li>
+32:             <li><%= link_to 'New', new_admin_asset_path %></li>
+33:           </ul>
+34:         </li>
+
+    (eval):16:in `admin_asset_path'
+    app/views/layouts/admin/admin.html.erb:31
+
+Rendered rescues/_trace (43.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:16:06) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:18:13) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+
+ActionView::TemplateError (undefined local variable or method `widgets_admin_assets_path' for #<ActionView::Base:0x23d0c28>) on line #38 of app/views/layouts/admin/admin.html.erb:
+35:         <li><h2><%= link_to 'Appearance', admin_themes_path %></h2>
+36:           <ul>
+37:             <li><%= link_to 'Browse', admin_themes_path %></li>
+38:             <li><%= link_to 'Widgets', widgets_admin_assets_path %></li>
+39:           </ul>
+40:         </li>
+41:         <li><h2><%= link_to 'Tools', admin_tools_path %></h2>
+
+    app/views/layouts/admin/admin.html.erb:38
+
+Rendered rescues/_trace (97.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:18:17) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+
+ActionView::TemplateError (undefined local variable or method `widget_admin_assets_path' for #<ActionView::Base:0x2689870>) on line #38 of app/views/layouts/admin/admin.html.erb:
+35:         <li><h2><%= link_to 'Appearance', admin_themes_path %></h2>
+36:           <ul>
+37:             <li><%= link_to 'Browse', admin_themes_path %></li>
+38:             <li><%= link_to 'Widgets', widget_admin_assets_path %></li>
+39:           </ul>
+40:         </li>
+41:         <li><h2><%= link_to 'Tools', admin_tools_path %></h2>
+
+    app/views/layouts/admin/admin.html.erb:38
+
+Rendered rescues/_trace (45.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:18:21) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+
+ActionView::TemplateError (undefined local variable or method `widget_admin_assets_path' for #<ActionView::Base:0x238af5c>) on line #38 of app/views/layouts/admin/admin.html.erb:
+35:         <li><h2><%= link_to 'Appearance', admin_themes_path %></h2>
+36:           <ul>
+37:             <li><%= link_to 'Browse', admin_themes_path %></li>
+38:             <li><%= link_to 'Widgets', widget_admin_assets_path %></li>
+39:           </ul>
+40:         </li>
+41:         <li><h2><%= link_to 'Tools', admin_tools_path %></h2>
+
+    app/views/layouts/admin/admin.html.erb:38
+
+Rendered rescues/_trace (103.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:18:22) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+
+ActionView::TemplateError (undefined local variable or method `widgets_admin_asset_path' for #<ActionView::Base:0x2569904>) on line #38 of app/views/layouts/admin/admin.html.erb:
+35:         <li><h2><%= link_to 'Appearance', admin_themes_path %></h2>
+36:           <ul>
+37:             <li><%= link_to 'Browse', admin_themes_path %></li>
+38:             <li><%= link_to 'Widgets', widgets_admin_asset_path %></li>
+39:           </ul>
+40:         </li>
+41:         <li><h2><%= link_to 'Tools', admin_tools_path %></h2>
+
+    app/views/layouts/admin/admin.html.erb:38
+
+Rendered rescues/_trace (39.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:18:36) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:19:59) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:20:43) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:24:14) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:24:24) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:29:23) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 65ms (View: 63, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 15:29:23) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.3.2" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 15:29:55) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 15:38:27) [GET]
+  Parameters: {"locale"=>"nl-BE"}
+
+ActionController::RoutingError (No route matches "/locale/set" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 15:38:31) [GET]
+  Parameters: {"1239285820"=>nil}
+
+ActionController::RoutingError (No route matches "/images/flags/gb.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:22:00) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:29:45) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:29:45) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:29:46) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:29:46) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:30:01) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:30:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:30:06) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:30:06) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:30:10) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:30:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:31:42) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:31:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:32:06) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:32:06) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:32:25) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:32:25) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:32:45) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:32:45) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:33:20) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:33:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:33:28) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:33:28) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:33:46) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:33:46) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:33:58) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:33:58) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:34:01) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:34:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:34:02) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:34:02) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Thu Apr 09 16:44:18 -0400 2009
+  Status: 500 Internal Server Error
+  /Users/taf2/work/anerian/railspress/app/helpers/admin/admin_helper.rb:5: syntax error, unexpected kEND, expecting ')'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:224:in `depend_on'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:136:in `require_dependency'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:126:in `helper'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:115:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:115:in `helper'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:120:in `helper'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:115:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:115:in `helper'
+    /Users/taf2/work/anerian/railspress/app/controllers/application_controller.rb:5
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:80:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:92:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:90:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:102:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:28:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/bin/mongrel_rails:19:in `load'
+    /opt/local/bin/mongrel_rails:19
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Thu Apr 09 16:44:24 -0400 2009
+  Status: 500 Internal Server Error
+  /Users/taf2/work/anerian/railspress/app/helpers/admin/admin_helper.rb:5: syntax error, unexpected kEND, expecting ')'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:224:in `depend_on'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:136:in `require_dependency'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:126:in `helper'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:115:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:115:in `helper'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:120:in `helper'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:115:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:115:in `helper'
+    /Users/taf2/work/anerian/railspress/app/controllers/application_controller.rb:5
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:80:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:92:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:90:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:102:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:28:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/bin/mongrel_rails:19:in `load'
+    /opt/local/bin/mongrel_rails:19
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Thu Apr 09 16:44:25 -0400 2009
+  Status: 500 Internal Server Error
+  /Users/taf2/work/anerian/railspress/app/helpers/admin/admin_helper.rb:5: syntax error, unexpected kEND, expecting ')'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:224:in `depend_on'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:136:in `require_dependency'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:126:in `helper'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:115:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:115:in `helper'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:120:in `helper'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:115:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:115:in `helper'
+    /Users/taf2/work/anerian/railspress/app/controllers/application_controller.rb:5
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:80:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:92:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:90:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:102:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:28:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/bin/mongrel_rails:19:in `load'
+    /opt/local/bin/mongrel_rails:19
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Thu Apr 09 16:44:33 -0400 2009
+  Status: 500 Internal Server Error
+  /Users/taf2/work/anerian/railspress/app/helpers/admin/admin_helper.rb:5: syntax error, unexpected kEND, expecting ')'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:224:in `depend_on'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:136:in `require_dependency'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:126:in `helper'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:115:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:115:in `helper'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:120:in `helper'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:115:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/helpers.rb:115:in `helper'
+    /Users/taf2/work/anerian/railspress/app/controllers/application_controller.rb:5
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:80:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:92:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:90:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:102:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:28:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/bin/mongrel_rails:19:in `load'
+    /opt/local/bin/mongrel_rails:19
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:44:56) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.call) on line #20 of app/views/layouts/admin/admin.html.erb:
+17:     <%= flash_display -%>
+18:     <div id="toolbar" class="container">
+19:       <ul>
+20:         <% toolbar_section(t(:pages), :pages) do %>
+21:           <li><%= link_to 'Browse', admin_pages_path %></li>
+22:           <li><%= link_to 'New', new_admin_page_path %></li>
+23:           <li><%= link_to 'Categories', admin_categories_path %></li>
+
+    app/helpers/admin/admin_helper.rb:4:in `toolbar_section'
+    app/views/layouts/admin/admin.html.erb:20
+
+Rendered rescues/_trace (41.7ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:45:26) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.call) on line #20 of app/views/layouts/admin/admin.html.erb:
+17:     <%= flash_display -%>
+18:     <div id="toolbar" class="container">
+19:       <ul>
+20:         <% toolbar_section(t(:pages), :pages) do %>
+21:           <li><%= link_to 'Browse', admin_pages_path %></li>
+22:           <li><%= link_to 'New', new_admin_page_path %></li>
+23:           <li><%= link_to 'Categories', admin_categories_path %></li>
+
+    app/helpers/admin/admin_helper.rb:4:in `toolbar_section'
+    app/views/layouts/admin/admin.html.erb:20
+
+Rendered rescues/_trace (117.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:45:39) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:45:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:45:53) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:45:53) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:46:53) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:46:53) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:49:59) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:50:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:52:08) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:52:08) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:53:07) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:53:07) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:57:47) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+ERROR: compiling _run_erb_app47views47layouts47admin47admin46html46erb RAISED compile error
+/Users/taf2/work/anerian/railspress/app/views/layouts/admin/admin.html.erb:21: syntax error, unexpected ')', expecting kEND
+...wse, admin_pages_path) ).to_s); @output_buffer.concat "\n   ...
+                              ^
+/Users/taf2/work/anerian/railspress/app/views/layouts/admin/admin.html.erb:22: syntax error, unexpected ')', expecting kEND
+..., new_admin_page_path) ).to_s); @output_buffer.concat "\n   ...
+                              ^
+Function body:           def _run_erb_app47views47layouts47admin47admin46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"/>\n  <title>RailsPress</title>\n  "
+
+
+
+
+; @output_buffer.concat(( stylesheet_link_tag 'admin/style', :media => 'screen' ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( yield :head ).to_s); @output_buffer.concat "\n</head>\n<body>\n<!--[if IE]><div class=\"ie\"><![endif]-->\n  <!--[if lt IE 7.]><div class=\"ie6\"><![endif]-->\n  <div id=\"header\">\n    <img title=\"Rails Press\" alt=\"Rails Press\" src=\"/images/admin/logo.png\"/>\n    <h1><a href=\"/\">Blog Title goes here<span>\342\206\220 Visit site</span></a></h1>\n  </div>\n  <div id=\"content\">\n    "
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( flash_display ).to_s)
+@output_buffer.concat "    <div id=\"toolbar\" class=\"container\">\n      <ul>\n        "
+
+;  toolbar_section(:pages) do ; @output_buffer.concat "\n          "
+; @output_buffer.concat(( tb_item :browse, admin_pages_path) ).to_s); @output_buffer.concat "\n          "
+; @output_buffer.concat(( tb_item :new, new_admin_page_path) ).to_s); @output_buffer.concat "\n          "
+; @output_buffer.concat(( tb_item :categories, admin_categories_path ).to_s); @output_buffer.concat "\n          "
+; @output_buffer.concat(( tb_item :tags, admin_tags_path ).to_s); @output_buffer.concat "\n        "
+;  end ; @output_buffer.concat "\n        "
+;  toolbar_section(:links) do ; @output_buffer.concat "\n          <li>"
+; @output_buffer.concat(( link_to t(:browse), admin_links_path ).to_s); @output_buffer.concat "</li>\n          <li>"
+; @output_buffer.concat(( link_to t(:new), new_admin_link_path ).to_s); @output_buffer.concat "</li>\n        "
+;  end ; @output_buffer.concat "\n        "
+;  toolbar_section(:media) do ; @output_buffer.concat "\n          <li>"
+; @output_buffer.concat(( link_to t(:browse), admin_assets_path ).to_s); @output_buffer.concat "</li>\n          <li>"
+; @output_buffer.concat(( link_to t(:new), new_admin_asset_path ).to_s); @output_buffer.concat "</li>\n        "
+;  end ; @output_buffer.concat "\n        "
+;  toolbar_section(:appearance) do ; @output_buffer.concat "\n          <li>"
+; @output_buffer.concat(( link_to t(:browse), admin_themes_path ).to_s); @output_buffer.concat "</li>\n          <li>"
+; @output_buffer.concat(( link_to t(:widgets), widgets_admin_themes_path ).to_s); @output_buffer.concat "</li>\n        "
+;  end ; @output_buffer.concat "\n        "
+;  toolbar_section(:tools) do ; @output_buffer.concat "\n          <li>"
+; @output_buffer.concat(( link_to t(:general), admin_tools_path ).to_s); @output_buffer.concat "</li>\n          <li>"
+; @output_buffer.concat(( link_to t(:import), admin_import_tools_path ).to_s); @output_buffer.concat "</li>\n          <li>"
+; @output_buffer.concat(( link_to t(:export), admin_export_tools_path ).to_s); @output_buffer.concat "</li>\n        "
+;  end ; @output_buffer.concat "\n        "
+;  toolbar_section(:settings) do ; @output_buffer.concat "\n          <li>"
+; @output_buffer.concat(( link_to t(:general), admin_options_path ).to_s); @output_buffer.concat "</li>\n          <li>"
+; @output_buffer.concat(( link_to t(:writing), writing_admin_options_path ).to_s); @output_buffer.concat "</li>\n          <li>"
+; @output_buffer.concat(( link_to t(:reading), reading_admin_options_path ).to_s); @output_buffer.concat "</li>\n        "
+;  end ; @output_buffer.concat "\n      </ul>\n    </div>\n    <div id=\"workspace\">\n      "
+
+
+
+; @output_buffer.concat(( yield ).to_s); @output_buffer.concat "\n    </div>\n  </div>\n  "
+
+
+; @output_buffer.concat(( javascript_include_tag 'jquery-1.3.2.min').to_s); @output_buffer.concat "\n  <script type=\"text/javascript\">\n    $(document).ready(function () {\n      $(\"#toolbar h2\");\n    });\n  </script>\n  "
+
+
+
+
+
+; @output_buffer.concat(( yield :head ).to_s); @output_buffer.concat "\n  <!--[if lt IE 7.]></div><![endif]-->\n<!--[if IE]></div><![endif]-->\n</body>\n</html>\n"
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/taf2/work/anerian/railspress/app/views/layouts/admin/admin.html.erb:68:in `compile!'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:347:in `_render_with_layout'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:102:in `dispatch_cgi'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:28:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:159:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:282:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/opt/local/bin/mongrel_rails:19:in `load'
+/opt/local/bin/mongrel_rails:19
+
+ActionView::TemplateError (compile error
+/Users/taf2/work/anerian/railspress/app/views/layouts/admin/admin.html.erb:21: syntax error, unexpected ')', expecting kEND
+...wse, admin_pages_path) ).to_s); @output_buffer.concat "\n   ...
+                              ^
+/Users/taf2/work/anerian/railspress/app/views/layouts/admin/admin.html.erb:22: syntax error, unexpected ')', expecting kEND
+..., new_admin_page_path) ).to_s); @output_buffer.concat "\n   ...
+                              ^) on line #21 of app/views/layouts/admin/admin.html.erb:
+18:     <div id="toolbar" class="container">
+19:       <ul>
+20:         <% toolbar_section(:pages) do %>
+21:           <%= tb_item :browse, admin_pages_path) %>
+22:           <%= tb_item :new, new_admin_page_path) %>
+23:           <%= tb_item :categories, admin_categories_path %>
+24:           <%= tb_item :tags, admin_tags_path %>
+
+    app/views/layouts/admin/admin.html.erb:68:in `compile!'
+
+Rendered rescues/_trace (40.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:58:02) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+
+ActionView::TemplateError (undefined method `admin_media_path' for #<ActionView::Base:0x27570b8>) on line #30 of app/views/layouts/admin/admin.html.erb:
+27:           <li><%= link_to t(:browse), admin_links_path %></li>
+28:           <li><%= link_to t(:new), new_admin_link_path %></li>
+29:         <% end %>
+30:         <% toolbar_section(:media) do %>
+31:           <li><%= link_to t(:browse), admin_assets_path %></li>
+32:           <li><%= link_to t(:new), new_admin_asset_path %></li>
+33:         <% end %>
+
+    app/helpers/admin/admin_helper.rb:3:in `send'
+    app/helpers/admin/admin_helper.rb:3:in `toolbar_section'
+    app/views/layouts/admin/admin.html.erb:30
+
+Rendered rescues/_trace (43.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:58:55) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+
+ActionView::TemplateError (undefined method `admin_appearance_path' for #<ActionView::Base:0x2401030>) on line #34 of app/views/layouts/admin/admin.html.erb:
+31:           <li><%= link_to t(:browse), admin_assets_path %></li>
+32:           <li><%= link_to t(:new), new_admin_asset_path %></li>
+33:         <% end %>
+34:         <% toolbar_section(:appearance) do %>
+35:           <li><%= link_to t(:browse), admin_themes_path %></li>
+36:           <li><%= link_to t(:widgets), widgets_admin_themes_path %></li>
+37:         <% end %>
+
+    app/helpers/admin/admin_helper.rb:3:in `send'
+    app/helpers/admin/admin_helper.rb:3:in `toolbar_section'
+    app/views/layouts/admin/admin.html.erb:34
+
+Rendered rescues/_trace (107.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:59:08) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+
+ActionView::TemplateError (undefined method `admin_settings_path' for #<ActionView::Base:0x2615d6c>) on line #43 of app/views/layouts/admin/admin.html.erb:
+40:           <li><%= link_to t(:import), admin_import_tools_path %></li>
+41:           <li><%= link_to t(:export), admin_export_tools_path %></li>
+42:         <% end %>
+43:         <% toolbar_section(:settings) do %>
+44:           <li><%= link_to t(:general), admin_options_path %></li>
+45:           <li><%= link_to t(:writing), writing_admin_options_path %></li>
+46:           <li><%= link_to t(:reading), reading_admin_options_path %></li>
+
+    app/helpers/admin/admin_helper.rb:3:in `send'
+    app/helpers/admin/admin_helper.rb:3:in `toolbar_section'
+    app/views/layouts/admin/admin.html.erb:43
+
+Rendered rescues/_trace (43.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:59:17) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:59:17) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 16:59:47) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 16:59:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:00:51) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 17:00:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:02:39) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 17:02:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:02:41) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 17:02:41) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:09:48) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 79ms (View: 77, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 17:09:48) [GET]
+
+ActionController::RoutingError (No route matches "/images/admin/drop-arrow.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:13:08) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:13:23) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:13:48) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:13:57) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:14:06) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:15:18) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:15:34) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:15:42) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:15:51) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:15:54) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:16:03) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:16:10) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:16:14) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:16:16) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:16:29) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:16:38) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:16:42) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:16:48) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:16:53) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:17:46) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:18:02) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:18:55) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:19:02) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:19:07) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:19:10) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:19:48) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:20:31) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:20:57) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:21:18) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:21:24) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:21:57) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:22:02) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:22:10) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 72ms (View: 70, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:22:40) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:22:49) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:22:56) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:23:10) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:23:15) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:23:21) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:23:24) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:23:34) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:23:44) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:23:58) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:24:01) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:24:04) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:24:13) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:24:29) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:24:38) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:24:42) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:24:47) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:25:06) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:25:11) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:25:17) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:25:23) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:25:47) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:25:55) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:26:00) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:26:06) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:26:30) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:27:16) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:27:48) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:27:49) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:28:04) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:28:29) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:28:35) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:28:42) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:28:50) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:28:53) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:28:58) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:29:02) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:29:05) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:31:53) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:32:17) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:32:18) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:32:23) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:33:10) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 74ms (View: 10, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:33:58) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+ERROR: compiling _run_erb_app47views47layouts47admin47admin46html46erb RAISED compile error
+/Users/taf2/work/anerian/railspress/app/views/layouts/admin/admin.html.erb:66: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47layouts47admin47admin46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"/>\n  <title>RailsPress</title>\n  "
+
+
+
+
+; @output_buffer.concat(( stylesheet_link_tag 'admin/style', :media => 'screen' ).to_s); @output_buffer.concat "\n  "
+; @output_buffer.concat(( yield :head ).to_s); @output_buffer.concat "\n</head>\n<body>\n<!--[if IE]><div class=\"ie\"><![endif]-->\n  <!--[if lt IE 7.]><div class=\"ie6\"><![endif]-->\n  <div id=\"header\">\n    <img title=\"Rails Press\" alt=\"Rails Press\" src=\"/images/admin/logo.png\"/>\n    <h1><a href=\"/\">Blog Title goes here<span>\342\206\220 Visit site</span></a></h1>\n  </div>\n  <div id=\"content\">\n    "
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( flash_display ).to_s)
+@output_buffer.concat "    ";  toolbar do ; @output_buffer.concat "\n      "
+;  toolbar_section(:dashboard) ; @output_buffer.concat "\n      "
+;  end ; @output_buffer.concat "\n      "
+;  toolbar_section(:pages) do ; @output_buffer.concat "\n        "
+; @output_buffer.concat(( tb_item :browse, admin_pages_path ).to_s); @output_buffer.concat "\n        "
+; @output_buffer.concat(( tb_item :new, new_admin_page_path ).to_s); @output_buffer.concat "\n        "
+; @output_buffer.concat(( tb_item :categories, admin_categories_path ).to_s); @output_buffer.concat "\n        "
+; @output_buffer.concat(( tb_item :tags, admin_tags_path ).to_s); @output_buffer.concat "\n      "
+;  end ; @output_buffer.concat "\n      "
+;  toolbar_section(:links) do ; @output_buffer.concat "\n        "
+; @output_buffer.concat(( tb_item :browse, admin_links_path ).to_s); @output_buffer.concat "\n        "
+; @output_buffer.concat(( tb_item :new, new_admin_link_path ).to_s); @output_buffer.concat "\n      "
+;  end ; @output_buffer.concat "\n      "
+;  toolbar_section(:media, admin_assets_path) do ; @output_buffer.concat "\n        "
+; @output_buffer.concat(( tb_item :browse, admin_assets_path ).to_s); @output_buffer.concat "\n        "
+; @output_buffer.concat(( tb_item :new, new_admin_asset_path ).to_s); @output_buffer.concat "\n      "
+;  end ; @output_buffer.concat "\n      "
+;  toolbar_section(:appearance, admin_themes_path) do ; @output_buffer.concat "\n        "
+; @output_buffer.concat(( tb_item :browse, admin_themes_path ).to_s); @output_buffer.concat "\n        "
+; @output_buffer.concat(( tb_item :widgets, widgets_admin_themes_path ).to_s); @output_buffer.concat "\n      "
+;  end ; @output_buffer.concat "\n      "
+;  toolbar_section(:tools) do ; @output_buffer.concat "\n        "
+; @output_buffer.concat(( tb_item :general, admin_tools_path ).to_s); @output_buffer.concat "\n        "
+; @output_buffer.concat(( tb_item :import, admin_import_tools_path ).to_s); @output_buffer.concat "\n        "
+; @output_buffer.concat(( tb_item :export, admin_export_tools_path ).to_s); @output_buffer.concat "\n      "
+;  end ; @output_buffer.concat "\n      "
+;  toolbar_section(:settings, admin_options_path ) do ; @output_buffer.concat "\n        "
+; @output_buffer.concat(( tb_item :general, admin_options_path ).to_s); @output_buffer.concat "\n        "
+; @output_buffer.concat(( tb_item :writing, writing_admin_options_path ).to_s); @output_buffer.concat "\n        "
+; @output_buffer.concat(( tb_item :reading, reading_admin_options_path ).to_s); @output_buffer.concat "\n      "
+;  end ; @output_buffer.concat "\n    "
+;  end ; @output_buffer.concat "\n    <div id=\"workspace\">\n      "
+
+; @output_buffer.concat(( yield ).to_s); @output_buffer.concat "\n    </div>\n  </div>\n  "
+
+
+; @output_buffer.concat(( javascript_include_tag 'jquery-1.3.2.min').to_s); @output_buffer.concat "\n  <script type=\"text/javascript\">\n    $(document).ready(function () {\n      $(\"#toolbar h2\");\n    });\n  </script>\n  "
+
+
+
+
+
+; @output_buffer.concat(( yield :head ).to_s); @output_buffer.concat "\n  <!--[if lt IE 7.]></div><![endif]-->\n<!--[if IE]></div><![endif]-->\n</body>\n</html>\n"
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/taf2/work/anerian/railspress/app/views/layouts/admin/admin.html.erb:66:in `compile!'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:347:in `_render_with_layout'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:102:in `dispatch_cgi'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:28:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:159:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:282:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/opt/local/bin/mongrel_rails:19:in `load'
+/opt/local/bin/mongrel_rails:19
+
+ActionView::TemplateError (compile error
+/Users/taf2/work/anerian/railspress/app/views/layouts/admin/admin.html.erb:66: syntax error, unexpected kENSURE, expecting $end) on line #66 of app/views/layouts/admin/admin.html.erb:
+63: </body>
+64: </html>
+
+    app/views/layouts/admin/admin.html.erb:66:in `compile!'
+
+Rendered rescues/_trace (44.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:34:22) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+
+ActionView::TemplateError (undefined local variable or method `admin_path' for #<ActionView::Base:0x2407c78>) on line #19 of app/views/layouts/admin/admin.html.erb:
+16:   <div id="content">
+17:     <%= flash_display -%>
+18:     <% toolbar do %>
+19:       <% toolbar_section(:dashboard, admin_path ) do %>
+20:       <% end %>
+21:       <% toolbar_section(:pages) do %>
+22:         <%= tb_item :browse, admin_pages_path %>
+
+    app/views/layouts/admin/admin.html.erb:19
+    app/helpers/admin/admin_helper.rb:5:in `toolbar'
+    app/views/layouts/admin/admin.html.erb:18
+
+Rendered rescues/_trace (112.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:34:31) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:34:49) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:36:06) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:42:06) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:42:12) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:42:16) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:42:39) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:42:41) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:43:20) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:43:39) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:43:45) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:43:59) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:44:46) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:45:09) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:45:16) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 74ms (View: 71, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:45:21) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:45:55) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:46:10) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:46:31) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:46:41) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:46:49) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:47:00) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:47:23) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:47:28) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:47:42) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:48:09) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:48:33) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:48:43) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:49:13) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:50:47) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:51:06) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:51:42) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:51:49) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:52:18) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:53:18) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:53:29) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:53:40) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:53:58) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 17:54:23) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 19:26:26) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 91ms (View: 89, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 19:26:39) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 19:27:31) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 19:27:39) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 19:27:45) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 19:31:27) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 19:31:47) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 19:31:55) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 19:32:02) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 74ms (View: 72, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 19:32:16) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 19:32:26) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:14:13) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:14:18) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:14:36) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:14:44) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:14:56) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:14:59) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:15:10) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:15:11) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:15:12) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:15:29) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:15:33) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:15:38) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:15:41) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:15:46) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:16:00) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 71ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:16:05) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:16:09) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:16:14) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:16:30) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:16:35) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:16:40) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:16:47) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:16:59) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:17:29) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-09 20:17:31) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#index (for 127.0.0.1 at 2009-04-09 20:17:32) [GET]
+Rendering template within layouts/application
+Rendering admin/categories/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/admin/categories]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#index (for 127.0.0.1 at 2009-04-09 20:17:41) [GET]
+Rendering template within layouts/application
+Rendering admin/categories/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/admin/categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#index (for 127.0.0.1 at 2009-04-09 20:18:07) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/categories/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/categories]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::LinksController#index (for 127.0.0.1 at 2009-04-09 20:18:10) [GET]
+Rendering template within layouts/application
+Rendering admin/links/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/links]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::CategoriesController#index (for 127.0.0.1 at 2009-04-09 20:18:12) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/categories/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/categories]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:18:13) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:21:47) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 77ms (View: 76, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:22:13) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:22:26) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:25:34) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:26:04) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:26:22) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:26:35) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:27:04) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:27:31) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 73ms (View: 71, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:28:24) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:31:40) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:32:07) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:32:26) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:32:39) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:33:29) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:33:57) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:41:02) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:46:38) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:46:50) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:50:05) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:50:07) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (7.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:50:12) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 7ms (View: 5, DB: 8) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:51:25) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2009-04-09 20:51:27) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/index
+Completed in 93ms (View: 92, DB: 0) | 200 OK [http://localhost/admin/pages]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-09 20:52:03) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:52:07) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:52:20) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:52:23) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:52:24) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:55:41) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:56:08) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:56:37) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-09 20:57:21) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 08:40:31) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 08:41:42) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 08:41:44) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 08:42:14) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 08:42:23) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 08:42:37) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 08:42:45) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 08:42:50) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 70ms (View: 68, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 08:43:01) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 08:43:57) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 08:44:31) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 08:50:29) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 08:50:50) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 08:55:08) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 08:55:25) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 08:55:34) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 08:55:50) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 08:58:04) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 08:58:20) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 08:58:57) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 09:03:56) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 09:04:08) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 80ms (View: 78, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 09:06:23) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 09:07:15) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 09:07:34) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 09:07:44) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 09:08:23) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 09:09:04) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 09:09:39) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 80ms (View: 78, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 09:10:38) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://192.168.1.113/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 09:12:21) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://192.168.1.113/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 09:14:10) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+
+ActionView::TemplateError (undefined local variable or method `content' for #<ActionView::Base:0x2506674>) on line #2 of app/views/widgets/_toolbar.html.erb:
+1: <div id="toolbar">
+2:   <ul><%= content %></ul>
+3: </div>
+4: <%= javascript_include_tag 'jquery-1.3.2.min'%>
+5: <script type="text/javascript">
+
+    app/views/widgets/_toolbar.html.erb:2
+    app/helpers/admin/admin_helper.rb:4:in `toolbar'
+    app/views/layouts/admin/admin.html.erb:18
+
+Rendered rescues/_trace (52.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 09:14:36) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+
+ActionView::TemplateError (undefined local variable or method `content' for #<ActionView::Base:0x2741038>) on line #2 of app/views/widgets/_toolbar.html.erb:
+1: <div id="toolbar">
+2:   <ul><%= content %></ul>
+3: </div>
+4: <% content_for :foot do %>
+5: <script type="text/javascript">
+
+    app/views/widgets/_toolbar.html.erb:2
+    app/helpers/admin/admin_helper.rb:4:in `toolbar'
+    app/views/layouts/admin/admin.html.erb:18
+
+Rendered rescues/_trace (47.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 09:14:57) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (0.6ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 09:15:05) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 09:15:15) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (0.2ms)
+Completed in 76ms (View: 7, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-10 09:19:30) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (0.1ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (65.9ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateOptions (20090408201656)
+  [4;35;1mSQL (1.6ms)[0m   [0mDROP TABLE `options`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090408201656'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `pages`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW KEYS FROM `pages`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePages (20090408200846)
+Migrating to CreateOptions (20090408201656)
+  [4;35;1mSQL (41.5ms)[0m   [0mCREATE TABLE `options` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `key` varchar(32), `value` text, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (5.1ms)[0m   [0;1mCREATE INDEX `index_options_on_key` ON `options` (`key`)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090408201656')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `options`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mdescribe `options`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `options`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mdescribe `pages`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `pages`[0m

@@ -3,12 +3,20 @@ ActionController::Routing::Routes.draw do |map|
 
   map.namespace :admin do|admin|
     admin.resources :pages, :member => {:delete => :get}
-    admin.resources :options, :member => {:delete => :get}
+    admin.resources :options, :member => {:delete => :get}, :collection => { :writing => :get, :reading => :get}
+    admin.resources :categories, :member => {:delete => :get}
+    admin.resources :tags, :member => {:delete => :get}
+    admin.resources :assets, :member => {:delete => :get}
+    admin.resources :themes, :member => {:delete => :get}, :collection => { :widgets => :get }
+    admin.resources :links, :member => {:delete => :get}
+    admin.root :controller => 'dash'
+    admin.tools 'admin/tools', :controller => 'tools'
+    admin.import_tools 'admin/tools/import', :controller => 'tools', :action => 'import'
+    admin.export_tools 'admin/tools/export', :controller => 'tools', :action => 'export'
   end
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
   # map.root :controller => "welcome"
-  map.root :controller => 'dash'
 
   # See how all your routes lay out with "rake routes"
 

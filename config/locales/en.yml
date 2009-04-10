@@ -2,4 +2,20 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  pages: Pages
+  browse: Browse
+  new: New
+  categories: Categories
+  tags: Tags
+  links: Links
+  media: Media
+  appearance: Appearance
+  widgets: Widgets
+  tools: Tools
+  general: General
+  import: Import
+  export: Export
+  settings: Settings
+  writing: Writing
+  reading: Reading
+  dashboard: Dashboard

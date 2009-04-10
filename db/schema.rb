@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(:version => 20090408201656) do
   create_table "options", :force => true do |t|
     t.string   "key",        :limit => 32
     t.text     "value"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

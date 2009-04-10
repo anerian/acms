@@ -64,6 +64,9 @@ html, body {
   background:#f9f9f9;
   color: #333;
 }
+a {
+  color: #21759B;
+}
 #header {
   background: #464646;
   height: 48px;
@@ -108,15 +111,162 @@ html, body {
   margin:0;
   position:relative;
 }
+/* toolbar.css */
 #toolbar {
   position:absolute;
   left:0px;
   top:0px;
-  width:150px;
+  width:180px;
   overflow:hidden;
+  font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+  font-size:13px;
+}
+#toolbar a {
+  text-decoration:none;
+}
+#toolbar a:hover {
+  text-decoration:underline;
+  color:#D54E21;
+}
+#toolbar ul {
+  list-style:none;
+}
+#toolbar ul li.first {
+  margin-top:10px;
+  border:none;
+  background:transparent;
+}
+#toolbar ul li ul {
+  margin:0px;
+  background:#fff;
+}
+#toolbar ul li ul li {
+  text-indent:10px;
+  border:1px solid #ccc;
+  border-bottom:none;
+  border-top:none;
+  background:#fff;
+}
+#toolbar ul li ul li.last {
+  border-bottom:1px solid #ccc;
+  padding-bottom:5px;
+}
+#toolbar ul li ul li a {
+  display:block;
+  width:100%;
+}
+#toolbar ul li ul li a:hover {
+  color:#000;
+  text-decoration:none;
+  background:#EAF2FA;
+}
+#toolbar h2 {
+  font-size:16px;
+  position:relative;
+  padding-left:24px;
+  border:1px solid #ccc;
+  background:#eee;
+  margin:0;
+}
+#toolbar li.first h2 {
+  -moz-border-radius-topleft:8px;
+  -moz-border-radius-topright:8px;
+  -webkit-border-top-left-radius:8px;
+  -webkit-border-top-right-radius:8px;
+}
+#toolbar ul li {
+  background:#eee;
+}
+#toolbar h2:hover {
+  cursor:pointer;
+}
+#toolbar h2 .handle {
+  background: transparent url(/images/admin/down-arrow.png) no-repeat;
+  display:block;
+  position:absolute;
+  width:24px;
+  height:24px;
+  right:0px;
+  top:0px;
+  cursor:pointer;
+  border-left:1px solid #ccc;
+}
+#toolbar h2 .micon {
+  background: transparent url(/images/admin/menu.png) no-repeat;
+  display:block;
+  position:absolute;
+  width:19px;
+  height:19px;
+  left:2px;
+  top:0px;
+}
+#toolbar h2 .pages-icon {
+  background-position:-276px -36px;
+}
+#toolbar h2:hover .pages-icon {
+  background-position:-276px -4px;
+}
+#toolbar h2 .links-icon {
+  background-position:-96px -36px;
+}
+#toolbar h2:hover .links-icon {
+  background-position:-96px -4px;
+}
+#toolbar h2 .media-icon {
+  background-position:-126px -40px;
+  top:4px;
+}
+#toolbar h2:hover .media-icon {
+  background-position:-126px -8px;
+}
+#toolbar h2 .appearance-icon {
+  background-position:-6px -36px;
+}
+#toolbar h2:hover .appearance-icon {
+  background-position:-6px -4px;
+}
+#toolbar h2 .tools-icon {
+  background-position:-216px -40px;
+  top:4px;
+}
+#toolbar h2:hover .tools-icon {
+  background-position:-216px -8px;
+}
+#toolbar h2 .settings-icon {
+  background-position:-246px -36px;
+}
+#toolbar h2:hover .settings-icon {
+  background-position:-246px -4px;
+}
+#toolbar h2 .dashboard-icon {
+  background-position:-66px -36px;
+}
+#toolbar h2:hover .dashboard-icon {
+  background-position:-66px -4px;
+}
+#toolbar .dashboard {
+  margin:10px 0px 0px 0px;
+  padding: 5px 0px;
+  background:#666;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+}
+#toolbar .dashboard h2 {
+  background:transparent;
+  border:none;
+}
+#toolbar .dashboard a {
+  color:#fff;
+}
+#toolbar .dashboard h2 {
+  color:#fff;
+}
+#toolbar .dashboard h2 .handle {
+  background:none;
+  border:none;
 }
 #workspace {
-  margin-left:175px;
+  margin-left:195px;
   clear:both;
 }
 #page {

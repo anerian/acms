@@ -4,27 +4,57 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <title>RailsPress</title>
   <%= stylesheet_link_tag 'admin/style', :media => 'screen' %>
-  <%= javascript_include_tag 'prototype'%>
   <%= yield :head %>
 </head>
 <body>
 <!--[if IE]><div class="ie"><![endif]-->
   <!--[if lt IE 7.]><div class="ie6"><![endif]-->
   <div id="header">
-    <img title="Rails Press" alt="Rails Press" src="/images/admin/logo.png"/>
+    <!--<img title="Rails Press" alt="Rails Press" src="/images/admin/logo.png"/>-->
     <h1><a href="/">Blog Title goes here<span>← Visit site</span></a></h1>
   </div>
   <div id="content">
     <%= flash_display -%>
-    <div id="toolbar" class="container">
-      <ul>
-        <li><%= link_to 'Pages', admin_pages_path %></li>
-      </ul>
-    </div>
+    <% toolbar do %>
+      <% toolbar_section(:dashboard, admin_root_path, :class => 'dashboard' ) do %>
+      <% end %>
+
+      <% toolbar_section(:pages, nil, :class => 'first') do %>
+        <%= tb_item :browse, admin_pages_path %>
+        <%= tb_item :new, new_admin_page_path %>
+        <%= tb_item :categories, admin_categories_path %>
+        <%= tb_item :tags, admin_tags_path %>
+      <% end %>
+      <% toolbar_section(:links) do %>
+        <%= tb_item :browse, admin_links_path %>
+        <%= tb_item :new, new_admin_link_path %>
+      <% end %>
+      <% toolbar_section(:media, admin_assets_path) do %>
+        <%= tb_item :browse, admin_assets_path %>
+        <%= tb_item :new, new_admin_asset_path %>
+      <% end %>
+      <% toolbar_section(:appearance, admin_themes_path) do %>
+        <%= tb_item :browse, admin_themes_path %>
+        <%= tb_item :widgets, widgets_admin_themes_path, :class => 'last' %>
+      <% end %>
+
+      <% toolbar_section(:tools, nil, :class => 'first') do %>
+        <%= tb_item :general, admin_tools_path %>
+        <%= tb_item :import, admin_import_tools_path %>
+        <%= tb_item :export, admin_export_tools_path %>
+      <% end %>
+      <% toolbar_section(:settings, admin_options_path ) do %>
+        <%= tb_item :general, admin_options_path %>
+        <%= tb_item :writing, writing_admin_options_path %>
+        <%= tb_item :reading, reading_admin_options_path, :class => 'last' %>
+      <% end %>
+    <% end %>
     <div id="workspace">
       <%= yield %>
     </div>
   </div>
+  <%= javascript_include_tag 'jquery-1.3.2.min'%>
+  <%= yield :foot %>
   <!--[if lt IE 7.]></div><![endif]-->
 <!--[if IE]></div><![endif]-->
 </body>
