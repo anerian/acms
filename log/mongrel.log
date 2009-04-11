@@ -44,3 +44,37 @@
 ** Rails signals registered.  HUP => reload (without restart).  It might not work well.
 ** Mongrel 1.1.5 available at 0.0.0.0:4000
 ** Writing PID file to log/mongrel.pid
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:149: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:149: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:149: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:149: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:149: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:149: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:161: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:161: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:161: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:161: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:161: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:161: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:161: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:161: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:161: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:161: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:161: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:161: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:162: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:162: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:162: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:162: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:162: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:162: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:163: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:182: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:182: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:153: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:153: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:153: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:153: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:153: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:153: warning: Object#id will be deprecated; use Object#object_id
+/Users/taf2/work/anerian/railspress/app/views/admin/pages/_form.html.erb:153: warning: Object#id will be deprecated; use Object#object_id

@@ -1,14 +1,182 @@
+<% content_for :head do %>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/admin/editor-skin.css">
+<% end %>
 <div class="body_content">
-  <% if @page.new_record? %>
-  <h2>Add New Page</h2>
-  <% else %>
-  <h2>Edit Page</h2>
-  <% end %>
+  <div class="title">
+    <% if @page.new_record? %>
+      <h2>Add New Page</h2>
+    <% else %>
+      <h2>Edit Page</h2>
+    <% end %>
+  </div>
   <% form_for [:admin,@page] do|f| %>
     <div id="title_field">
       <%= f.text_field :title %>
-      <%= f.text_field :slug %>
+      <div id="url_slug" style="display:none">
+        <%= f.text_field :slug %>
+      </div>
     </div>
-    <%= f.text_area :content %>
+    <!--
+    <div class="" id="media-buttons">
+      Upload/Insert 
+      <a title="Add an Image" class="thickbox" id="add_image" href=""><img alt="Add an Image" src="/images/admin/media-button-image.gif"/></a>
+      <a title="Add Video" class="thickbox" id="add_video" href=""><img alt="Add Video" src="/images/admin/media-button-video.gif"/></a>
+      <a title="Add Audio" class="thickbox" id="add_audio" href=""><img alt="Add Audio" src="/images/admin/media-button-music.gif"/></a>
+      <a title="Add Media" class="thickbox" id="add_media" href=""><img alt="Add Media" src="/images/admin/media-button-other.gif"/></a>
+    </div> -->
+    <div id="editorcontainer" class="yui-skin-sam">
+      <%= f.text_area :content %>
+    </div>
   <% end %>
 </div>
+<% content_for :sidebar do %>
+  <div class="container">
+    <div class="title"><h3>Publish</h3></div>
+    <div class="content">
+       <input id="page_savedraft" style="float:left" type="button" name="draft" value="Save Draft"/>
+       <input id="page_preview" style="float:right" type="button" name="preview" value="Preview"/>
+       <div class="clear"></div>
+    </div>
+    <div class="footer">
+       <input id="page_publish" type="button" name="publish" value="Publish"/>
+    </div>
+  </div>
+<% end %>
+<% content_for :foot do %>
+<%= javascript_include_tag "admin/yui-editor2.7.0" %>
+<script type="text/javascript">
+  var Dom = YAHOO.util.Dom, Event = YAHOO.util.Event;
+  var state = 'off';
+  $(document).ready( function() {
+    setupEditor();
+    enablePublishing();
+  });
+
+  function enablePublishing() {
+    $("#page_publish").click(function(e) {
+      e.preventDefault();
+      $("#fields .body_content form").serialize();
+    });
+    $("#page_savedraft").click(function(e) {
+      e.preventDefault();
+      $("#fields .body_content form").serialize();
+    });
+    $("#page_preview").click(function(e) {
+      e.preventDefault();
+      $("#fields .body_content form").serialize();
+    });
+  }
+
+  function setupEditor() {
+    var options = {
+      autoHeight: true,
+      filterWord: true,
+      width: '100%',
+      dompath: true, //Turns on the bar at the bottom
+      toolbar: {
+        titlebar: null,
+        collapse: true,
+        buttons: [
+          { group: 'textstyle',
+            buttons: [
+              { type: 'push', label: 'Bold', value: 'bold' },
+              { type: 'push', label: 'Italic', value: 'italic' },
+              { type: 'push', label: 'Underline', value: 'underline' },
+              { type: 'separator' },
+              { type: 'push', label: 'Link', value: 'createlink' },
+              { type: 'push', label: 'Picker', value: 'insertimage' },
+              { type: 'push', label: 'Edit HTML Code', value: 'editcode' },
+              { type: 'separator' }
+            ]
+          }
+        ]
+      }
+    };
+    var editor = new YAHOO.widget.SimpleEditor('page_content', options);
+    editor.on('toolbarLoaded', function() { 
+      var codeConfig = {
+          type: 'push', label: 'Edit HTML Code', value: 'editcode'
+      };
+      this.toolbar.on('editcodeClick', function() {
+
+          var ta = this.get('element'),
+              iframe = this.get('iframe').get('element');
+
+          if (state == 'on') {
+              state = 'off';
+              this.toolbar.set('disabled', false);
+              this.setEditorHTML(ta.value);
+              if (!this.browser.ie) {
+                  this._setDesignMode('on');
+              }
+
+              Dom.removeClass(iframe, 'editor-hidden');
+              Dom.addClass(ta, 'editor-hidden');
+              this.show();
+              this._focusWindow();
+          } else {
+              state = 'on';
+              this.cleanHTML();
+              Dom.addClass(iframe, 'editor-hidden');
+              Dom.removeClass(ta, 'editor-hidden');
+              this.toolbar.set('disabled', true);
+              this.toolbar.getButtonByValue('editcode').set('disabled', false);
+              this.toolbar.selectButton('editcode');
+              this.dompath.innerHTML = 'Editing HTML Code';
+              this.hide();
+          }
+          return false;
+      }, this, true);
+
+      this.on('cleanHTML', function(ev) {
+        this.get('element').value = ev.html;
+      }, this, true);
+      
+      this.on('afterRender', function() {
+        var wrapper = this.get('editor_wrapper');
+        wrapper.appendChild(this.get('element'));
+        
+        this.setStyle('width', '100%');
+        this.setStyle('height', '100%');
+        this.setStyle('visibility', '');
+        this.setStyle('top', '');
+        this.setStyle('left', '');
+        this.setStyle('position', '');
+
+        this.addClass('editor-hidden');
+        
+      }, this, true);
+
+/*
+      this.toolbar.on('insertimageClick', function() {
+        try  {
+          $("#<%= id %>_picker_target").assetpicker({
+            selected: function(event, asset) {
+              $.getJSON(asset.path, function(data) {
+                // switch(asset.basic_type) {
+                //   case 'image':
+                //     break;
+                //   case 'flash':
+                //     break;
+                // }
+
+                editor.execCommand('insertimage', asset.thumbPath); 
+                
+                // var html = $(editor.getEditorHTML()).find('img').each(function(){
+                //   console.info(this);
+                //   this.src = 'http://google.com'
+                // });
+                // console.info(html);
+                
+              });
+            }
+          });          
+        } catch(e) {}
+        return false;
+      }, this, true);
+*/
+    });
+    editor.render();
+  };
+</script>
+<% end %>

@@ -4250,3 +4250,672 @@ Rendering admin/pages/new
 Rendered admin/pages/_form (2.7ms)
 Rendered widgets/_toolbar (0.2ms)
 Completed in 16ms (View: 11, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:39:10) [GET]
+  [4;35;1mPage Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (2.9ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 17ms (View: 11, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:39:12) [GET]
+  [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (2.2ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 14ms (View: 8, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:39:23) [GET]
+  [4;35;1mPage Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (2.5ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 15ms (View: 9, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:39:24) [GET]
+  [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (2.1ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 14ms (View: 8, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:41:02) [GET]
+  [4;35;1mPage Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (4.9ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 19ms (View: 13, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#images to gif (for 127.0.0.1 at 2009-04-11 10:41:02) [GET]
+  Parameters: {"id"=>"media-button-image"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, delete, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#images to gif (for 127.0.0.1 at 2009-04-11 10:41:02) [GET]
+  Parameters: {"id"=>"media-button-video"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, delete, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#images to gif (for 127.0.0.1 at 2009-04-11 10:41:02) [GET]
+  Parameters: {"id"=>"media-button-music"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, delete, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#images to gif (for 127.0.0.1 at 2009-04-11 10:41:02) [GET]
+  Parameters: {"id"=>"media-button-other"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, delete, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:41:46) [GET]
+  [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (3.1ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 16ms (View: 11, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#images to gif (for 127.0.0.1 at 2009-04-11 10:41:46) [GET]
+  Parameters: {"id"=>"media-button-image"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, delete, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#images to gif (for 127.0.0.1 at 2009-04-11 10:41:46) [GET]
+  Parameters: {"id"=>"media-button-video"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, delete, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#images to gif (for 127.0.0.1 at 2009-04-11 10:41:46) [GET]
+  Parameters: {"id"=>"media-button-music"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, delete, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#images to gif (for 127.0.0.1 at 2009-04-11 10:41:46) [GET]
+  Parameters: {"id"=>"media-button-other"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, delete, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:42:27) [GET]
+  [4;35;1mPage Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (3.0ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 16ms (View: 10, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:43:10) [GET]
+  [4;35;1mPage Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (3.5ms)
+Rendered widgets/_toolbar (0.3ms)
+Completed in 18ms (View: 12, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:43:35) [GET]
+  [4;35;1mPage Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (3.5ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 18ms (View: 12, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:44:16) [GET]
+  [4;35;1mPage Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (2.4ms)
+Rendered widgets/_toolbar (0.2ms)
+Completed in 15ms (View: 9, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:51:11) [GET]
+  [4;35;1mPage Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (3.9ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 19ms (View: 13, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:51:59) [GET]
+  [4;35;1mPage Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (4.0ms)
+Rendered widgets/_toolbar (0.2ms)
+Completed in 19ms (View: 13, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:53:42) [GET]
+  [4;35;1mPage Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (3.7ms)
+Rendered widgets/_toolbar (0.2ms)
+Completed in 19ms (View: 12, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:53:55) [GET]
+  [4;35;1mPage Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (3.9ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 17ms (View: 11, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:54:01) [GET]
+  [4;35;1mPage Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (3.5ms)
+Rendered widgets/_toolbar (0.2ms)
+Completed in 17ms (View: 11, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:54:05) [GET]
+  [4;35;1mPage Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (3.9ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 80ms (View: 74, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:54:20) [GET]
+  [4;35;1mPage Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (3.9ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 19ms (View: 12, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:57:13) [GET]
+  [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (4.6ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 20ms (View: 13, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:57:44) [GET]
+  [4;35;1mPage Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (3.7ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 16ms (View: 11, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:58:24) [GET]
+  [4;35;1mPage Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (5.5ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 20ms (View: 13, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:58:54) [GET]
+  [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (2.5ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 16ms (View: 10, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 11:00:07) [GET]
+  [4;35;1mPage Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (5.3ms)
+Rendered widgets/_toolbar (0.2ms)
+Completed in 19ms (View: 13, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 11:01:37) [GET]
+  [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (5.6ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 19ms (View: 14, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 11:02:54) [GET]
+  [4;35;1mPage Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (5.5ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 18ms (View: 13, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:00:45) [GET]
+  [4;35;1mPage Columns (4.2ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (7.2ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 33ms (View: 16, DB: 4) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:01:37) [GET]
+  [4;35;1mPage Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (6.5ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 21ms (View: 15, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:02:22) [GET]
+  [4;35;1mPage Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (5.9ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 21ms (View: 15, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-11 12:02:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/editor-skin.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:02:28) [GET]
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (5.3ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 18ms (View: 13, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:03:42) [GET]
+  [4;36;1mPage Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (6.1ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 23ms (View: 16, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:03:55) [GET]
+  [4;36;1mPage Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (6.4ms)
+Rendered widgets/_toolbar (0.2ms)
+Completed in 20ms (View: 14, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:07:22) [GET]
+  [4;36;1mPage Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (6.6ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 27ms (View: 20, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:10:21) [GET]
+  [4;36;1mPage Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (6.2ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 20ms (View: 14, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:10:51) [GET]
+  [4;36;1mPage Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (2.9ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 16ms (View: 10, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:11:43) [GET]
+  [4;36;1mPage Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (2.7ms)
+Rendered widgets/_toolbar (0.3ms)
+Completed in 16ms (View: 10, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:12:03) [GET]
+  [4;36;1mPage Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (2.3ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 15ms (View: 8, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:12:26) [GET]
+  [4;36;1mPage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (2.4ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 15ms (View: 8, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:12:39) [GET]
+  [4;36;1mPage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (2.4ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 15ms (View: 9, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:13:07) [GET]
+  [4;36;1mPage Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (2.7ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 15ms (View: 9, DB: 3) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:13:11) [GET]
+  [4;36;1mPage Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (2.9ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 15ms (View: 9, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:13:14) [GET]
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (2.3ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 14ms (View: 8, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:14:27) [GET]
+  [4;36;1mPage Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (63.2ms)
+Rendered widgets/_toolbar (0.2ms)
+Completed in 76ms (View: 70, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:14:57) [GET]
+  [4;36;1mPage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (2.6ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 15ms (View: 9, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:34:36) [GET]
+  [4;36;1mPage Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (6.3ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 22ms (View: 14, DB: 3) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:35:12) [GET]
+  [4;36;1mPage Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (6.6ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 21ms (View: 15, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:35:42) [GET]
+  [4;36;1mPage Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (2.6ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 14ms (View: 8, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:36:18) [GET]
+  [4;36;1mPage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (2.7ms)
+Rendered widgets/_toolbar (61.7ms)
+Completed in 78ms (View: 72, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:37:27) [GET]
+  [4;36;1mPage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (7.0ms)
+Rendered widgets/_toolbar (0.2ms)
+Completed in 22ms (View: 16, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:37:34) [GET]
+  [4;36;1mPage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (6.8ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 22ms (View: 16, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 12:37:43) [GET]
+  [4;36;1mPage Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (5.8ms)
+Rendered widgets/_toolbar (0.2ms)
+Completed in 19ms (View: 13, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 13:04:37) [GET]
+  [4;36;1mPage Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (7.7ms)
+Rendered widgets/_toolbar (0.3ms)
+Completed in 150ms (View: 131, DB: 3) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 13:05:00) [GET]
+  [4;36;1mPage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (6.4ms)
+Rendered widgets/_toolbar (0.2ms)
+Completed in 80ms (View: 75, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 13:06:21) [GET]
+  [4;36;1mPage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (6.8ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 20ms (View: 15, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 13:06:35) [GET]
+  [4;36;1mPage Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (2.6ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 18ms (View: 13, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 13:06:40) [GET]
+  [4;36;1mPage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (2.5ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 18ms (View: 12, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 13:06:45) [GET]
+  [4;36;1mPage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (2.7ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 19ms (View: 13, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 13:06:50) [GET]
+  [4;36;1mPage Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (5.9ms)
+Rendered widgets/_toolbar (0.2ms)
+Completed in 25ms (View: 19, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 13:06:59) [GET]
+  [4;36;1mPage Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (6.4ms)
+Rendered widgets/_toolbar (0.1ms)
+Completed in 20ms (View: 14, DB: 2) | 200 OK [http://localhost/admin/pages/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 13:07:13) [GET]
+  [4;36;1mPage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered admin/pages/_form (2.7ms)
+Rendered widgets/_toolbar (0.2ms)
+Completed in 14ms (View: 9, DB: 2) | 200 OK [http://localhost/admin/pages/new]

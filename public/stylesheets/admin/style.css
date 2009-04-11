@@ -102,9 +102,6 @@ a {
   line-height:48px;
   padding-left:10px;
 }
-.container {
-  background:#fff;
-}
 #content {
   width:100%;
   height:100%;
@@ -283,10 +280,18 @@ a {
   float:right;
   position:relative;
   width:280px;
+  margin-top:45px;
 }
 #page {
   float:left;
   width:100%;
+}
+#title_field {
+  margin-bottom:10px;
+}
+#editorcontainer {
+  width:100%;
+  padding:3px 4px;
 }
 .body_content {
   margin-right:305px;
@@ -304,8 +309,31 @@ a {
   outline-width:medium;
   padding:3px 4px;
   width:100%;
+  border-color:#DFDFDF;
 }
 /* layout.css */
+.container {
+  background:#fff;
+  margin:10px;
+  border:1px solid #DFDFDF;
+}
+.container .title {
+  background:#DFDFDF;
+  padding:6px;
+}
+.container .title h3 {
+  margin:0;
+}
+.container .content {
+  background:#fff;
+  font-size:11px;
+  padding:6px;
+}
+.container .footer {
+  background:#EAF2FA;
+  padding:6px;
+  text-align:right;
+}
 .content {
   clear:right;
 }

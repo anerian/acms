@@ -3,8 +3,8 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <title>RailsPress</title>
-  <%= stylesheet_link_tag 'admin/style', :media => 'screen' %>
-  <%= yield :head %>
+  <%= stylesheet_link_tag 'admin/style', :media => 'screen' -%>
+  <%= yield :head -%>
 </head>
 <body>
 <!--[if IE]><div class="ie"><![endif]-->
@@ -50,7 +50,9 @@
       <% end %>
     <% end %>
     <div id="workspace">
-      <div id="sidebar">Sidebar content</div>
+      <div id="sidebar">
+        <%= yield :sidebar %>
+      </div>
       <div id="fields">
         <%= yield %>
       </div>
