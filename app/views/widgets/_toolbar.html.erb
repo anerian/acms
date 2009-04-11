@@ -1,0 +1,43 @@
+<div id="toolbar">
+  <ul><%= content %></ul>
+</div>
+<% content_for :foot do %>
+<script type="text/javascript">
+  var navItems = ['pages', 'links', 'media', 'appearance', 'tools', 'settings'];
+  // controls for the toolbar
+  $(document).ready(function () {
+    for( var i = 0, len = navItems.length; i < len; ++i ) {
+      var state = $.cookie(navItems[i]);
+      //console.log("check: "+ navItems[i] + "=" + state);
+      if( state == 'hidden' ) {
+        //console.log("hide it");
+        $("#toolbar ." + navItems[i] + "-icon").parents("h2").next("ul").hide();
+      }
+    }
+    $("#toolbar h2 .handle").click(function(e) {
+      e.preventDefault();
+      var item = $(this).parents("h2").children(".micon").get(0);
+      var options = { path: '/', expires: 10 };
+      var itemName = null;
+
+      for( var i = 0, len = navItems.length; i < len; ++i ) {
+        if( item.className.match(navItems[i]) ) {
+          itemName = navItems[i];
+          break;
+        }
+      }
+
+      $(this).parents("h2").next("ul").slideToggle("fast", function() {
+        if( $(this).get(0).style.display == 'none' ) {
+       //   console.log(itemName + ":hidden"); // SAVE in cookie
+          $.cookie(itemName, "hidden", options);
+        }
+        else {
+        //  console.log(itemName + ":visible"); // SAVE in cookie
+          $.cookie(itemName, "visible", options);
+        }
+      });
+    });
+  });
+</script>
+<% end %>

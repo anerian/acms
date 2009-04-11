@@ -3840,3 +3840,236 @@ Migrating to CreateOptions (20090408201656)
   [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
   [4;35;1mSQL (3.5ms)[0m   [0mdescribe `pages`[0m
   [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `pages`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-11 09:27:40) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:27:44) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (1.3ms)
+Completed in 23ms (View: 21, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:34:29) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (0.8ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:35:16) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (0.1ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:35:20) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (0.1ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:36:03) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (0.1ms)
+Completed in 70ms (View: 68, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:36:20) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (0.1ms)
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:48:08) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (0.8ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:51:04) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (0.9ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:51:31) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (0.9ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:55:01) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (1.0ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:55:17) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (1.0ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:55:27) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (1.0ms)
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:55:29) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (0.1ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:55:57) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (1.0ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:56:05) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (0.1ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:56:12) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (0.1ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:56:26) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (1.0ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:56:51) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (1.0ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:56:52) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (0.1ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:57:01) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (1.0ms)
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:57:03) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (0.1ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:57:13) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (1.1ms)
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:57:15) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (0.1ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:57:46) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (1.1ms)
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:58:09) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (0.1ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 09:58:11) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (0.1ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DashController#index (for 127.0.0.1 at 2009-04-11 10:05:16) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/dash/index
+Rendered widgets/_toolbar (0.1ms)
+Completed in 72ms (View: 70, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::PagesController#new (for 127.0.0.1 at 2009-04-11 10:05:18) [GET]
+Rendering template within layouts/admin/admin
+Rendering admin/pages/new
+Rendered widgets/_toolbar (0.1ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/pages/new]
