@@ -6,6 +6,7 @@ class Admin::PagesController < Admin::AdminController
   end
 
   def new
+    @page = Page.new
   end
 
   def create

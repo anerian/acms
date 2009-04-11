@@ -1,0 +1,14 @@
+<div class="body_content">
+  <% if @page.new_record? %>
+  <h2>Add New Page</h2>
+  <% else %>
+  <h2>Edit Page</h2>
+  <% end %>
+  <% form_for [:admin,@page] do|f| %>
+    <div id="title_field">
+      <%= f.text_field :title %>
+      <%= f.text_field :slug %>
+    </div>
+    <%= f.text_area :content %>
+  <% end %>
+</div>

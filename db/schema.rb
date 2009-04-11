@@ -20,13 +20,20 @@ ActiveRecord::Schema.define(:version => 20090408201656) do
   end
 
   add_index "options", ["key"], :name => "index_options_on_key"
+  add_index "options", ["user_id"], :name => "index_options_on_user_id"
 
   create_table "pages", :force => true do |t|
     t.string   "title"
-    t.string   "author"
+    t.string   "slug",         :limit => 128
     t.text     "content"
+    t.integer  "user_id"
+    t.integer  "status",                      :default => 0
+    t.datetime "published_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "pages", ["slug"], :name => "index_pages_on_slug"
+  add_index "pages", ["status"], :name => "index_pages_on_status"
 
 end

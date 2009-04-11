@@ -268,9 +268,41 @@ a {
 #workspace {
   margin-left:195px;
   clear:both;
+  height:100%;
+  position:relative;
+  top:0px; left:0px;
+}
+#fields {
+  float:left;
+  clear:left;
+  width:100%;
+  margin-right:-340px;
+}
+#sidebar {
+  clear:right;
+  float:right;
+  position:relative;
+  width:280px;
 }
 #page {
   float:left;
+  width:100%;
+}
+.body_content {
+  margin-right:305px;
+}
+#page_title {
+  -moz-border-radius-bottomleft:6px;
+  -moz-border-radius-bottomright:6px;
+  -moz-border-radius-topleft:6px;
+  -moz-border-radius-topright:6px;
+  border-style:solid;
+  border-width:1px;
+  font-size:1.7em;
+  outline-color:-moz-use-text-color;
+  outline-style:none;
+  outline-width:medium;
+  padding:3px 4px;
   width:100%;
 }
 /* layout.css */

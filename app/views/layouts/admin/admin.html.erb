@@ -50,7 +50,10 @@
       <% end %>
     <% end %>
     <div id="workspace">
-      <%= yield %>
+      <div id="sidebar">Sidebar content</div>
+      <div id="fields">
+        <%= yield %>
+      </div>
     </div>
   </div>
   <%= javascript_include_tag 'jquery-1.3.2.min'%>
