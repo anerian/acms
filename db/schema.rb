@@ -13,14 +13,14 @@ ActiveRecord::Schema.define(:version => 20090408201656) do
 
   create_table "options", :force => true do |t|
     t.string   "key",        :limit => 32
-    t.text     "value"
-    t.integer  "user_id"
+    t.integer  "type",                     :default => 0
+    t.integer  "i_value"
+    t.text     "s_value"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "options", ["key"], :name => "index_options_on_key"
-  add_index "options", ["user_id"], :name => "index_options_on_user_id"
 
   create_table "pages", :force => true do |t|
     t.string   "title"

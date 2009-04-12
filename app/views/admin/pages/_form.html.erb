@@ -31,15 +31,17 @@
 </div>
 <% content_for :sidebar do %>
   <div class="container">
-    <div class="title"><h3>Publish</h3></div>
-    <div class="content">
-       <input id="page_savedraft" style="float:left" type="button" name="draft" value="Save Draft"/>
-       <input id="page_preview" style="float:right" type="button" name="preview" value="Preview"/>
-       <div class="clear"></div>
-    </div>
-    <div class="footer">
-       <input id="page_publish" type="button" name="publish" value="Publish"/>
-    </div>
+    <form id="page_controls">
+      <div class="title"><h3>Publish</h3></div>
+      <div class="content">
+         <input id="page_savedraft" style="float:left" type="button" name="draft" value="Save Draft"/>
+         <input id="page_preview" style="float:right" type="button" name="preview" value="Preview"/>
+         <div class="clear"></div>
+      </div>
+      <div class="footer">
+         <input id="page_publish" type="button" name="publish" value="Publish"/>
+      </div>
+    </form>
   </div>
 <% end %>
 <% content_for :foot do %>
@@ -47,23 +49,50 @@
 <script type="text/javascript">
   var Dom = YAHOO.util.Dom, Event = YAHOO.util.Event;
   var state = 'off';
+  var PageEditor = null;
+
   $(document).ready( function() {
-    setupEditor();
+    PageEditor = setupEditor();
     enablePublishing();
   });
 
   function enablePublishing() {
     $("#page_publish").click(function(e) {
       e.preventDefault();
-      $("#fields .body_content form").serialize();
+      sendForm("publish", 2);
     });
     $("#page_savedraft").click(function(e) {
       e.preventDefault();
-      $("#fields .body_content form").serialize();
+      sendForm("savedraft", 0);
     });
     $("#page_preview").click(function(e) {
       e.preventDefault();
-      $("#fields .body_content form").serialize();
+      alert("TODO: show preview");
+      //sendForm("preview");
+    });
+  }
+  function sendForm(action,status) {
+    if( state == 'off' ) {
+      PageEditor.saveHTML();
+    }
+    var fields = $("#fields .body_content form").serialize();
+    fields += "&do=" + action + "page%5Bstatus%5D=" + status;
+    console.log(fields);
+    var formAction = $("#fields form").attr("action");
+    $.ajax({
+      type: "POST",
+      url: formAction,
+      beforeSend: function (XMLHttpRequest) {
+        XMLHttpRequest.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+        XMLHttpRequest.setRequestHeader('Accept', 'text/javascript, text/html, application/xml, text/xml, */*');
+      },
+      data: fields,
+      success: function(msg){
+        alert( "Data Saved: " + msg );
+      },
+      error: function (XMLHttpRequest, textStatus, errorThrown) {
+        alert("error: " + errorThrown);
+      }
     });
   }
 
@@ -177,6 +206,7 @@
 */
     });
     editor.render();
+    return editor;
   };
 </script>
 <% end %>

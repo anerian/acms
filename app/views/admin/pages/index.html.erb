@@ -1,2 +1,36 @@
-<h1>Admin::Pages#index</h1>
-<p>Find me in app/views/admin/pages/index.html.erb</p>
+<div class="body_content">
+  <div class="title">
+    <h2><%= t(:browse_pages) %></h2>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th><%= t(:page_title) %></th>
+        <th><%= t(:author) %></th>
+        <th><%= t(:categories) %></th>
+        <th><%= t(:tags) %></th>
+        <th><%= t(:date) %></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for page in @pages do %>
+        <tr>
+          <td><%= link_to page.title, edit_admin_page_path(page) %></td>
+          <td><%#= page.user.name %></td>
+          <td><%#= page.categories %></td>
+          <td><%#= page.tags %></td>
+          <td><%= page.updated_at %></td>
+        </tr>
+      <% end %>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th><%= t(:page_title) %></th>
+        <th><%= t(:author) %></th>
+        <th><%= t(:categories) %></th>
+        <th><%= t(:tags) %></th>
+        <th><%= t(:date) %></th>
+      </tr>
+    </tfoot>
+  </table>
+</div>

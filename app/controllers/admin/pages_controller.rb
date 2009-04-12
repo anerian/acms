@@ -1,8 +1,12 @@
 class Admin::PagesController < Admin::AdminController
   def index
+    @page = params[:page]
+    @page = 1 if @page.blank?
+    @pages = Page.paginate(:all, {:page => @page })
   end
 
   def show
+    @page = Page.find_by_id(params[:id])
   end
 
   def new
@@ -12,18 +16,35 @@ class Admin::PagesController < Admin::AdminController
   def create
     @page = Page.new(params[:page])
     if @page.save
-      flash[:success] = t(:page_created)
-      redirect_to edit_admin_page_path(@page)
+      respond_to do|t|
+        t.html {flash[:success] = t(:page_created); redirect_to edit_admin_page_path(@page) }
+        t.js { render :text => t(:page_created) }
+      end
     else
-      flash.now[:error] = t(:page_errors)
-      render :action => 'new'
+      respond_to do|t|
+        t.html { flash.now[:error] = t(:page_errors); render :action => 'new' }
+        t.js { render :status => 500, :text => t(:page_errors) }
+      end
     end
   end
 
   def edit
+    @page = Page.find_by_id(params[:id])
   end
 
   def update
+    @page = Page.find_by_id(params[:id])
+    if @page.update_attributes(params[:page])
+      respond_to do|t|
+        t.html {flash[:success] = t(:page_created); redirect_to edit_admin_page_path(@page) }
+        t.js { render :text => t(:page_created) }
+      end
+    else
+      respond_to do|t|
+        t.html { flash.now[:error] = t(:page_errors); render :action => 'new' }
+        t.js { render :status => 500, :text => t(:page_errors) }
+      end
+    end
   end
 
   def delete

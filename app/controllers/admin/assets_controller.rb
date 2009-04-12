@@ -1,4 +1,4 @@
-class Admin::AssetsController < ApplicationController
+class Admin::AssetsController < Admin::AdminController
   def index
   end
 

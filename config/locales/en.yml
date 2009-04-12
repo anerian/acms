@@ -2,8 +2,13 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  author: Author
+  date: Date
   pages: Pages
+  page_title: "Page Title"
+  page_created: "Page Saved"
   browse: Browse
+  browse_pages: "Browse pages"
   new: New
   categories: Categories
   tags: Tags

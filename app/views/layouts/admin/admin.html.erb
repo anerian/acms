@@ -12,41 +12,48 @@
   <div id="header">
     <!--<img title="Rails Press" alt="Rails Press" src="/images/admin/logo.png"/>-->
     <h1><a href="/">Blog Title goes here<span>← Visit site</span></a></h1>
+    <div id="fav-actions">
+      <div><%= link_to "New Post", new_admin_page_path %></div>
+      <div><%= link_to "Drafts", admin_pages_path(:show=>'drafts') %></div>
+      <div><%#= link_to "Uploads", admin_pages_path(:show=>'drafts') %></div>
+      <div><%#= link_to "Comments", admin_pages_path(:show=>'drafts') %></div>
+      <div><%#= link_to "Cache", admin_pages_path(:show=>'drafts') %></div>
+    </div>
   </div>
   <div id="content">
     <%= flash_display -%>
     <% toolbar do %>
-      <% toolbar_section(:dashboard, admin_root_path, :class => 'dashboard' ) do %>
+      <% toolbar_section(:dashboard, admin_root_path, :class => 'first last empty' ) do %>
       <% end %>
 
-      <% toolbar_section(:pages, nil, :class => 'first') do %>
-        <%= tb_item :browse, admin_pages_path %>
+      <% toolbar_section(:pages, nil, :class => 'first', :match => true) do %>
+        <%= tb_item :browse, admin_pages_path, :class => 'cfirst' %>
         <%= tb_item :new, new_admin_page_path %>
         <%= tb_item :categories, admin_categories_path %>
-        <%= tb_item :tags, admin_tags_path %>
+        <%= tb_item :tags, admin_tags_path, :class => 'clast' %>
       <% end %>
-      <% toolbar_section(:links) do %>
-        <%= tb_item :browse, admin_links_path %>
-        <%= tb_item :new, new_admin_link_path %>
+      <% toolbar_section(:links, nil, :match => true) do %>
+        <%= tb_item :browse, admin_links_path, :class => 'cfirst' %>
+        <%= tb_item :new, new_admin_link_path, :class => 'clast' %>
       <% end %>
-      <% toolbar_section(:media, admin_assets_path) do %>
-        <%= tb_item :browse, admin_assets_path %>
-        <%= tb_item :new, new_admin_asset_path %>
+      <% toolbar_section(:media, admin_assets_path, :match => true) do %>
+        <%= tb_item :browse, admin_assets_path, :class => 'cfirst' %>
+        <%= tb_item :new, new_admin_asset_path, :class => 'clast' %>
       <% end %>
-      <% toolbar_section(:appearance, admin_themes_path) do %>
-        <%= tb_item :browse, admin_themes_path %>
-        <%= tb_item :widgets, widgets_admin_themes_path, :class => 'last' %>
+      <% toolbar_section(:appearance, admin_themes_path, :class => 'last', :match => true) do %>
+        <%= tb_item :browse, admin_themes_path, :class => 'cfirst' %>
+        <%= tb_item :widgets, widgets_admin_themes_path, :class => 'last clast' %>
       <% end %>
 
-      <% toolbar_section(:tools, nil, :class => 'first') do %>
-        <%= tb_item :general, admin_tools_path %>
+      <% toolbar_section(:tools, nil, :class => 'first', :match => true) do %>
+        <%= tb_item :general, admin_tools_path, :class => 'cfirst' %>
         <%= tb_item :import, admin_import_tools_path %>
-        <%= tb_item :export, admin_export_tools_path %>
+        <%= tb_item :export, admin_export_tools_path, :class => 'clast' %>
       <% end %>
-      <% toolbar_section(:settings, admin_options_path ) do %>
-        <%= tb_item :general, admin_options_path %>
+      <% toolbar_section(:settings, admin_options_path, :class => 'last', :match => true ) do %>
+        <%= tb_item :general, admin_options_path, :class => 'cfirst' %>
         <%= tb_item :writing, writing_admin_options_path %>
-        <%= tb_item :reading, reading_admin_options_path, :class => 'last' %>
+        <%= tb_item :reading, reading_admin_options_path, :class => 'last clast' %>
       <% end %>
     <% end %>
     <div id="workspace">

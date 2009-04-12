@@ -1,4 +1,4 @@
-class Admin::ThemesController < ApplicationController
+class Admin::ThemesController < Admin::AdminController
   def index
   end
 

@@ -11,7 +11,10 @@
       //console.log("check: "+ navItems[i] + "=" + state);
       if( state == 'hidden' ) {
         //console.log("hide it");
-        $("#toolbar ." + navItems[i] + "-icon").parents("h2").next("ul").hide();
+        var icon = $("#toolbar ." + navItems[i] + "-icon");
+        var h2 = icon.parents("h2");
+        h2.next("ul").hide();
+        h2.parent().removeClass("open");
       }
     }
     $("#toolbar h2 .handle").click(function(e) {
@@ -26,15 +29,18 @@
           break;
         }
       }
-
-      $(this).parents("h2").next("ul").slideToggle("fast", function() {
+      var h2 = $(this).parents("h2");
+      var ul = h2.next("ul");
+      // show the line below the header right away
+      if( ul.get(0).style.display == "none" ) {
+        $.cookie(itemName, "visible", options);
+        h2.parent().addClass("open");
+      }
+      ul.slideToggle("fast", function() {
         if( $(this).get(0).style.display == 'none' ) {
-       //   console.log(itemName + ":hidden"); // SAVE in cookie
+          // delay showing this line until the sub-menu is fully appeared
           $.cookie(itemName, "hidden", options);
-        }
-        else {
-        //  console.log(itemName + ":visible"); // SAVE in cookie
-          $.cookie(itemName, "visible", options);
+          h2.parent().removeClass("open");
         }
       });
     });
