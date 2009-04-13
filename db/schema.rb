@@ -13,8 +13,9 @@ ActiveRecord::Schema.define(:version => 20090408201656) do
 
   create_table "options", :force => true do |t|
     t.string   "key",        :limit => 32
-    t.integer  "type",                     :default => 0
+    t.integer  "opt_type",                 :default => 0
     t.integer  "i_value"
+    t.string   "ss_value"
     t.text     "s_value"
     t.datetime "created_at"
     t.datetime "updated_at"
