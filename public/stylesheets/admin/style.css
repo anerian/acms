@@ -51,13 +51,65 @@ caption {background:#eee;}
 .hide {display:none;}
 .quiet {color:#666;}
 .loud {color:#000;}
-.highlight {background:#ff0;}
+.highlight {background:#FFFBCC;}
 .added {background:#060;color:#fff;}
 .removed {background:#900;color:#fff;}
 .first {margin-left:0;padding-left:0;}
 .last {margin-right:0;padding-right:0;}
 .top {margin-top:0;padding-top:0;}
 .bottom {margin-bottom:0;padding-bottom:0;}
+
+/* form.css */
+input[type=text] {
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border:1px solid #DFDFDF;
+  font-size:1.7em;
+  outline-color:-moz-use-text-color;
+  outline-style:none;
+  outline-width:medium;
+  padding:3px 4px;
+}
+label {
+  padding:3px 4px;
+  float:left;
+  clear:left;
+  text-align:justify;
+  width:450px;
+  display:block;
+  position:relative;
+}
+label strong {
+  float:left;
+  color:#222;
+  text-shadow:0 1px 0 #FFFFFF;
+  font-weight:normal;
+  font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+  font-size:13px;
+  font-size-adjust:none;
+  font-style:normal;
+  font-variant:normal;
+  line-height:30px;
+}
+label input[type=text] {
+  float:right;
+}
+form.inputs {
+  width:100%;
+}
+form.inputs span.desc {
+  height:1.7em;
+  line-height:1.7em;
+  float:left;
+  display:block;
+  padding:3px 4px;
+  margin:5px;
+  font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+  font-style:italic;
+  color:#666;
+  font-size:11px;
+  line-height:20px;
+}
 
 /* design.css */
 html, body {
@@ -207,7 +259,7 @@ a {
   cursor:pointer;
 }
 #toolbar h2 .handle {
-  background: transparent url(/images/admin/down-arrow.png) no-repeat;
+  background: transparent url(/images/admin/menu-bits.gif) no-repeat scroll -1px -111px;
   display:block;
   position:absolute;
   width:24px;
@@ -229,12 +281,14 @@ a {
 #toolbar h2 .pages-icon {
   background-position:-276px -36px;
 }
+#toolbar .current h2 .pages-icon,
 #toolbar h2:hover .pages-icon {
   background-position:-276px -4px;
 }
 #toolbar h2 .links-icon {
   background-position:-96px -36px;
 }
+#toolbar .current h2 .links-icon,
 #toolbar h2:hover .links-icon {
   background-position:-96px -4px;
 }
@@ -242,45 +296,52 @@ a {
   background-position:-126px -40px;
   top:4px;
 }
+#toolbar .current h2 .media-icon,
 #toolbar h2:hover .media-icon {
   background-position:-126px -8px;
 }
 #toolbar h2 .appearance-icon {
   background-position:-6px -36px;
 }
+#toolbar .current h2 .appearance-icon,
 #toolbar h2:hover .appearance-icon {
   background-position:-6px -4px;
+}
+#toolbar h2 .users-icon {
+  background-position:-306px -40px;
+  top:4px;
+}
+#toolbar .current h2 .users-icon,
+#toolbar h2:hover .users-icon {
+  background-position:-306px -8px;
 }
 #toolbar h2 .tools-icon {
   background-position:-216px -40px;
   top:4px;
 }
+#toolbar .current h2 .tools-icon,
 #toolbar h2:hover .tools-icon {
   background-position:-216px -8px;
 }
 #toolbar h2 .settings-icon {
   background-position:-246px -36px;
 }
+#toolbar .current h2 .settings-icon,
 #toolbar h2:hover .settings-icon {
   background-position:-246px -4px;
 }
 #toolbar h2 .dashboard-icon {
   background-position:-66px -36px;
 }
+#toolbar .current h2 .dashboard-icon,
 #toolbar h2:hover .dashboard-icon {
   background-position:-66px -4px;
 }
 #toolbar .current {
   background:#666 !important;
-/*  -moz-border-radius:8px;
-  -webkit-border-radius:8px;
-  */
 }
-/*#toolbar ul li.first {
-  background:#666;
-}*/
 #toolbar .current h2 {
-  background:transparent;
+  background: transparent url(/images/admin/menu-bits.gif) repeat-x scroll top left;
 }
 #toolbar .current h2 a {
   color:#fff;
@@ -290,6 +351,7 @@ a {
 }
 #toolbar .current h2 .handle {
   border:none;
+  background-position: -1px -211px;
 }
 #toolbar ul li ul li.selected a:hover {
   background:#EAF2FA url(/images/admin/menu-dark.gif) no-repeat scroll left top;
@@ -305,6 +367,70 @@ a {
 }
 #toolbar .clast {
   border-bottom:none;
+}
+
+/* top navigation css */
+
+#fav-actions {
+  position:absolute;
+  right:100px;
+  top:0px;
+  border-color: #777 #777 #666;
+  margin:11px 12px 0;
+  min-width:130px;
+}
+#fav-actions a {
+  color:#ddd;
+  text-decoration:none;
+}
+#fav-actions .first {
+  -moz-border-radius:12px;
+  -webkit-border-radius:12px;
+  border-style:solid;
+  border-width:1px;
+  line-height:15px;
+  padding:3px 30px 4px 12px;
+  background:#797979 url(/images/admin/fav.png) repeat-x left center;
+  border-color:#797979;
+}
+#fav-actions .toggle {
+  background:transparent url(/images/admin/fav-arrow.gif) no-repeat scroll 0px -4px;
+  height:22px;
+  position:absolute;
+  right:0;
+  top:1px;
+  width:28px;
+}
+#fav-actions .menu {
+  display:none;
+}
+#fav-actions.open .menu {
+  background:#797979;
+  border-color:#797979;
+  -moz-border-radius-bottomleft:12px;
+  -moz-border-radius-bottomright:12px;
+  -moz-border-radius-topleft:0;
+  -moz-border-radius-topright:0;
+  -webkit-border-bottom-left-radius:12px;
+  -webkit-border-bottom-right-radius:12px;
+  -webkit-border-top-left-radius:0px;
+  -webkit-border-top-right-radius:0px;
+  border-style:solid;
+  border-width:1px;
+  border-top:0;
+  margin:0 0 0 0;
+  padding:0 1px 6px;
+  position:absolute;
+  z-index:11;
+  width:86px;
+  padding: 3px 30px 4px 12px;
+}
+#fav-actions.open .first {
+  border-bottom:0;
+  -moz-border-radius-bottomleft:0px;
+  -moz-border-radius-bottomright:0px;
+  -webkit-border-bottom-left-radius:0px;
+  -webkit-border-bottom-right-radius:0px;
 }
 
 /* workspace.css */
@@ -328,6 +454,7 @@ a {
   width:280px;
   margin-top:45px;
 }
+/* page.css */
 #page {
   float:left;
   width:100%;
@@ -335,15 +462,63 @@ a {
 #title_field {
   margin-bottom:10px;
 }
-#editorcontainer {
+#editorcontainer #page_content_container {
   width:100%;
+  height:100%;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border:1px solid #DFDFDF;
+  font-size:1.7em;
+  outline-color:-moz-use-text-color;
+  outline-style:none;
+  outline-width:medium;
   padding:3px 4px;
+  width:100%;
+  background:#F2F2F2;
+}
+#url_slug {
+  position:relative;
+}
+#url_slug .highlight {
+  cursor:text;
+}
+#url_slug label {
+  height:30px;
+  line-height:30px;
+  padding:4px;
+  position:relative;
+  top:0px; left:0px;
+}
+#url_slug .editable {
+  display:block;
+  position:absolute;
+  right:-218px;
+  top:-4px;
+  width:270px;
+}
+#url_slug .editable input {
+  width:150px;
+}
+/* content stuff */
+.body_content .title .icon {
+  background:transparent url(/images/admin/icons32.png) no-repeat;
+  width:36px;
+  height:36px;
+  margin-top:14px;
+  float:left;
+}
+.page .title .icon {
+  background-position:-552px -5px;
+}
+.general .title .icon {
+  background-position:-492px -5px;
 }
 .body_content {
   margin-right:305px;
 }
 .body_content h2 {
   color:#464646;
+  text-indent:10px;
   -x-system-font:none;
   font-family:Georgia,"Times New Roman","Bitstream Charter",Times,serif;
   font-size:24px;
@@ -358,10 +533,8 @@ a {
   text-shadow:0 1px 0 #FFFFFF;
 }
 #page_title {
-  -moz-border-radius-bottomleft:6px;
-  -moz-border-radius-bottomright:6px;
-  -moz-border-radius-topleft:6px;
-  -moz-border-radius-topright:6px;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
   border-style:solid;
   border-width:1px;
   font-size:1.7em;
@@ -402,4 +575,42 @@ a {
 /* utils.css */
 .clear {
   clear:both;
+}
+
+/* button.css */
+a.button {
+  line-height:1.2em;
+  padding:4px 10px;
+}
+.button, .submit input, input[type="button"], input[type="submit"] {
+  background:#F2F2F2 url(/images/admin/white-grad.png) repeat-x scroll left top;
+  border-color:#BBBBBB;
+  color:#464646;
+  text-shadow:0 1px 0 #FFFFFF;
+  -moz-border-radius:11px;
+  -webkit-border-radius:11px;
+  -moz-box-sizing:content-box;
+  border-style:solid;
+  border-width:1px;
+  cursor:pointer;
+  font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+  font-size:11px !important;
+  line-height:16px;
+  padding:2px 8px;
+  text-decoration:none;
+}
+.button:hover, .submit input:hover, input[type="button"]:hover, input[type="submit"]:hover {
+  border-color:#666666;
+  color:#000000;
+}
+/* primary button */
+.default input {
+  background:#21759B url(/images/admin/button-grad.png) repeat-x;
+  border-color:#298CBA;
+  color:#FFF;
+  font-weight:normal;
+  text-shadow:none;
+}
+.default input:hover {
+  color:#FFF;
 }

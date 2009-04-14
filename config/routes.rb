@@ -3,12 +3,13 @@ ActionController::Routing::Routes.draw do |map|
 
   map.namespace :admin do|admin|
     admin.resources :pages, :member => {:delete => :get}
-    admin.resources :options, :member => {:delete => :get}, :collection => { :writing => :get, :reading => :get}
+    admin.resources :options, :member => {:delete => :get}, :collection => { :general => [:get,:post], :writing => [:get,:post], :reading => [:get,:post]}
     admin.resources :categories, :member => {:delete => :get}
     admin.resources :tags, :member => {:delete => :get}
     admin.resources :assets, :member => {:delete => :get}
     admin.resources :themes, :member => {:delete => :get}, :collection => { :widgets => :get }
     admin.resources :links, :member => {:delete => :get}
+    admin.resources :users, :member => {:delete => :get}
     admin.root :controller => 'dash'
     admin.tools 'admin/tools', :controller => 'tools'
     admin.import_tools 'admin/tools/import', :controller => 'tools', :action => 'import'

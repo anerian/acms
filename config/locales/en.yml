@@ -7,9 +7,12 @@ en:
   pages: Pages
   page_title: "Page Title"
   page_created: "Page Saved"
+  add_new_page: "Add New Page"
+  edit_page: "Edit Page"
   browse: Browse
   browse_pages: "Browse pages"
   new: New
+  save_changes: "Save Changes"
   categories: Categories
   tags: Tags
   links: Links
@@ -18,9 +21,19 @@ en:
   widgets: Widgets
   tools: Tools
   general: General
+  general_settings: "General Settings"
   import: Import
   export: Export
   settings: Settings
   writing: Writing
   reading: Reading
   dashboard: Dashboard
+  users: Users
+  authors_users: "Authors & Users"
+  profile: Profile
+  blog_title: "Blog Title"
+  tagline: "Tagline"
+  tagline_desc: "In a few words, explain what this blog is about."
+  blog_url: "Web address (URL)"
+  blog_email: "E-mail address"
+  blog_email_desc: "This address is used for admin purposes, like new user notification."

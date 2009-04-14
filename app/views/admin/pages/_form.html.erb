@@ -1,29 +1,28 @@
 <% content_for :head do %>
-  <link rel="stylesheet" type="text/css" href="/stylesheets/admin/editor-skin.css">
+  <%= stylesheet_link_tag 'admin/editor-skin' %>
 <% end %>
-<div class="body_content">
+<div class="body_content page">
   <div class="title">
+    <div class="icon"></div>
     <% if @page.new_record? %>
-      <h2>Add New Page</h2>
+      <h2><%= t(:add_new_page) %></h2>
     <% else %>
-      <h2>Edit Page</h2>
+      <h2><%= t(:edit_page) %></h2>
     <% end %>
   </div>
   <% form_for [:admin,@page] do|f| %>
     <div id="title_field">
       <%= f.text_field :title %>
-      <div id="url_slug" style="display:none">
-        <%= f.text_field :slug %>
+      <div id="url_slug" style="display:block">
+        <label for="page_slug"><strong>Permalink:</strong> http://hostname.com/goes/here/<span class="highlight">sample-permalink<% if !@page.new_record? %><%= @page.permalink %><% end %></span>
+        <a class="edit-slug button" onclick="edit_permalink(646); return false;" href="#post_name">Edit</a>
+        <span class="editable">
+          <%= f.text_field :slug %>
+          <a class="save button" href="#post_name_save">Save</a>
+          <a class="cancel" href="#post_name_cancel">Cancel</a>
+        </span></label>
       </div>
     </div>
-    <!--
-    <div class="" id="media-buttons">
-      Upload/Insert 
-      <a title="Add an Image" class="thickbox" id="add_image" href=""><img alt="Add an Image" src="/images/admin/media-button-image.gif"/></a>
-      <a title="Add Video" class="thickbox" id="add_video" href=""><img alt="Add Video" src="/images/admin/media-button-video.gif"/></a>
-      <a title="Add Audio" class="thickbox" id="add_audio" href=""><img alt="Add Audio" src="/images/admin/media-button-music.gif"/></a>
-      <a title="Add Media" class="thickbox" id="add_media" href=""><img alt="Add Media" src="/images/admin/media-button-other.gif"/></a>
-    </div> -->
     <div id="editorcontainer" class="yui-skin-sam">
       <%= f.text_area :content %>
     </div>
@@ -43,9 +42,27 @@
       </div>
     </form>
   </div>
+  <div class="container">
+    <form id="tags">
+      <div class="title"><h3>Tags</h3></div>
+      <div class="content">
+        <input type="text" name="tags" value=""/>
+        <input type="button" class="button" value="Add"/>
+      </div>
+    </form>
+  </div>
+  <div class="container">
+    <form id="categories">
+      <div class="title"><h3>Categories</h3></div>
+      <div class="content">
+        <input type="text" name="catgories" value=""/>
+        <input type="button" class="button" value="Add"/>
+      </div>
+    </form>
+  </div>
 <% end %>
 <% content_for :foot do %>
-<%= javascript_include_tag "admin/yui-editor2.7.0" %>
+<%= javascript_include_tag "admin/yui-editor2.7.0", "admin/jquery.autocomplete", :cache => true %>
 <script type="text/javascript">
   var Dom = YAHOO.util.Dom, Event = YAHOO.util.Event;
   var state = 'off';
@@ -54,7 +71,44 @@
   $(document).ready( function() {
     PageEditor = setupEditor();
     enablePublishing();
+    pageSlugAutoPopulateAndEdit();
   });
+
+  function TitleWatch(page_title,url_slug) {
+    if( $("#url_slug input").attr("value").length == 0 ) {
+      this.firstBlur = false;
+      var self = this;
+      if( $(page_title).attr("value").length == 0 ) {
+        try {
+          $(page_title).focus( function(e, self) {
+            console.log("focusing");
+            this.firstBlur = true;
+          });
+          $(page_title).blur( function(e, self) {
+            if( this.firstBlur )  {
+              window.setTimeout(function(self) {
+                var title = $(page_title).attr("value");
+                $("#url_slug input").attr("value", title.replace(/\s/g,'-').toLowerCase() );
+                $("#url_slug").show();
+              },500);
+            }
+          });
+        } catch( e ) {
+          console.error(e);
+        }
+      }
+    }
+    else {
+      console.log("url slug has some content already");
+      // show the slug and it's controls
+      $("#url_slug").show();
+    }
+  }
+
+  function pageSlugAutoPopulateAndEdit()
+  {
+    new TitleWatch("#page_title", "#url_slug");
+  }
 
   function enablePublishing() {
     $("#page_publish").click(function(e) {
@@ -88,10 +142,10 @@
       },
       data: fields,
       success: function(msg){
-        alert( "Data Saved: " + msg );
+        window.location = msg;
       },
       error: function (XMLHttpRequest, textStatus, errorThrown) {
-        alert("error: " + errorThrown);
+        alert("error: " + XMLHttpRequest.responseText);
       }
     });
   }

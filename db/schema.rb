@@ -9,7 +9,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090408201656) do
+ActiveRecord::Schema.define(:version => 20090413183620) do
+
+  create_table "categories", :force => true do |t|
+    t.string   "name"
+    t.integer  "parent_id"
+    t.integer  "position"
+    t.integer  "children_count"
+    t.integer  "ancestors_count"
+    t.integer  "descendants_count"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "options", :force => true do |t|
     t.string   "key",        :limit => 32
@@ -28,6 +39,7 @@ ActiveRecord::Schema.define(:version => 20090408201656) do
     t.string   "slug",         :limit => 128
     t.text     "content"
     t.integer  "user_id"
+    t.integer  "parent_id"
     t.integer  "status",                      :default => 0
     t.datetime "published_at"
     t.datetime "created_at"
@@ -36,5 +48,32 @@ ActiveRecord::Schema.define(:version => 20090408201656) do
 
   add_index "pages", ["slug"], :name => "index_pages_on_slug"
   add_index "pages", ["status"], :name => "index_pages_on_status"
+
+  create_table "taggings", :force => true do |t|
+    t.integer  "tag_id"
+    t.integer  "taggable_id"
+    t.string   "taggable_type"
+    t.datetime "created_at"
+  end
+
+  add_index "taggings", ["tag_id"], :name => "index_taggings_on_tag_id"
+  add_index "taggings", ["taggable_id", "taggable_type"], :name => "index_taggings_on_taggable_id_and_taggable_type"
+
+  create_table "tags", :force => true do |t|
+    t.string "name"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "email",                  :limit => 128, :null => false
+    t.string   "name",                   :limit => 128, :null => false
+    t.string   "salt",                                  :null => false
+    t.string   "hashed_password",        :limit => 40,  :null => false
+    t.string   "remember_token"
+    t.string   "remember_token_expires"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "users", ["email"], :name => "index_users_on_email"
 
 end

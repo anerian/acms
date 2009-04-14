@@ -1,4 +1,4 @@
-class PagesController < ApplicationController
+class Admin::UsersController < Admin::AdminController
   def index
   end
 

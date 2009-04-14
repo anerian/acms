@@ -5,6 +5,7 @@ class CreatePages < ActiveRecord::Migration
       t.string :slug, :limit => 128
       t.text :content
       t.integer :user_id
+      t.integer :parent_id
       t.integer :status, :default => 0
       t.datetime :published_at
       t.timestamps

@@ -1,7 +1,29 @@
 class Admin::OptionsController < Admin::AdminController
   def index
-    # view all global options and your personalized options
-    @opts = Option.find(:all, :conditions => ["user_id IS NULL OR user_id=?", @auth_user.id])
+  end
+
+  class GeneralOptions
+    KeyTypes = {:blog_title => :string,
+                :tagline => :string,
+                :blog_url => :string,
+                :blog_email => :string,
+                :timezone => :string,
+                :date_format => :string,
+                :time_format => :string,
+                :weekstart => :string}.freeze
+    Keys = KeyTypes.keys.freeze #%w(blog_title tagline blogurl admin_email timezone date_format time_format weekstart).freeze
+  end
+
+  def general
+    # fetch general options
+    @option_values = Option.find(:all, :conditions => {:key => GeneralOptions::Keys})
+    # map keys to values
+    @options = {}
+    GeneralOptions::Keys.each {|k| @options[k] = nil }
+    @option_values.each {|v| @options[v.key] = v }
+    if request.post?
+      # save
+    end
   end
 
   def writing
