@@ -1,0 +1,19 @@
+<div class="body_content general">
+  <div class="title">
+    <div class="icon"></div>
+    <h2><%= t(:general_settings) %></h2>
+  </div>
+  <form class="inputs" method="post" action="<%= general_admin_options_path %>">
+    <div>
+      <%= render :partial => 'text_input', :locals => { :key => 'blog_title'} %>
+      <%= render :partial => 'text_input', :locals => { :key => 'tagline', :desc => t(:tagline_desc) } %>
+      <%= render :partial => 'text_input', :locals => { :key => 'blog_url' } %>
+      <%= render :partial => 'text_input', :locals => { :key => 'blog_email', :desc => t(:blog_email_desc) } %>
+      <label for="timezone">
+        <strong><%= t(:timezone) %></strong>
+      </label>
+    </div>
+    <div class="clear"></div>
+    <p class="default"><input type="submit" class="default" value="<%= t(:save_changes) %>"/></p>
+  </form>
+</div>

@@ -1,0 +1,7 @@
+<label for="<%= key %>">
+  <strong><%= t(key) %></strong>
+  <input id="<%= key %>" type="text" name="option[<%= key %>]"/>
+</label>
+<% if defined?(desc) %>
+<span class="desc"><%= desc %></span>
+<% end %>
