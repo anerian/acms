@@ -123,13 +123,7 @@ a {
   background: #464646;
   height: 48px;
 }
-#header img {
-  float:left;
-}
 #header h1 {
-  float:left;
-  line-height:48px;
-  -x-system-font:none;
   float:left;
   font-family:Georgia,"Times New Roman","Bitstream Charter",Times,serif;
   font-size:22px;
@@ -138,9 +132,19 @@ a {
   font-style:normal;
   font-variant:normal;
   font-weight:normal;
-  line-height:normal;
+  height:22px;
+  line-height:22px;
   margin:0;
+  padding:0px 8px 5px;
+  display:block;
 }
+#header img {
+  width: 31px;
+  height:30px;
+  margin: 7px 0 0 15px;
+  float:left;
+}
+
 #header h1 a {
   line-height:48px;
   color:#fff;
