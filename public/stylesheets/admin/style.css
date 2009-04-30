@@ -70,6 +70,13 @@ input[type=text] {
   outline-width:medium;
   padding:3px 4px;
 }
+input.simple {
+  -moz-border-radius:2px;
+  -webkit-border-radius:2px;
+  border:1px solid #DFDFDF;
+  font-size:1.0em;
+  padding:3px 3px;
+}
 label {
   padding:3px 4px;
   float:left;
@@ -574,6 +581,44 @@ a {
 }
 .content {
   clear:right;
+}
+
+/* nice looking table list */
+.listview {
+  table-layout: fixed;
+  background-color: #fff;
+  border-color: #DFDFDF;
+  border-collapse:separate;
+  border-spacing:0;
+  border-style:solid;
+  border-width:1px;
+  clear:both;
+  margin:0;
+  width:100%;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+}
+.listview .check-col {
+  padding:0;
+  width:2.2em;
+}
+.listview th {
+  background:#DFDFDF url(/images/admin/gray-grad.png) repeat-x scroll left top;
+  color:#333;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+.listview td,
+.listview th {
+  border-color: #DFDFDF;
+  overflow: hidden;
+  border-bottom-style:solid;
+  border-bottom-width:1px;
+  font-size:11px;
+  vertical-align:text-top;
+}
+.filters,
+.bulkactions {
+  float:left;
 }
 
 /* utils.css */

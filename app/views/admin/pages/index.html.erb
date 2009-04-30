@@ -3,9 +3,43 @@
     <div class="icon"></div>
     <h2><%= t(:browse_pages) %></h2>
   </div>
-  <table>
+  <form method="get" action="">
+  <ul class="page-filters">
+    <li>All ()</li>
+    <li>Published ()</li>
+    <li>Drafts ()</li>
+  </ul>
+  <div class="search-pages">
+    <input class="simple" type="text" value="" name="s"/>
+    <input class="button" type="submit" value="Search Pages"/>
+  </div>
+  <div class="list-nav">
+    <div class="actions">
+      <div class="bulkactions">
+        <select name="bulkaction">
+          <option selected="selected" value="-1">Bulk Actions</option>
+          <option value="delete">Delete</option>
+        </select>
+        <input type="submit" name="doaction" value="Apply"/>
+      </div>
+      <div class="filters">
+        <select name="datefilter">
+          <option selected="selected" value="-1">Show all dates</option>
+        </select>
+        <select name="categoryfilter">
+          <option selected="selected" value="-1">View all categories</option>
+        </select>
+        <input type="submit" name="dofilter" value="Filter"/>
+      </div>
+    </div>
+    <div class="pagination">
+      <%= will_paginate(@pages) %>
+    </div>
+  </div>
+  <table class="listview">
     <thead>
       <tr>
+        <th class="check-col"></th>
         <th><%= t(:page_title) %></th>
         <th><%= t(:author) %></th>
         <th><%= t(:categories) %></th>
@@ -16,6 +50,7 @@
     <tbody>
       <% for page in @pages do %>
         <tr>
+          <td class="check-col"></td>
           <td><%= link_to page.title, edit_admin_page_path(page) %></td>
           <td><%#= page.user.name %></td>
           <td><%#= page.categories %></td>
@@ -26,6 +61,7 @@
     </tbody>
     <tfoot>
       <tr>
+        <th class="check-col"></th>
         <th><%= t(:page_title) %></th>
         <th><%= t(:author) %></th>
         <th><%= t(:categories) %></th>
@@ -34,4 +70,5 @@
       </tr>
     </tfoot>
   </table>
+  </form>
 </div>
