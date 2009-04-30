@@ -17,7 +17,7 @@ module Admin::AdminHelper
   end
   
   def toolbar(&block)
-    concat render :partial => 'widgets/toolbar', :locals => { :content => capture(&block) }
+    concat render(:partial => 'widgets/toolbar', :locals => { :content => capture(&block) })
   end
 
   def toolbar_section(type,path=nil,options={},&block)
