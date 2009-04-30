@@ -22,6 +22,8 @@ ActionController::Routing::Routes.draw do |map|
   # named user routes
   map.register 'register', :controller => "users", :action => "new"
 
+  map.admin_login   'admin/login',   :controller => 'admin/user_sessions',        :action => 'login',  :conditions => { :method => :get }
+
   map.login    'login',    :controller => "user_sessions", :action => "new"
   map.logout   'logout',   :controller => "user_sessions", :action => "destroy"
 
