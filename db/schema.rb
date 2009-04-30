@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090430182132) do
+ActiveRecord::Schema.define(:version => 20090430205953) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -77,6 +77,8 @@ ActiveRecord::Schema.define(:version => 20090430182132) do
     t.datetime "last_login_at"
     t.string   "current_login_ip"
     t.string   "last_login_ip"
+    t.boolean  "google"
+    t.string   "name"
   end
 
 end

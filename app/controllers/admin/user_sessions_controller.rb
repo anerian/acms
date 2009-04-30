@@ -1,14 +1,14 @@
-class UserSessionsController < ApplicationController
-  before_filter :require_user, :only => :destroy
+class Admin::UserSessionsController < Admin::AdminController
+  before_filter :require_admin_user, :only => :destroy
   
   def new
     @user_session = UserSession.new
   end
   
   def create
+    email    = params[:user_session][:email]
+    password = params[:user_session][:password]
     if !email.blank? and email.match(/^.*@anerian\.com$/)
-      email    = params[:user_session][:email]
-      password = params[:user_session][:password]
       begin
         Google::Base.establish_connection(email,password)
 
@@ -22,12 +22,16 @@ class UserSessionsController < ApplicationController
                               :password_confirmation => password )
         end
 
-        unless @user_session = UserSession.create(params[:user_session])
-          # should never get here -- if we do, looks like something went wrong with creating the user and authenticating it above
+        if @user_session = UserSession.create(params[:user_session])
+          flash[:notice] = "Login successful!"
+          redirect_back_or_default '/admin'
+        else
           flash[:error] = "There was a problem with your authentication. Please try again, or contact support if you still can't login."
           render :action => :new
         end
-      rescue Google::LoginError
+      rescue Google::LoginError => e
+        @user_session = UserSession.new(params[:user_session])
+        flash[:error] = "Your Google login attempt failed: #{e.message}"
         render :action => :new
       end
     else
