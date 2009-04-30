@@ -2,18 +2,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <title><%= @page.title %></title>
-  <link type="text/css" href="<%= @theme_path %>/style.css" rel="stylesheet"/>
+  <title>Anerian Services</title>
+  <%= stylesheet_link_tag "#{theme_path}/style", :media => 'screen' %>
+  <%= javascript_include_tag 'prototype'%>
 </head>
 <body>
 <!--[if IE]><div class="ie"><![endif]-->
   <!--[if lt IE 7.]><div class="ie6"><![endif]-->
   <div class="container">
     <div class="header">
-      <h1 class="logo-brand"><a href="/"><span><%= @page.title %></span></a></h1>
+      <h1 class="logo-brand"><a href="/"><span>Anerian Pages</span></a></h1>
     </div>
     <div class="content">
-      <%= @page.content %>
+      <%= yield %>
     </div>
   </div>
   <!--[if lt IE 7.]></div><![endif]-->

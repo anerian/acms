@@ -1,2 +1,10 @@
-<h1>Admin::Themes#index</h1>
-<p>Find me in app/views/admin/themes/index.html.erb</p>
+<h1>Theme listing</h1>
+<p>view paths</p>
+<pre>
+  <%= h ActionController::Base.view_paths.inspect %>
+</pre>
+<ul>
+  <% for theme in @themes do %>
+  <li><%= theme[0].inspect %></li>
+  <% end %>
+</ul>

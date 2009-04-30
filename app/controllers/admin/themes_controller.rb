@@ -1,5 +1,6 @@
 class Admin::ThemesController < Admin::AdminController
   def index
+    @themes = Dir["#{THEME_ROOT}/*"].reject{|t| File.basename(t) == 'active' }.map{|t| [File.basename(t),t]}
   end
 
   def widgets
