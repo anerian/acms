@@ -1,5 +1,5 @@
 module Admin::AdminHelper
-
+  
   def flash_display
     if flash.key?(:success)
       out = flash[:success]
@@ -56,4 +56,5 @@ module Admin::AdminHelper
     end
     content_tag :li, link, options
   end
+
 end

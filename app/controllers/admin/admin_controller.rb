@@ -1,4 +1,5 @@
 class Admin::AdminController < ApplicationController
+  helper Admin::UiHelper
   before_filter :require_admin_user
 
   def require_admin_user

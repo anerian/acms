@@ -59,6 +59,10 @@ caption {background:#eee;}
 .top {margin-top:0;padding-top:0;}
 .bottom {margin-bottom:0;padding-bottom:0;}
 
+.clearfix:after{clear:both;content:'.';display:block;visibility:hidden;height:0}.clearfix{display:inline-block}* html .clearfix{height:1%}.clearfix{display:block}
+
+input[type="text"], input[type="password"], textarea { -moz-box-sizing:border-box; }
+
 /* form.css */
 input[type=text] {
   -moz-border-radius:6px;
@@ -69,6 +73,7 @@ input[type=text] {
   outline-style:none;
   outline-width:medium;
   padding:3px 4px;
+  width: 100%;
 }
 input.simple {
   -moz-border-radius:2px;
@@ -447,6 +452,7 @@ a {
 /* workspace.css */
 #workspace {
   margin-left:195px;
+  margin-right: 15px;
   clear:both;
   height:100%;
   position:relative;
@@ -463,7 +469,6 @@ a {
   float:right;
   position:relative;
   width:280px;
-  margin-top:45px;
 }
 /* page.css */
 #page {
@@ -483,10 +488,16 @@ a {
   outline-color:-moz-use-text-color;
   outline-style:none;
   outline-width:medium;
-  padding:3px 4px;
+  padding: 0px;
   width:100%;
   background:#F2F2F2;
 }
+
+#editorcontainer #page_content_toolbar {
+  padding: 3px;
+  background: transparent url(/images/admin/ed-bg.gif) top left repeat-x;
+}
+
 #url_slug {
   position:relative;
 }
@@ -511,33 +522,30 @@ a {
   width:150px;
 }
 /* content stuff */
-.body_content .title .icon {
+.page_title .icon {
   background:transparent url(/images/admin/icons32.png) no-repeat;
   width:36px;
   height:36px;
   margin-top:14px;
   float:left;
 }
-.page .title .icon {
+.post_stuff { padding-top: 10px; }
+.page .page_title .icon {
   background-position:-552px -5px;
 }
-.general .title .icon {
+.general .page_title .icon {
   background-position:-492px -5px;
 }
 .body_content {
   margin-right:305px;
 }
-.body_content h2 {
+.page_title h2 {
   color:#464646;
   text-indent:10px;
   -x-system-font:none;
   font-family:Georgia,"Times New Roman","Bitstream Charter",Times,serif;
   font-size:24px;
-  font-size-adjust:none;
-  font-stretch:normal;
   font-style:italic;
-  font-variant:normal;
-  font-weight:normal;
   line-height:35px;
   margin:0;
   padding:14px 15px 3px 0;
@@ -663,6 +671,50 @@ a.button {
 .default input:hover {
   color:#FFF;
 }
+
+#publishing-action { float:right; text-align:right; }
+
+.button-primary {
+  min-width:80px;
+  text-align:center;
+  -moz-border-radius:11px;
+  -moz-box-sizing:content-box;
+  border:1px solid #BBBBBB;
+  color:#464646;
+  cursor:pointer;
+  font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+  font-size:11px !important;
+  line-height:16px;
+  padding:2px 8px;
+  text-decoration:none;
+  text-shadow:0 1px 0 #FFFFFF;
+  background:#21759B url(/images/admin/button-grad.png) repeat-x scroll left top;
+  border-color:#298CBA !important;
+  color:#FFFFFF !important;
+  font-weight:bold;
+}
+
+
+.postbox { border: 1px solid #DFDFDF; -moz-border-radius:6px; line-height:1; margin-bottom:20px; min-width:255px; position:relative; width:99.5%; }
+.postbox h3 { background:#DFDFDF url(/images/admin/gray-grad.png) repeat-x scroll left top; text-shadow:0 1px 0 #FFFFFF; font-size:12px; font-weight:bold; line-height:1; margin:0; padding:7px 9px; color:#464646; }
+.postbox .inside {  }
+.postbox .inside, .postbox .inside p { font-size:11px; }
+
+.categorychecklist { list-style: none; margin: 0px; }
+.categorychecklist li { line-height: 19px; margin:0; padding:0; list-style: none; margin-bottom:0px; vertical-align: top; font-size: 12px; }
+.categorychecklist li input {vertical-align:text-top; line-height:19px; margin:1px; font-size:13px; }
+.categorychecklist li label { float: none; width: 100%; padding: 0px; }
+.categorychecklist li .children { margin-left:18px; }
+
+#minor-publishing-actions { text-align:right; padding:6px; }
+#minor-publishing-actions input, #major-publishing-actions input, #minor-publishing-actions .preview { min-width:80px; text-align:center; }
+#save-post { float:left; }
+.preview { float:right; }
+
+#major-publishing-actions { background:#EAF2FA none repeat scroll 0 0; border-top:medium none; clear:both; padding:6px; }
+#delete-action { float:left; line-height:25px; text-align:left; vertical-align:middle; }
+.submitbox .submitdelete, a.delete { border-bottom-color:#FF0000; color:#FF0000; }
+.submitbox .submitdelete { border-bottom-style:solid; border-bottom-width:1px; padding:1px 2px; text-decoration:none; }=======
 
 /* themes.css */
 .themes {

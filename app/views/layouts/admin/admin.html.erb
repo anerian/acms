@@ -66,14 +66,19 @@
         <% end %>
       <% end %>
     <% end %>
-    <div id="workspace">
+    <div id="workspace" class="clearfix">
       <div id="status-alert"><%= flash_display %></div>
-      <div id="sidebar">
-        <%= yield :sidebar %>
-      </div>
-      <div id="fields">
-        <%= yield %>
-      </div>
+      
+      <% if content_given?(:custom_wrapper) %>
+        <%= yield :custom_wrapper %>
+      <% else %>
+        <div id="sidebar">
+          <%= yield :sidebar %>
+        </div>
+        <div id="fields">
+          <%= yield %>
+        </div>
+      <% end %>
     </div>
   </div>
   <%= javascript_include_tag 'jquery-1.3.2.min', 'admin/admin', :cache => true %>

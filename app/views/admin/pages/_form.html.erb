@@ -1,66 +1,33 @@
 <% content_for :head do %>
   <%= stylesheet_link_tag 'admin/editor-skin' %>
 <% end %>
-<div class="body_content page">
-  <div class="title">
-    <div class="icon"></div>
-    <% if @page.new_record? %>
-      <h2><%= t(:add_new_page) %></h2>
-    <% else %>
-      <h2><%= t(:edit_page) %></h2>
+
+<% content_for :custom_wrapper do %>
+  <div class="page">
+    <div class="page_title">
+      <div class="icon"></div>
+      <% if @page.new_record? %>
+        <h2><%= t(:add_new_page) %></h2>
+      <% else %>
+        <h2><%= t(:edit_page) %></h2>
+      <% end %>
+    </div>
+    <div class="post_stuff">
+    <% form_for [:admin,@page] do |form| %>
+      <div id="sidebar">
+        <%= render :partial => 'sidebar', :locals => {:form => form} %>
+      </div>
+      <div class="body_content">
+        <div id="fields">
+          <%= render :partial => 'fields', :locals => {:form => form} %>
+        </div>
+      </div>
     <% end %>
-  </div>
-  <% form_for [:admin,@page] do|f| %>
-    <div id="title_field">
-      <%= f.text_field :title %>
-      <div id="url_slug" style="display:block">
-        <label for="page_slug"><strong>Permalink:</strong> http://hostname.com/goes/here/<span class="highlight">sample-permalink<% if !@page.new_record? %><%= @page.permalink %><% end %></span>
-        <a class="edit-slug button" onclick="edit_permalink(646); return false;" href="#post_name">Edit</a>
-        <span class="editable">
-          <%= f.text_field :slug %>
-          <a class="save button" href="#post_name_save">Save</a>
-          <a class="cancel" href="#post_name_cancel">Cancel</a>
-        </span></label>
-      </div>
     </div>
-    <div id="editorcontainer" class="yui-skin-sam">
-      <%= f.text_area :content %>
-    </div>
-  <% end %>
-</div>
-<% content_for :sidebar do %>
-  <div class="container">
-    <form id="page_controls">
-      <div class="title"><h3>Publish</h3></div>
-      <div class="content">
-         <input id="page_savedraft" style="float:left" type="button" name="draft" value="Save Draft"/>
-         <input id="page_preview" style="float:right" type="button" name="preview" value="Preview"/>
-         <div class="clear"></div>
-      </div>
-      <div class="footer">
-         <input id="page_publish" type="button" name="publish" value="Publish"/>
-      </div>
-    </form>
   </div>
-  <div class="container">
-    <form id="tags">
-      <div class="title"><h3>Tags</h3></div>
-      <div class="content">
-        <input type="text" name="tags" value=""/>
-        <input type="button" class="button" value="Add"/>
-      </div>
-    </form>
-  </div>
-  <div class="container">
-    <form id="categories">
-      <div class="title"><h3>Categories</h3></div>
-      <div class="content">
-        <input type="text" name="catgories" value=""/>
-        <input type="button" class="button" value="Add"/>
-      </div>
-    </form>
-  </div>
+
 <% end %>
+
 <% content_for :foot do %>
 <%= javascript_include_tag "admin/yui-editor2.7.0", "admin/jquery.autocomplete", :cache => true %>
 <script type="text/javascript">
@@ -111,19 +78,19 @@
   }
 
   function enablePublishing() {
-    $("#page_publish").click(function(e) {
-      e.preventDefault();
-      sendForm("publish", 2);
-    });
-    $("#page_savedraft").click(function(e) {
-      e.preventDefault();
-      sendForm("savedraft", 0);
-    });
-    $("#page_preview").click(function(e) {
-      e.preventDefault();
-      alert("TODO: show preview");
-      //sendForm("preview");
-    });
+    // $("#page_publish").click(function(e) {
+    //   e.preventDefault();
+    //   sendForm("publish", 2);
+    // });
+    // $("#page_savedraft").click(function(e) {
+    //   e.preventDefault();
+    //   sendForm("savedraft", 0);
+    // });
+    // $("#page_preview").click(function(e) {
+    //   e.preventDefault();
+    //   alert("TODO: show preview");
+    //   //sendForm("preview");
+    // });
   }
   function sendForm(action,status) {
     if( state == 'off' ) {

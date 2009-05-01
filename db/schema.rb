@@ -22,6 +22,13 @@ ActiveRecord::Schema.define(:version => 20090430205953) do
     t.datetime "updated_at"
   end
 
+  create_table "categories_pages", :id => false, :force => true do |t|
+    t.integer "category_id", :null => false
+    t.integer "page_id",     :null => false
+  end
+
+  add_index "categories_pages", ["category_id", "page_id"], :name => "index_categories_pages_on_category_id_and_page_id", :unique => true
+
   create_table "options", :force => true do |t|
     t.string   "key",        :limit => 32
     t.integer  "opt_type",                 :default => 0
