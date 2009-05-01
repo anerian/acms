@@ -6,3 +6,16 @@
     </li>
   <% end %>
 </ul>
+<% content_for :foot do %>
+<div id="dialog" title="Basic dialog">
+  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+</div>
+<script type="text/javascript">
+  $(document).ready( function() {
+    $('.theme-clip .preview-theme').click(function(e) { 
+      e.preventDefault();
+      $('#dialog').dialog();
+    });
+  });
+</script>
+<% end %>

@@ -3,13 +3,14 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <title>RailsPress</title>
-  <%= stylesheet_link_tag 'admin/style', :media => 'screen' -%>
+  <%= stylesheet_link_tag 'admin/style', 'admin/jquery-ui-1.7.1.custom', :media => 'screen' -%>
   <%= yield :head -%>
 </head>
 <body>
 <!--[if IE]><div class="ie"><![endif]-->
   <!--[if lt IE 7.]><div class="ie6"><![endif]-->
-  <% if current_user # and current_user.is_admin? -%>
+  <% if current_user # and current_user.is_admin?
+-%>
   <div id="header">
     <img title="Phrase Press" alt="Phrase Press" src="/images/admin/slogo.png"/>
     <h1><a href="/">Blog Title goes here<span>← Visit site</span></a></h1>
@@ -81,7 +82,7 @@
       <% end %>
     </div>
   </div>
-  <%= javascript_include_tag 'jquery-1.3.2.min', 'admin/admin', :cache => true %>
+  <%= javascript_include_tag 'jquery-1.3.2.min', 'admin/jquery-ui-1.7.1.custom.min', 'admin/admin', :cache => true %>
   <%= yield :foot %>
   <!--[if lt IE 7.]></div><![endif]-->
 <!--[if IE]></div><![endif]-->
