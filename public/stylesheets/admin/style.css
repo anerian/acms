@@ -663,3 +663,26 @@ a.button {
 .default input:hover {
   color:#FFF;
 }
+
+/* themes.css */
+.themes {
+  list-style:none;
+}
+.theme-clip {
+  display:block;
+  margin:10px;
+  border:3px solid;
+  height:300px;
+  width:400px;
+  padding:10px;
+}
+.themes li {
+  float:left;
+}
+.themes li.active .theme-clip {
+  border-color: #ddd;
+}
+.theme-clip img {
+  width: 200px;
+  height: 200px;
+}
