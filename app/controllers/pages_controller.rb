@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   def show
     # lookup the page for this request
     @page = Page.find_by_id(params[:id])
-    @site_info = OpenStruct.new(ActiveSupport::JSON.decode(Option.find_by_key("blog_info").value)) rescue {}
+    @site_info = Option.load_by_key('site_info')
     if @page
       render :layout => 'default'
     else

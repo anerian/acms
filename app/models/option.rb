@@ -13,4 +13,10 @@ class Option < ActiveRecord::Base
   def self.default_general_object
     OpenStruct.new(General::Defaults)
   end
+
+  def self.load_by_key(key)
+    option = self.find_by_key(key)
+    return nil if option.nil?
+    OpenStruct.new(ActiveSupport::JSON.decode(option.value))
+  end
 end
