@@ -2,20 +2,26 @@ class Admin::OptionsController < Admin::AdminController
   def index
   end
 
-  class SiteOptions
-    Keys = [:site_title, :tagline, :site_url, :site_email, :timezone, :date_format, :time_format, :weekstart].freeze
-  end
-
   def general
     # fetch general options
     @general = Option.find_by_key('site_info')
     if @general.nil?
-      @general = {}
+      @general = Option.new
+      @general.key = 'site_info'
+      @values = @general.value = {}
     else
-      @general = ActiveSupport::JSON.decode(@general)
+      @values = ActiveSupport::JSON.decode(@general.value)
     end
     if request.post?
       # save
+      params[:option].each do|key,value|
+        @values[key] = value
+      end
+      @general.value = @values.to_json
+      if @general.save
+        flash[:success] = "Saved"
+        redirect_to general_admin_options_path
+      end
     end
   end
 

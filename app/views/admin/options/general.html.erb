@@ -5,6 +5,7 @@
   </div>
   <form class="inputs" method="post" action="<%= general_admin_options_path %>">
     <div>
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>"/>
       <%= render :partial => 'text_input', :locals => { :key => 'site_title' } %>
       <%= render :partial => 'text_input', :locals => { :key => 'tagline', :desc => t(:tagline_desc) } %>
       <%= render :partial => 'text_input', :locals => { :key => 'site_url' } %>
