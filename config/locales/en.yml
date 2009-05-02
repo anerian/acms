@@ -32,9 +32,9 @@ en:
   users: Users
   authors_users: "Authors & Users"
   profile: Profile
-  blog_title: "Blog Title"
+  site_title: "Site Title"
   tagline: "Tagline"
-  tagline_desc: "In a few words, explain what this blog is about."
-  blog_url: "Web address (URL)"
-  blog_email: "E-mail address"
-  blog_email_desc: "This address is used for admin purposes, like new user notification."
+  tagline_desc: "In a few words, explain what this site is about."
+  site_url: "Web address (URL)"
+  site_email: "E-mail address"
+  site_email_desc: "This address is used for admin purposes, like new user notification."

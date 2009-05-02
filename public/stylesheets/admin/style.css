@@ -688,7 +688,7 @@ a.button {
   padding:2px 8px;
   text-decoration:none;
   text-shadow:0 1px 0 #FFFFFF;
-  background:#21759B url(/images/admin/button-grad.png) repeat-x scroll left top;
+  background:#21759B url(/images/admin/button-grad.png) repeat-x scroll left top !important;
   border-color:#298CBA !important;
   color:#FFFFFF !important;
   font-weight:bold;
@@ -730,6 +730,7 @@ a.button {
 }
 .themes li {
   float:left;
+  list-style:none !important;
 }
 .themes li.active .theme-clip {
   border-color: #ddd;
@@ -737,4 +738,8 @@ a.button {
 .theme-clip img {
   width: 200px;
   height: 200px;
+}
+/* dialog.css */
+#dialog {
+  display:none;
 }

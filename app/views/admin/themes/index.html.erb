@@ -8,13 +8,20 @@
 </ul>
 <% content_for :foot do %>
 <div id="dialog" title="Basic dialog">
-  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+  <p></p>
 </div>
 <script type="text/javascript">
   $(document).ready( function() {
+    var loadTheme = "";
     $('.theme-clip .preview-theme').click(function(e) { 
+      console.log("click");
       e.preventDefault();
-      $('#dialog').dialog();
+      $('#dialog').dialog({
+        open: function(event,ui) {
+          console.log(event);
+          console.log(ui);
+        }
+      });
     });
   });
 </script>

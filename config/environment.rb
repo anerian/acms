@@ -21,7 +21,6 @@ Rails::Initializer.run do |config|
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem "authlogic"
   config.gem "will_paginate"
-  config.gem "erubis"
   config.gem "googlebase", :lib => 'google/base'
 
   # Only load the plugins named here, in the order given (default is alphabetical).
@@ -43,3 +42,4 @@ Rails::Initializer.run do |config|
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
 end
+require 'ostruct'

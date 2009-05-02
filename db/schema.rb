@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090430205953) do
+ActiveRecord::Schema.define(:version => 20090502155238) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -30,13 +30,8 @@ ActiveRecord::Schema.define(:version => 20090430205953) do
   add_index "categories_pages", ["category_id", "page_id"], :name => "index_categories_pages_on_category_id_and_page_id", :unique => true
 
   create_table "options", :force => true do |t|
-    t.string   "key",        :limit => 32
-    t.integer  "opt_type",                 :default => 0
-    t.integer  "i_value"
-    t.string   "ss_value"
-    t.text     "s_value"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string "key",   :limit => 32, :null => false
+    t.text   "value",               :null => false
   end
 
   add_index "options", ["key"], :name => "index_options_on_key"
