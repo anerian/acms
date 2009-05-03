@@ -12,20 +12,25 @@
   </div>
 </div>
 <script type="text/javascript">
+  var dialog = null;
   $(document).ready( function() {
-    var loadTheme = "";
+    dialog = $('#dialog').dialog({
+      autoOpen: false,
+      closeOnEscape: true,
+      width: "800px",
+      position: 'top'
+    });
     $('.theme-clip .preview-theme').click(function(e) { 
-      var themeName = this.innerHTML;
-      console.log("preview: " + themeName);
       e.preventDefault();
-      $('#dialog').dialog({
-        width: "800px",
-        open: function(event,ui) {
-          var frame = "<iframe style='width:800px;height:600px' src='" + "<%= @site_info.site_url %>" + "/?preview=" + themeName + "'></iframe>";
-          console.log("openning dialog: " + frame);
-          $("#dialog-content").html( frame );
-        }
+      var themeName = this.innerHTML;
+      //console.log("preview: " + themeName);
+      dialog.bind('dialogopen', function(event,ui) {
+        var frame = "<iframe style='width:800px;height:600px' src='" + "<%= @site_info.site_url %>" + "/?preview=" + themeName + "'></iframe>";
+        //console.log("openning dialog: " + frame);
+        $("#dialog-content").html( frame );
+        $('#dialog').dialog('moveToTop');
       });
+      dialog.dialog('open');
     });
   });
 </script>
