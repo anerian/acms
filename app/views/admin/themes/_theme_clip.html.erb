@@ -4,7 +4,7 @@
   <p>theme path: <%= theme[:path] %></p>
   <pre><%= h theme[:message] %></pre>
 <% else %>
-  <h3><%= link_to theme[:name], '#preview', :class => 'preview-theme' %></h3>
+  <h3><%= link_to theme[:name], "?preview=#{theme[:name]}", :class => 'preview-theme' %></h3>
   <p><img src="<%= theme[:url_to_theme] %>/<%= theme[:details]['preview'] %>"/><%= theme[:details]['desc'] %></p>
 <% end %>
 </div>

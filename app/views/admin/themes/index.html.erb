@@ -7,19 +7,23 @@
   <% end %>
 </ul>
 <% content_for :foot do %>
-<div id="dialog" title="Basic dialog">
-  <p></p>
+<div id="dialog" title="Theme preview">
+  <div id="dialog-content">
+  </div>
 </div>
 <script type="text/javascript">
   $(document).ready( function() {
     var loadTheme = "";
     $('.theme-clip .preview-theme').click(function(e) { 
-      console.log("click");
+      var themeName = this.innerHTML;
+      console.log("preview: " + themeName);
       e.preventDefault();
       $('#dialog').dialog({
+        width: "800px",
         open: function(event,ui) {
-          console.log(event);
-          console.log(ui);
+          var frame = "<iframe style='width:800px;height:600px' src='" + "<%= @site_info.site_url %>" + "/?preview=" + themeName + "'></iframe>";
+          console.log("openning dialog: " + frame);
+          $("#dialog-content").html( frame );
         }
       });
     });
