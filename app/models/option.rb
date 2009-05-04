@@ -10,13 +10,14 @@ class Option < ActiveRecord::Base
                 :weekstart => "Sunday"}.freeze
   end
 
-  def self.default_general_object
-    OpenStruct.new(General::Defaults)
-  end
-
   def self.load_by_key(key)
     option = self.find_by_key(key)
     return nil if option.nil?
     OpenStruct.new(ActiveSupport::JSON.decode(option.value))
+  end
+
+  def self.create_default_general_object
+    option = Option.find_or_create_by_key(:key => 'site_info', :value => Option::General::Defaults.to_json)
+    OpenStruct.new(Option::General::Defaults)
   end
 end

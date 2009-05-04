@@ -41,10 +41,9 @@ class ApplicationController < ActionController::Base
   end
 
   def setup_siteinfo
-    if general = Option.find_by_key('site_info')
-      @siteinfo = OpenStruct.new(ActiveSupport::JSON.decode(general.value))
-    else
-      @siteinfo = Option.default_general_object
+    # load up info or create a default if there's no site_info set
+    unless @siteinfo = Option.load_by_key('site_info')
+      @siteinfo = Option.create_default_general_object
     end
   end
 end
