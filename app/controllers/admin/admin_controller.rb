@@ -12,9 +12,10 @@ class Admin::AdminController < ApplicationController
   end
 
   def setup_bloginfo
-    general = Option.find_by_key('site_info')
-    @site_info = Option.default_general_object
-    return if general.nil?
-    @site_info = OpenStruct.new(ActiveSupport::JSON.decode(general.value))
+    if general = Option.find_by_key('site_info')
+      @siteinfo = OpenStruct.new(ActiveSupport::JSON.decode(general.value))
+    else
+      @siteinfo = Option.default_general_object
+    end
   end
 end

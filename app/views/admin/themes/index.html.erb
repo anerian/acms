@@ -40,7 +40,7 @@
       themeName = this.innerHTML;
       //console.log("preview: " + themeName);
       dialog.bind('dialogopen', function(event,ui) {
-        var frame = "<iframe style='width:800px;height:600px' src='" + "<%= @site_info.site_url %>" + "/?preview=" + themeName + "'></iframe>";
+        var frame = "<iframe style='width:800px;height:600px' src='" + "<%= @siteinfo.site_url %>" + "/?preview=" + themeName + "'></iframe>";
         //console.log("openning dialog: " + frame);
         $("#dialog-content").html( frame );
         $('#dialog').dialog('moveToTop');
