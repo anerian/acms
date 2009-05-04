@@ -762,6 +762,9 @@ div.ui-tabs-panel { border-color:#F1F1F1; }
 
 #post-body #category-add input { width:30%; }
 #category-add select { width:100%; }
+#editable-post-name input { width: 16em; }
+#edit-slug-box strong, .tablenav .displaying-num, #submitted-on { color:#777777; }
+#edit-slug-box { margin:8px 0px; padding:0 7px; }
 
 
 

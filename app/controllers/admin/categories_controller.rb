@@ -11,8 +11,6 @@ class Admin::CategoriesController < Admin::AdminController
   def create
     @category = Category.create(params[:category])
     
-    params[:category].delete(:parent_id) if params[:category] && params[:category][:parent_id] == '-1'
-    
     respond_to do |format|
       format.html
       format.js
