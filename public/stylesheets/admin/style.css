@@ -76,6 +76,12 @@ textarea, input, select {
 }
 input[type="text"], input[type="password"], textarea { -moz-box-sizing:border-box; }
 
+.success, .error { -moz-border-radius:3px; border-style:solid; border-width:1px; margin:5px 0px 2px; padding:0 0.6em; }
+.success { background-color:#FFFFE0; border-color:#E6DB55; }
+.error { background-color:#FFEBE8; border-color:#CC0000; }
+.wrap .success, .wrap .error { margin:5px 0; }
+.success p, .error p { line-height:1; margin:0.5em 0; padding:2px; }
+
 /* form.css */
 input[type=text], input[type="password"] {
   border:1px solid #DFDFDF;

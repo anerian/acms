@@ -70,11 +70,10 @@
       <% end %>
     <% end %>
     <div id="workspace" class="clearfix">
-      <div id="status-alert"><%= flash_display %></div>
-      
       <% if content_given?(:custom_wrapper) %>
         <%= yield :custom_wrapper %>
       <% else %>
+        <div id="status-alert"><%= flash_display %></div>
         <div id="sidebar">
           <%= yield :sidebar %>
         </div>

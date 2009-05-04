@@ -13,7 +13,7 @@ module Admin::AdminHelper
     end
     #logger.debug("status: #{status.inspect} #{flash.inspect}")
     return '' if out.blank?
-    %(<div class="#{status}">#{out}</div>)
+    %(<div id="message" class="#{status}"><p>#{out}</p></div>)
   end
   
   def toolbar(&block)

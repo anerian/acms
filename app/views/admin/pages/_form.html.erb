@@ -11,25 +11,27 @@
       <% else %>
         <h2><%= t(:edit_page) %></h2>
       <% end %>
+      <%= flash_display %>
     </div>
     <div class="post_stuff">
-    <% form_for [:admin,@page] do |form| %>
-      <div id="sidebar">
-        <%= render :partial => 'sidebar', :locals => {:form => form} %>
-      </div>
-      <div class="body_content">
-        <div id="fields">
-          <%= render :partial => 'fields', :locals => {:form => form} %>
+
+      <% form_for [:admin,@page] do |form| %>
+        <div id="sidebar">
+          <%= render :partial => 'sidebar', :locals => {:form => form} %>
         </div>
-      </div>
-    <% end %>
+        <div class="body_content">
+          <div id="fields">
+            <%= render :partial => 'fields', :locals => {:form => form} %>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 
 <% end %>
 
 <% content_for :foot do %>
-<%= javascript_include_tag "admin/yui-editor2.7.0", "admin/jquery.autocomplete", :cache => true %>
+<%= javascript_include_tag "admin/yui-editor2.7.0", :cache => true %>
 <script type="text/javascript">
   var Dom = YAHOO.util.Dom, Event = YAHOO.util.Event;
   var state = 'off';
