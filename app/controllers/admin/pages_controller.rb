@@ -14,7 +14,7 @@ class Admin::PagesController < Admin::AdminController
   end
 
   def create
-    @page = Page.new(params[:page])
+    @page = current_user.pages.new(params[:page])
     if @page.save
       respond_to do |t|
         t.html {flash[:success] = t(:page_created); redirect_to edit_admin_page_path(@page) }

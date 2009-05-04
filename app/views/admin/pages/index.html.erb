@@ -1,19 +1,19 @@
 <div class="body_content page">
-  <div class="title">
+  <div class="page_title">
     <div class="icon"></div>
     <h2><%= t(:browse_pages) %></h2>
   </div>
   <form method="get" action="">
-  <ul class="page-filters">
-    <li>All ()</li>
-    <li>Published ()</li>
-    <li>Drafts ()</li>
+  <ul class="subsubsub">
+    <li><a>All <span class="count">(<%= Page.count %>)</span></a>&nbsp;|&nbsp;</li>
+    <li><a>Published <span class="count">(<%= Page.count :conditions => ['published_at is not null'] %>)</span></a>&nbsp;|&nbsp;</li>
+    <li><a>Drafts <span class="count">(<%= Page.count :conditions => ['published_at is null'] %>)</span></a></li>
   </ul>
-  <div class="search-pages">
+  <p class="search-box">
     <input class="simple" type="text" value="" name="s"/>
     <input class="button" type="submit" value="Search Pages"/>
-  </div>
-  <div class="list-nav">
+  </p>
+  <div class="tablenav">
     <div class="actions">
       <div class="bulkactions">
         <select name="bulkaction">
@@ -36,10 +36,12 @@
       <%= will_paginate(@pages) %>
     </div>
   </div>
-  <table class="listview">
+  <table class="listview widefat post fixed">
     <thead>
       <tr>
-        <th class="check-col"></th>
+        <th class="check-column">
+          &nbsp;
+        </th>
         <th><%= t(:page_title) %></th>
         <th><%= t(:author) %></th>
         <th><%= t(:categories) %></th>
@@ -50,12 +52,14 @@
     <tbody>
       <% for page in @pages do %>
         <tr>
-          <td class="check-col"></td>
-          <td><%= link_to page.title, edit_admin_page_path(page) %></td>
+          <th class="check-column">
+            <input type="checkbox" value="5" name="post[]"/>
+          </th>
+          <td><%= link_to page.title, edit_admin_page_path(page), :class => 'row-title' %></td>
           <td><%#= page.user.name %></td>
-          <td><%#= page.categories %></td>
-          <td><%#= page.tags %></td>
-          <td><%= page.updated_at %></td>
+          <td><%= page.categories.blank?? 'Uncategorized' : page.categories.map{|c| link_to(c.name)}.join(', ') %></td>
+          <td><%= page.tags.blank?? 'No Tags' : page.tags.map{|t| link_to(t.name)}.join(', ') %></td>
+          <td><%= page.updated_at.to_s(:date) %></td>
         </tr>
       <% end %>
     </tbody>
