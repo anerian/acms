@@ -3,6 +3,7 @@ class Admin::UserSessionsController < Admin::AdminController
   
   def new
     @user_session = UserSession.new
+    render :layout => 'admin/account' 
   end
   
   def create

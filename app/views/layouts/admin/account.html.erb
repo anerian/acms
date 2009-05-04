@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>RailsPress</title>
+  <%= stylesheet_link_tag 'admin/style', 'admin/jquery-ui-1.7.1.custom', :media => 'screen' -%>
+  <%= yield :head -%>
+</head>
+<body>
+<!--[if IE]><div class="ie"><![endif]-->
+  <!--[if lt IE 7.]><div class="ie6"><![endif]-->
+  <% if current_user # and current_user.is_admin?
+-%>
+  <div id="header">
+    <img title="Phrase Press" alt="Phrase Press" src="/images/admin/slogo.png"/>
+    <h1><a href="/"><%= @site_info.site_title %><span>← Visit site</span></a></h1>
+    <div id="fav-actions">
+      <div class="first"><%= link_to "New Post", new_admin_page_path %></div>
+      <div class="toggle"></div>
+      <div class="menu">
+        <div><%= link_to "Drafts", admin_pages_path(:show=>'drafts') %></div>
+        <div><%#= link_to "Uploads", admin_pages_path(:show=>'drafts') %></div>
+        <div><%#= link_to "Comments", admin_pages_path(:show=>'drafts') %></div>
+        <div><%#= link_to "Cache", admin_pages_path(:show=>'drafts') %></div>
+      </div>
+    </div>
+  </div>
+  <div id="content">
+      <% toolbar do %>
+        <% toolbar_section(:dashboard, admin_root_path, :class => 'first last empty' ) do %>
+        <% end %>
+
+        <% toolbar_section(:pages, nil, :class => 'first', :match => /admin\/pages|admin\/categories|admin\/tags/) do %>
+          <%= tb_item :browse, admin_pages_path, :class => 'cfirst' %>
+          <%= tb_item :new, new_admin_page_path %>
+          <%= tb_item :categories, admin_categories_path %>
+          <%= tb_item :tags, admin_tags_path, :class => 'clast' %>
+        <% end %>
+        <% toolbar_section(:links, nil, :match => true) do %>
+          <%= tb_item :browse, admin_links_path, :class => 'cfirst' %>
+          <%= tb_item :new, new_admin_link_path, :class => 'clast' %>
+        <% end %>
+        <% toolbar_section(:media, admin_assets_path, :match => true) do %>
+          <%= tb_item :browse, admin_assets_path, :class => 'cfirst' %>
+          <%= tb_item :new, new_admin_asset_path, :class => 'clast' %>
+        <% end %>
+        <% toolbar_section(:appearance, admin_themes_path, :class => 'last', :match => true) do %>
+          <%= tb_item :themes, admin_themes_path, :class => 'cfirst' %>
+          <%= tb_item :new, new_admin_theme_path %>
+          <%= tb_item :widgets, widgets_admin_themes_path, :class => 'last clast' %>
+        <% end %>
+
+        <% toolbar_section(:users, nil, :class => 'first', :match => true) do %>
+          <%= tb_item :authors_users, admin_users_path, :class => 'cfirst' %>
+          <%= tb_item :new, new_admin_user_path %>
+          <%= tb_item :profile, new_admin_user_path, :class => 'clast' %>
+        <% end %>
+
+        <% toolbar_section(:tools, nil, :match => true) do %>
+          <%= tb_item :general, admin_tools_path, :class => 'cfirst' %>
+          <%= tb_item :import, admin_import_tools_path %>
+          <%= tb_item :export, admin_export_tools_path, :class => 'clast' %>
+        <% end %>
+        <% toolbar_section(:settings, admin_options_path, :class => 'last', :match => true ) do %>
+          <%= tb_item :general, general_admin_options_path, :class => 'cfirst' %>
+          <%= tb_item :writing, writing_admin_options_path %>
+          <%= tb_item :reading, reading_admin_options_path, :class => 'last clast' %>
+        <% end %>
+      <% end %>
+    <% end %>
+
+      <div id="status-alert"><%= flash_display %></div>
+      <% if content_given?(:custom_wrapper) %>
+        <%= yield :custom_wrapper %>
+      <% else %>
+        <div id="sidebar">
+          <%= yield :sidebar %>
+        </div>
+        <div id="fields">
+          <%= yield %>
+        </div>
+      <% end %>
+    </div>
+
+  <%= javascript_include_tag 'jquery-1.3.2.min', 'admin/jquery-ui-1.7.1.custom.min', 'admin/admin', :cache => true %>
+  <%= yield :foot %>
+  <!--[if lt IE 7.]></div><![endif]-->
+<!--[if IE]></div><![endif]-->
+</body>
+</html>
