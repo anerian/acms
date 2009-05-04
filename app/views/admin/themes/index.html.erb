@@ -25,9 +25,10 @@
         $.ajax({
           type: "POST",
           url: "<%= activate_admin_themes_path %>",
-          data: "theme=" + themeName,
+          data: "theme=" + themeName + "&authenticity_token=" + encodeURIComponent("<%=form_authenticity_token%>"),
           success: function(msg) {
-            alert( "Data Saved: " + msg );
+            window.location = window.location;
+            //alert( "Data Saved: " + msg );
           }
         });
         // close the dialog

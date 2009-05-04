@@ -9,6 +9,7 @@ class Admin::ThemesController < Admin::AdminController
     theme = params[:theme]
     if theme and (theme=Theme.find_by_name(theme))
       theme.activate!
+      render :status => 200, :text => "activated" and return
     end
   end
 
