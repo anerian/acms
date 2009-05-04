@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <title><%= @site_info.site_title %></title>
+  <title><%= @siteinfo.site_title %></title>
   <%= stylesheet_link_tag "#{theme_path}/style", :media => 'screen' %>
   <%= javascript_include_tag 'prototype'%>
 </head>
@@ -11,7 +11,7 @@
   <!--[if lt IE 7.]><div class="ie6"><![endif]-->
   <div class="container">
     <div class="header">
-      <h1 class="logo-brand"><a href="/"><span><%= @site_info.site_title %></span></a></h1>
+      <h1 class="logo-brand"><a href="/"><span><%= @siteinfo.site_title %></span></a></h1>
     </div>
     <div class="content">
       <%= yield %>
