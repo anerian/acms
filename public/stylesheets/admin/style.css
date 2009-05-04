@@ -64,7 +64,7 @@ caption {background:#eee;}
 input[type="text"], input[type="password"], textarea { -moz-box-sizing:border-box; }
 
 /* form.css */
-input[type=text] {
+input[type=text], input[type="password"] {
   -moz-border-radius:6px;
   -webkit-border-radius:6px;
   border:1px solid #DFDFDF;
@@ -74,6 +74,9 @@ input[type=text] {
   outline-width:medium;
   padding:3px 4px;
   width: 100%;
+}
+#user_session_remember_me{
+  float:left;
 }
 input.simple {
   -moz-border-radius:2px;
@@ -87,7 +90,7 @@ label {
   float:left;
   clear:left;
   text-align:justify;
-  width:450px;
+/*  width:450px;*/
   display:block;
   position:relative;
 }
@@ -176,6 +179,17 @@ a {
   margin:0;
   position:relative;
 }
+#login {
+  background:#fff;
+  border:1px solid #ccc;
+  -moz-border-radius:8px;
+  -webkit-border-bottom-left-radius:8px;
+  -webkit-border-bottom-right-radius:8px;
+  margin:4em auto;
+  width:320px;
+  padding:10px;
+}
+
 /* toolbar.css */
 #toolbar {
   position:absolute;
