@@ -5,6 +5,7 @@
   <title>RailsPress</title>
   <%= stylesheet_link_tag 'admin/style', 'admin/jquery-ui-1.7.1.custom', :media => 'screen' -%>
   <%= yield :head -%>
+  <%= javascript_tag "var AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? -%>
 </head>
 <body>
 <!--[if IE]><div class="ie"><![endif]-->

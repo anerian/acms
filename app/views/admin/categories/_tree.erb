@@ -1,0 +1,8 @@
+<ul class="categorychecklist clearfix">
+<% Category.parents.each do |category| %>
+  <li>
+    <label class="selectit"><%= check_box_tag "page[category_ids][]", category.id, page.categories.include?(category) %><%= category.name %></label>
+    <%= category_children(page, category) %>
+  </li>
+<% end %>
+</ul>

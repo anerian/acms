@@ -1,4 +1,4 @@
-<% post_box('Publish') do %>
+<% post_box('Publish', :id => 'submitdiv') do %>
   <div id="minor-publishing-actions">
     <div id="save-action">
       <input type="submit" class="button button-highlighted" tabindex="4" value="Save Draft" id="save-post" name="save"/>
@@ -7,7 +7,7 @@
       <a tabindex="4" id="post-preview" target="wp-preview" href="http://meenster.wordpress.com/?p=17&amp;preview=true" class="preview button">Preview</a>
       <input type="hidden" value="" id="wp-preview" name="wp-preview"/>
     </div>
-    <div class="clear">&nbsp;</div>
+    <div class="clear"></div>
   </div>
   <div id="major-publishing-actions">
     <div id="delete-action">
@@ -18,34 +18,57 @@
       <input type="hidden" value="Publish" id="original_publish" name="original_publish"/>
   		<input type="submit" value="Publish" accesskey="p" tabindex="5" id="publish" class="button-primary" name="publish"/>
   	</div>
-    <div class="clear">&nbsp;</div>
+    <div class="clear"></div>
   </div>
-
-
-
-  <!-- <div class="content">
-     <input id="page_savedraft" style="float:left" type="submit" name="draft" value="Save Draft"/>
-     <input id="page_preview" style="float:right" type="submit" name="preview" value="Preview"/>
-     <div class="clear"></div>
-  </div>
-  <div class="footer">
-     <input id="page_publish" type="button" name="publish" value="Publish"/>
-  </div> -->
 <% end %>
 
 <% post_box('Tags') do %>
   <%= form.text_field :tag_list %>
 <% end %>
 
-<% post_box('Categories') do %>
-  <div>
-    <ul class="categorychecklist clearfix">
-    <% Category.parents.each do |category| %>
-      <li>
-        <label class="selectit"><%= check_box_tag "page[category_ids][]", category.id, @page.categories.include?(category) %><%= category.name %></label>
-        <%= category_children(@page, category) %>
-      </li>
-    <% end %>
-    </ul>
+<% post_box('Categories', :id => 'categorydiv') do %>
+  <div class="ui-tabs-panel" id="categories-all">
+    <%= render :partial => 'admin/categories/tree', :locals => {:page => @page} %>
   </div>
+  <div class="wp-hidden-children" id="category-adder">
+  	<h4><a tabindex="3" href="#category-add" id="category-add-toggle">+ Add New Category</a></h4>
+  	<p class="wp-hidden-child" id="category-add" style="display:none">
+      <input type="text" value="" id="newcat" name="category[name]"/>
+  		<%= select_for_categories :id => 'newcat_parent', :name => 'category[parent_id]', :class_name => 'postform' %>
+  		<input type="button" value="Add" id="category-add-sumbit"/>
+  	</p>
+  </div>
+<% end %>
+
+<% content_for :foot do %>
+<script type="text/javascript" charset="utf-8">
+  function selectChecked(categoryIds) {
+    $('#categories-all input').each(function(){
+      $(this).attr('checked', $.inArray(parseInt($(this).val()), categoryIds) > -1);
+    });
+  }
+  $(function(){
+    var categoryIds = [<%= @page.categories.map(&:id).join(',') %>];
+    
+    selectChecked(categoryIds);
+    $('#category-add-toggle').click(function(e){
+      e.preventDefault();
+      $('#category-add').toggle();
+    });
+    
+    $('#category-add-sumbit').click(function(e){
+      var parentId = $('#newcat_parent').val();
+      var categoryName = $('#newcat').val();
+      
+      $.post("/admin/categories", { 
+        'category[name]'      : $('#newcat').val(),
+        'category[parent_id]' : $('#newcat_parent').val()
+       },
+       function(data){
+         $('#categories-all').html(data);
+         selectChecked(categoryIds);
+        }, "html");
+    });
+  });
+</script>
 <% end %>

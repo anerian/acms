@@ -8,7 +8,12 @@ module Admin::UiHelper
     
   end
   
-  def post_box(title, &block)
-    concat(render(:partial => 'admin/ui/postbox', :locals => {:title => title, :content => capture(&block)}))
+  def post_box(title, options = {}, &block)
+    options[:title] = title
+    options[:content] = capture(&block)
+    options[:id] ||= ''
+    options[:class_name] ||= ''
+    
+    concat(render(:partial => 'admin/ui/postbox', :locals => options))
   end
 end

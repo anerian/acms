@@ -29,7 +29,7 @@ class Admin::PagesController < Admin::AdminController
   end
 
   def edit
-    @page = Page.find_by_id(params[:id])
+    @page = Page.find_by_id(params[:id], :include => {:categories => [:children]})
   end
 
   def update
