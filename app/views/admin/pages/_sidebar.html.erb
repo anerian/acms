@@ -4,19 +4,19 @@
       <input type="submit" class="button button-highlighted" tabindex="4" value="Save Draft" id="save-post" name="save"/>
     </div>
     <div id="preview-action">
-      <a tabindex="4" id="post-preview" target="wp-preview" href="http://meenster.wordpress.com/?p=17&amp;preview=true" class="preview button">Preview</a>
+      <a tabindex="4" id="post-preview" target="wp-preview" class="preview button">Preview</a>
       <input type="hidden" value="" id="wp-preview" name="wp-preview"/>
     </div>
     <div class="clear"></div>
   </div>
   <div id="major-publishing-actions">
     <div id="delete-action">
-      <a onclick="if ( confirm('You are about to delete this draft \'adsfasdfa\'\n  \'Cancel\' to stop, \'OK\' to delete.') ) {return true;}return false;" href="post.php?action=delete&amp;post=17&amp;_wpnonce=8c451dcb48" class="submitdelete deletion">Delete</a>
+      <a>Delete</a>
     </div>
 
     <div id="publishing-action">
       <input type="hidden" value="Publish" id="original_publish" name="original_publish"/>
-  		<input type="submit" value="Publish" accesskey="p" tabindex="5" id="publish" class="button-primary" name="publish"/>
+  		<input type="submit" value="Publish" accesskey="p" tabindex="5" id="publish" class="button-primary" name="page[publish]"/>
   	</div>
     <div class="clear"></div>
   </div>
