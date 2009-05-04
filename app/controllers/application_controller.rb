@@ -2,6 +2,7 @@
 # Likewise, all the methods added will be available for all controllers.
 
 class ApplicationController < ActionController::Base
+  before_filter :setup_siteinfo
   helper :all # include all helpers, all the time
   helper_method :current_user_session, :current_user
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
@@ -37,5 +38,13 @@ class ApplicationController < ActionController::Base
   def redirect_back_or_default(default)
     redirect_to(session[:return_to] || default)
     session[:return_to] = nil
+  end
+
+  def setup_siteinfo
+    if general = Option.find_by_key('site_info')
+      @siteinfo = OpenStruct.new(ActiveSupport::JSON.decode(general.value))
+    else
+      @siteinfo = Option.default_general_object
+    end
   end
 end

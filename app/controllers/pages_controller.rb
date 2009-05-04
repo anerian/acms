@@ -20,7 +20,6 @@ class PagesController < ApplicationController
 
 protected
   def load_site_info
-    @site_info = Option.load_by_key('site_info')
     @theme_path = THEME_PATH
   end
 
