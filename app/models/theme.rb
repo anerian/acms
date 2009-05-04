@@ -31,6 +31,11 @@ class Theme < OpenStruct
     super
   end
 
+  # access it as a hash too
+  def [](key)
+    send(key)
+  end
+
   def activate!
     File.unlink(THEME_PATH)
     File.symlink(self.path,THEME_PATH)

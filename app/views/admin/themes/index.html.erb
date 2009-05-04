@@ -13,17 +13,30 @@
 </div>
 <script type="text/javascript">
   var dialog = null;
+  var themeName = null;
   $(document).ready( function() {
     dialog = $('#dialog').dialog({
       autoOpen: false,
       closeOnEscape: true,
       width: "800px",
       position: 'top',
-      buttons: { "Activate": function() { $(this).dialog("close"); } }
+      buttons: { "Activate": function() {
+        // send the ajax request to activate the theme
+        $.ajax({
+          type: "POST",
+          url: "<%= activate_admin_themes_path %>",
+          data: "theme=" + themeName,
+          success: function(msg) {
+            alert( "Data Saved: " + msg );
+          }
+        });
+        // close the dialog
+        $(this).dialog("close");
+      } }
     });
     $('.theme-clip .preview-theme').click(function(e) { 
       e.preventDefault();
-      var themeName = this.innerHTML;
+      themeName = this.innerHTML;
       //console.log("preview: " + themeName);
       dialog.bind('dialogopen', function(event,ui) {
         var frame = "<iframe style='width:800px;height:600px' src='" + "<%= @site_info.site_url %>" + "/?preview=" + themeName + "'></iframe>";

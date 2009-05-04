@@ -24,7 +24,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :categories, :member => {:delete => :get}
     admin.resources :tags, :member => {:delete => :get}
     admin.resources :assets, :member => {:delete => :get}
-    admin.resources :themes, :member => {:delete => :get}, :collection => { :widgets => :get }
+    admin.resources :themes, :member => {:delete => :get}, :collection => { :activate => :post, :widgets => :get }
     admin.resources :links, :member => {:delete => :get}
     admin.resources :users, :member => {:delete => :get}
     admin.root :controller => 'dash'

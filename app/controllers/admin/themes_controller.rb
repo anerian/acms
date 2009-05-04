@@ -2,7 +2,7 @@ class Admin::ThemesController < Admin::AdminController
   def index
     @themes = Theme.all
     logger.debug("themes #{@themes.inspect}")
-    @active = @themes.find{|t| t[:active] }
+    @active = @themes.find{|t| t.active }
   end
 
   def activate
