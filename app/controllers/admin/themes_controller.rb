@@ -1,7 +1,15 @@
 class Admin::ThemesController < Admin::AdminController
   def index
     @themes = Theme.all
+    logger.debug("themes #{@themes.inspect}")
     @active = @themes.find{|t| t[:active] }
+  end
+
+  def activate
+    theme = params[:theme]
+    if theme and (theme=Theme.find_by_name(theme))
+      theme.activate!
+    end
   end
 
   def widgets

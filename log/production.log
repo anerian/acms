@@ -1,0 +1,687 @@
+
+
+Processing Admin::ThemesController#index (for 127.0.0.1 at 2009-05-04 12:07:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/themes"}
+
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  authlogic (2.0.11) lib/authlogic/acts_as_authentic/base.rb:80:in `first_column_to_exist'
+  authlogic (2.0.11) lib/authlogic/acts_as_authentic/base.rb:80:in `each'
+  authlogic (2.0.11) lib/authlogic/acts_as_authentic/base.rb:80:in `first_column_to_exist'
+  authlogic (2.0.11) lib/authlogic/acts_as_authentic/login.rb:19:in `login_field'
+  authlogic (2.0.11) lib/authlogic/session/password.rb:50:in `login_field'
+  authlogic (2.0.11) lib/authlogic/session/password.rb:151:in `login_field'
+  authlogic (2.0.11) lib/authlogic/session/password.rb:77:in `initialize'
+  authlogic (2.0.11) lib/authlogic/session/activation.rb:48:in `initialize'
+  authlogic (2.0.11) lib/authlogic/session/klass.rb:61:in `initialize'
+  authlogic (2.0.11) lib/authlogic/session/scopes.rb:79:in `initialize'
+  authlogic (2.0.11) lib/authlogic/session/persistence.rb:37:in `new'
+  authlogic (2.0.11) lib/authlogic/session/persistence.rb:37:in `find'
+  app/controllers/application_controller.rb:16:in `current_user_session'
+  app/controllers/application_controller.rb:21:in `current_user'
+  app/controllers/admin/admin_controller.rb:6:in `require_admin_user'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::ThemesController#index (for 127.0.0.1 at 2009-05-04 12:07:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/themes"}
+
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  authlogic (2.0.11) lib/authlogic/acts_as_authentic/base.rb:80:in `first_column_to_exist'
+  authlogic (2.0.11) lib/authlogic/acts_as_authentic/base.rb:80:in `each'
+  authlogic (2.0.11) lib/authlogic/acts_as_authentic/base.rb:80:in `first_column_to_exist'
+  authlogic (2.0.11) lib/authlogic/acts_as_authentic/login.rb:19:in `login_field'
+  authlogic (2.0.11) lib/authlogic/session/password.rb:50:in `login_field'
+  authlogic (2.0.11) lib/authlogic/session/password.rb:151:in `login_field'
+  authlogic (2.0.11) lib/authlogic/session/password.rb:77:in `initialize'
+  authlogic (2.0.11) lib/authlogic/session/activation.rb:48:in `initialize'
+  authlogic (2.0.11) lib/authlogic/session/klass.rb:61:in `initialize'
+  authlogic (2.0.11) lib/authlogic/session/scopes.rb:79:in `initialize'
+  authlogic (2.0.11) lib/authlogic/session/persistence.rb:37:in `new'
+  authlogic (2.0.11) lib/authlogic/session/persistence.rb:37:in `find'
+  app/controllers/application_controller.rb:16:in `current_user_session'
+  app/controllers/application_controller.rb:21:in `current_user'
+  app/controllers/admin/admin_controller.rb:6:in `require_admin_user'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::ThemesController#index (for 127.0.0.1 at 2009-05-04 12:07:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/themes"}
+Rendering template within layouts/admin/admin
+Rendering admin/themes/index
+Completed in 99ms (View: 57, DB: 3) | 200 OK [http://localhost/admin/themes]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-04 12:07:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages", "preview"=>"exact-sciences"}
+Rendering template within layouts/default
+Rendering pages/index
+Completed in 60ms (View: 5, DB: 9) | 200 OK [http://localhost/?preview=exact-sciences]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-04 12:07:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages", "preview"=>"exact-sciences"}
+Rendering template within layouts/default
+Rendering pages/index
+Completed in 92ms (View: 1, DB: 2) | 200 OK [http://localhost/?preview=exact-sciences]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-04 12:07:43) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages", "preview"=>"exact-sciences"}
+Rendering template within layouts/default
+Rendering pages/index
+Completed in 27ms (View: 1, DB: 2) | 200 OK [http://localhost/?preview=exact-sciences]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-04 12:07:43) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages", "preview"=>"simple"}
+Rendering template within layouts/default
+Rendering pages/index
+Completed in 71ms (View: 14, DB: 6) | 200 OK [http://localhost/?preview=simple]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:07:43) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/chrome_repeat_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:07:43) [GET]
+
+ActionController::RoutingError (No route matches "/img/linkscape/linkscape_logo_full.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:07:43) [GET]
+
+ActionController::RoutingError (No route matches "/img/users/medium/21348.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:07:43) [GET]
+
+ActionController::RoutingError (No route matches "/img/users/medium/63.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:07:43) [GET]
+
+ActionController::RoutingError (No route matches "/img/users/medium/43718.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:07:43) [GET]
+
+ActionController::RoutingError (No route matches "/img/top500/top_500_logo_full.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:07:43) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/white_highlight.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:07:44) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/footer_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:07:44) [GET]
+
+ActionController::RoutingError (No route matches "/img/twitter-icon-14x14.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:07:44) [GET]
+
+ActionController::RoutingError (No route matches "/css/v4/images/superb_logo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:07:44) [GET]
+
+ActionController::RoutingError (No route matches "/css/v4/images/exact_target_logo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:07:44) [GET]
+
+ActionController::RoutingError (No route matches "/css/v4/images/seomoz_small_flower.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:07:44) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/chrome.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:07:44) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/site_nav_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:07:44) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/active_tab_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:07:44) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/hire_banner_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:07:44) [GET]
+
+ActionController::RoutingError (No route matches "/css/v4/images/banners/blog.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:07:44) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/v4/images/mozstar_small.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:07:44) [GET]
+
+ActionController::RoutingError (No route matches "/img/feed-icon-14x14.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:07:44) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/footer_shadow_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-04 12:07:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages", "preview"=>"exact-sciences"}
+Rendering template within layouts/default
+Rendering pages/index
+Completed in 30ms (View: 2, DB: 2) | 200 OK [http://localhost/?preview=exact-sciences]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-04 12:07:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages", "preview"=>"simple"}
+Rendering template within layouts/default
+Rendering pages/index
+Completed in 58ms (View: 2, DB: 20) | 200 OK [http://localhost/?preview=simple]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-04 12:07:47) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages", "preview"=>"default"}
+Rendering template within layouts/default
+Rendering pages/index
+Completed in 35ms (View: 4, DB: 2) | 200 OK [http://localhost/?preview=default]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-04 12:07:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages", "preview"=>"exact-sciences"}
+Rendering template within layouts/default
+Rendering pages/index
+Completed in 35ms (View: 1, DB: 12) | 200 OK [http://localhost/?preview=exact-sciences]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-04 12:07:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages", "preview"=>"simple"}
+Rendering template within layouts/default
+Rendering pages/index
+Completed in 459ms (View: 110, DB: 326) | 200 OK [http://localhost/?preview=simple]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-04 12:07:57) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages", "preview"=>"default"}
+Rendering template within layouts/default
+Rendering pages/index
+Completed in 22ms (View: 1, DB: 2) | 200 OK [http://localhost/?preview=default]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-04 12:07:57) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages", "preview"=>"exact-sciences"}
+Rendering template within layouts/default
+Rendering pages/index
+Completed in 20ms (View: 1, DB: 2) | 200 OK [http://localhost/?preview=exact-sciences]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-04 12:07:57) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages", "preview"=>"exact-sciences"}
+Rendering template within layouts/default
+Rendering pages/index
+Completed in 28ms (View: 1, DB: 3) | 200 OK [http://localhost/?preview=exact-sciences]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-04 12:07:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages", "preview"=>"exact-sciences"}
+Rendering template within layouts/default
+Rendering pages/index
+Completed in 31ms (View: 1, DB: 6) | 200 OK [http://localhost/?preview=exact-sciences]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-04 12:07:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages", "preview"=>"default"}
+Rendering template within layouts/default
+Rendering pages/index
+Completed in 41ms (View: 2, DB: 17) | 200 OK [http://localhost/?preview=default]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-04 12:07:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages", "preview"=>"simple"}
+Rendering template within layouts/default
+Rendering pages/index
+Completed in 22ms (View: 2, DB: 2) | 200 OK [http://localhost/?preview=simple]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:08:00) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/chrome_repeat_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:08:00) [GET]
+
+ActionController::RoutingError (No route matches "/img/linkscape/linkscape_logo_full.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:08:00) [GET]
+
+ActionController::RoutingError (No route matches "/img/users/medium/21348.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:08:00) [GET]
+
+ActionController::RoutingError (No route matches "/img/users/medium/63.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:08:00) [GET]
+
+ActionController::RoutingError (No route matches "/img/users/medium/43718.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:08:00) [GET]
+
+ActionController::RoutingError (No route matches "/img/top500/top_500_logo_full.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:08:00) [GET]
+
+ActionController::RoutingError (No route matches "/img/twitter-icon-14x14.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:08:00) [GET]
+
+ActionController::RoutingError (No route matches "/css/v4/images/superb_logo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:08:00) [GET]
+
+ActionController::RoutingError (No route matches "/css/v4/images/exact_target_logo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:08:00) [GET]
+
+ActionController::RoutingError (No route matches "/css/v4/images/seomoz_small_flower.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:08:00) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/chrome.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:08:00) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/site_nav_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:08:00) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/active_tab_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:08:00) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/hire_banner_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:08:00) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/white_highlight.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:08:00) [GET]
+
+ActionController::RoutingError (No route matches "/css/v4/images/banners/blog.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:08:00) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/v4/images/mozstar_small.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:08:00) [GET]
+
+ActionController::RoutingError (No route matches "/img/feed-icon-14x14.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:08:00) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/footer_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 12:08:00) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/footer_shadow_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-04 12:08:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages", "preview"=>"exact-sciences"}
+Rendering template within layouts/default
+Rendering pages/index
+Completed in 25ms (View: 2, DB: 2) | 200 OK [http://localhost/?preview=exact-sciences]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-04 12:08:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages", "preview"=>"simple"}
+Rendering template within layouts/default
+Rendering pages/index
+Completed in 43ms (View: 3, DB: 5) | 200 OK [http://localhost/?preview=simple]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-04 12:08:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages", "preview"=>"default"}
+Rendering template within layouts/default
+Rendering pages/index
+Completed in 26ms (View: 2, DB: 2) | 200 OK [http://localhost/?preview=default]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-04 12:08:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages", "preview"=>"default"}
+Rendering template within layouts/default
+Rendering pages/index
+Completed in 33ms (View: 1, DB: 11) | 200 OK [http://localhost/?preview=default]
+
+
+Processing Admin::ThemesController#index (for 127.0.0.1 at 2009-05-04 13:14:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/themes"}
+Rendering template within layouts/admin/admin
+Rendering admin/themes/index
+Completed in 57ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/themes]
+
+
+Processing Admin::ThemesController#index (for 127.0.0.1 at 2009-05-04 13:14:18) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/themes"}
+Rendering template within layouts/admin/admin
+Rendering admin/themes/index
+Completed in 110ms (View: 10, DB: 25) | 200 OK [http://localhost/admin/themes]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-04 13:14:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"pages", "preview"=>"simple"}
+Rendering template within layouts/default
+Rendering pages/index
+Completed in 54ms (View: 18, DB: 2) | 200 OK [http://localhost/?preview=simple]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 13:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/chrome_repeat_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 13:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/img/users/medium/63.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 13:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/img/users/medium/21348.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 13:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/img/linkscape/linkscape_logo_full.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 13:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/img/users/medium/43718.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 13:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/img/top500/top_500_logo_full.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 13:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/img/twitter-icon-14x14.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 13:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/css/v4/images/superb_logo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 13:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/css/v4/images/exact_target_logo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 13:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/css/v4/images/seomoz_small_flower.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 13:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/chrome.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 13:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/site_nav_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 13:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/active_tab_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 13:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/hire_banner_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 13:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/white_highlight.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 13:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/css/v4/images/banners/blog.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 13:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/v4/images/mozstar_small.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 13:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/img/feed-icon-14x14.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 13:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/footer_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 13:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/themes/simple/css/images/footer_shadow_bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

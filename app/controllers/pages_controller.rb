@@ -55,6 +55,8 @@ protected
         logger.debug "restored view path: #{ActionController::Base.view_paths.inspect} and #{view_paths.inspect}"
       end
 
+    else
+      yield
     end
 
   end

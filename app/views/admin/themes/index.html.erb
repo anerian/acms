@@ -18,7 +18,8 @@
       autoOpen: false,
       closeOnEscape: true,
       width: "800px",
-      position: 'top'
+      position: 'top',
+      buttons: { "Activate": function() { $(this).dialog("close"); } }
     });
     $('.theme-clip .preview-theme').click(function(e) { 
       e.preventDefault();

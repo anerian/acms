@@ -46,6 +46,7 @@
         <% end %>
         <% toolbar_section(:appearance, admin_themes_path, :class => 'last', :match => true) do %>
           <%= tb_item :themes, admin_themes_path, :class => 'cfirst' %>
+          <%= tb_item :new, new_admin_theme_path %>
           <%= tb_item :widgets, widgets_admin_themes_path, :class => 'last clast' %>
         <% end %>
 

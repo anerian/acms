@@ -1,2 +1,7 @@
-<h1>Admin::Themes#new</h1>
-<p>Find me in app/views/admin/themes/new.html.erb</p>
+<h1>Upload Theme</h1>
+<p>To add a new theme from a remote server zip up the theme folder first.</p>
+<form action="<%= admin_themes_path %>" method="POST" enctype="multipart/form-data">
+  <input type="file" name="themepkg"/>
+  <input type="submit" value="Upload"/>
+</form>
+
