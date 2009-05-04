@@ -47,6 +47,12 @@
       $(this).attr('checked', $.inArray(parseInt($(this).val()), categoryIds) > -1);
     });
   }
+  function resetCategoryFields(){
+    $('#newcat_parent').val('-1');
+    $('#newcat').val(null);
+  }
+  
+  
   $(function(){
     var categoryIds = [<%= @page.categories.map(&:id).join(',') %>];
     
@@ -54,6 +60,7 @@
     $('#category-add-toggle').click(function(e){
       e.preventDefault();
       $('#category-add').toggle();
+      resetCategoryFields();
     });
     
     $('#category-add-sumbit').click(function(e){
@@ -66,6 +73,7 @@
        },
        function(data){
          $('#categories-all').html(data);
+         resetCategoryFields();
          selectChecked(categoryIds);
         }, "html");
     });
