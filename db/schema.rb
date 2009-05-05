@@ -13,7 +13,7 @@ ActiveRecord::Schema.define(:version => 20090505195058) do
 
   create_table "assets", :force => true do |t|
     t.string   "key"
-    t.string   "ext"
+    t.string   "info",       :limit => 1024
     t.datetime "created_at"
     t.datetime "updated_at"
   end

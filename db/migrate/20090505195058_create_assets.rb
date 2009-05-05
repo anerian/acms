@@ -2,7 +2,7 @@ class CreateAssets < ActiveRecord::Migration
   def self.up
     create_table :assets do |t|
       t.string :key
-      t.string :ext
+      t.string :info, :limit => 1024
       t.timestamps
     end
 
@@ -18,5 +18,6 @@ class CreateAssets < ActiveRecord::Migration
 
   def self.down
     drop_table :assets
+    drop_table :assets_pages
   end
 end
