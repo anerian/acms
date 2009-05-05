@@ -1,7 +1,6 @@
 /* reset.css */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
 body {line-height:1.5;}
-table {border-collapse:separate;border-spacing:0;}
 caption, th, td {text-align:left;}
 table, td, th {vertical-align:middle;}
 blockquote:before, blockquote:after, q:before, q:after {content:"";}
@@ -40,10 +39,8 @@ ol {list-style-type:decimal;}
 dl {margin:0 0 1.5em 0;}
 dl dt {font-weight:bold;}
 dd {margin-left:1.5em;}
-table {margin-bottom:1.4em;width:100%;}
 th, td {padding:4px 10px 4px 5px;}
 tr.even td {background:#E5ECF9;}
-tfoot {font-style:italic;}
 caption {background:#eee;}
 .small {font-size:.8em;margin-bottom:1.875em;line-height:1.875em;}
 .large {font-size:1.2em;line-height:2.5em;margin-bottom:1.25em;}
@@ -59,11 +56,50 @@ caption {background:#eee;}
 .bottom {margin-bottom:0;padding-bottom:0;}
 
 table.fixed { table-layout:fixed; }
-.widefat { background-color:#FFFFFF; border-color:#DFDFDF; }
-.widefat { -moz-border-radius:4px; border-collapse:separate; border-spacing:0; border-style:solid; border-width:1px; clear:both; margin:0; width:100%; }
-.widefat a { text-decoration:none; }
-.widefat .check-column { padding:0; width:2.2em; }
-.widefat th input { margin:0 0 0 8px; padding:0; vertical-align:text-top; }
+
+.widefat { border-width: 1px; border-style: solid; border-collapse: separate; border-spacing: 0; width: 100%; clear: both; margin: 0; -moz-border-radius: 4px; -khtml-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+.widefat * { word-wrap: break-word; }
+.widefat a { text-decoration: none; }
+.widefat td,
+.widefat th { border-bottom-width: 1px; border-bottom-style: solid; font-size: 11px; vertical-align: text-top; }
+.widefat td { padding: 7px 7px 5px; vertical-align: top; }
+.widefat thead tr th:first { -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; -khtml-border-top-left-radius: 4px; border-top-left-radius: 4px; }
+.widefat thead tr th:last { -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; -khtml-border-top-right-radius: 4px; border-top-right-radius: 4px; }
+.widefat tfoot tr th:first { -moz-border-radius-bottomleft: 4px; -webkit-border-bottom-left-radius: 4px; -khtml-border-bottom-left-radius: 4px; border-bottom-left-radius: 4px; }
+.widefat tfoot tr th:last { -moz-border-radius-bottomright: 4px; -webkit-border-bottom-right-radius: 4px; -khtml-border-bottom-right-radius: 4px; border-bottom-right-radius: 4px; }
+.widefat td p,
+.widefat td ol,
+.widefat td ul { font-size: 11px; }
+.widefat th { padding: 7px 7px 8px; text-align: left; line-height: 1.3em; }
+.widefat th input { margin: 0 0 0 8px; padding: 0; vertical-align: text-top; }
+.widefat .check-column { width: 2.2em; padding: 0; }
+.widefat tbody th.check-column { padding: 7px 0 22px; }
+.widefat .num,
+.column-comments,
+.column-links,
+.column-posts,
+.column-parent { text-align: center; }
+.widefat { border-color: #dfdfdf; background-color: #fff; }
+.widefat td,
+.widefat th { border-color: #dfdfdf; }
+.widefat th { text-shadow: rgba(255,255,255,0.8) 0 1px 0; }
+.widefat thead tr th,
+.widefat tfoot tr th,
+h3.dashboard-widget-title,
+h3.dashboard-widget-title span,
+h3.dashboard-widget-title small,
+.find-box-head {
+	color: #333;
+	background: #dfdfdf url(/images/admin/gray-grad.png) repeat-x scroll left top;
+}
+
+
+
+
+
+
+
+
 
 .clearfix:after{clear:both;content:'.';display:block;visibility:hidden;height:0}.clearfix{display:inline-block}* html .clearfix{height:1%}.clearfix{display:block}
 textarea, input, select {
@@ -821,3 +857,15 @@ p.search-box { float:right; margin:-5px 0 0; }
 .tablenav { clear:both; height:30px; margin:6px 0 4px; vertical-align:middle; }
 
 .row-title { font-size:12px !important; font-weight:bold; text-decoration: none;}
+
+#col-container { margin:0; overflow:hidden; padding:0; }
+#col-right { clear:right; float:right; margin:0; overflow:hidden; padding:0; width:59%; }
+#col-left { margin:0; overflow:hidden; padding:0; width:39%; }
+.form-wrap { margin:10px 0; width:97%; }
+.col-wrap h3 { font-size:1.1em; margin:12px 0; font-weight:bold; color:#333333; }
+.form-wrap .form-field { margin:0 0 10px; padding:8px; }
+.form-wrap .form-field label { float: none;}
+
+.setting-description, .form-wrap p { color:#666666; margin:2px 0 5px; font-size:11px; }
+.setting-description, .form-wrap p { font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif; font-style:italic; }
+

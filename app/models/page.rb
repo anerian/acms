@@ -14,8 +14,13 @@ class Page < ActiveRecord::Base
     PENDING_REVIEW=1
     PUBLISHED=2
   end
-  
-  def set_publish_date
-    self.published_at = publish.blank?? nil : Time.now
+
+  def published?
+    !published_at.blank?
   end
+  
+  private
+    def set_publish_date
+      self.published_at = publish.blank?? nil : Time.now
+    end
 end

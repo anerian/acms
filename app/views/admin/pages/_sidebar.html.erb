@@ -16,13 +16,13 @@
 
     <div id="publishing-action">
       <input type="hidden" value="Publish" id="original_publish" name="original_publish"/>
-  		<input type="submit" value="Publish" accesskey="p" tabindex="5" id="publish" class="button-primary" name="page[publish]"/>
+  		<input type="submit" value="<%= @page.published?? 'Update' : 'Publish'%>" accesskey="p" tabindex="5" id="publish" class="button-primary" name="page[publish]"/>
   	</div>
     <div class="clear"></div>
   </div>
 <% end %>
 
-<% post_box('Tags') do %>
+<% post_box('Page Tags') do %>
   <%= form.text_field :tag_list %>
 <% end %>
 

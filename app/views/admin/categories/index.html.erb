@@ -1,2 +1,86 @@
-<h1>Admin::Categories#index</h1>
-<p>Find me in app/views/admin/categories/index.html.erb</p>
+<% content_for :custom_wrapper do %>
+  <div class="page">
+    <div class="page_title">
+      <div class="icon"></div>
+      <h2>Categories</h2>
+      <%= flash_display %>
+    </div>
+    <div id="col-container">
+      <div id="col-right">
+        <div class="col-wrap">
+          <div class="form-wrap">
+            <form method="get" action="" id="posts-filter">
+              <div class="tablenav">
+                <div class="alignleft actions">
+                  <select name="action">
+                    <option selected="selected" value="">Bulk Actions</option>
+                    <option value="delete">Delete</option>
+                  </select>
+                  <input type="submit" class="button-secondary action" id="doaction" name="doaction" value="Apply"/>
+                </div>
+                <br class="clear"/>
+              </div>
+                
+              <table cellspacing="0" class="widefat fixed">
+                <thead>
+                  <tr>
+                    <th style="" class="manage-column column-cb check-column" id="cb" scope="col"><input type="checkbox"/></th>
+                    <th style="" class="manage-column column-name" id="name" scope="col">Name</th>
+                    <th style="" class="manage-column column-posts num" id="posts" scope="col">Pages</th>
+                  </tr>
+              	</thead>
+                <tbody>
+                  <% Category.all.each do |category| %>
+                  <tr>
+                    <th class="check-column"></th>
+                    <td class="name column-name">
+                      <a><%= category.name %></a>
+                    </td>
+                    <td class="name column-name">
+                      <a><%= category.name %></a>
+                    </td>
+                  </tr>
+                  <% end %>
+                </tbody>
+              	<tfoot>
+                  <tr>
+                    <th style="" class="manage-column column-cb check-column" scope="col"><input type="checkbox"/></th>
+                    <th style="" class="manage-column column-name" scope="col">Name</th>
+                    <th style="" class="manage-column column-posts num" scope="col">Pages</th>
+                  </tr>
+              	</tfoot>
+              </table>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="col-left">
+        <div class="col-wrap">
+          <div class="form-wrap">
+            <h3>Add Category</h3>
+            
+            <% form_for :category do |form| %>
+              <div class="form-field form-required">
+                <label for="cat_name">Category Name</label>
+                <input id="cat_name" type="text" aria-required="true" size="40" value="" name="cat_name"/>
+                <p>The name is used to identify the category almost everywhere, for example under the post or in the category widget.</p>
+              </div>
+              
+              <div class="form-field">
+                <%= form.label :parent_id, 'Category Parent' %>
+                <%= select_for_categories :name => 'category[parent_id]' %>
+                <p>Categories, unlike tags, can have a hierarchy. You might have a Jazz category, and under that have children categories for Bebop and Big Band. Totally optional.</p>
+              </div>
+              
+              <p class="submit">
+                <%= form.submit 'Add Category', :class => 'button' %>
+              </p>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<% end %>
