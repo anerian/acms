@@ -25,6 +25,29 @@ class Admin::OptionsController < Admin::AdminController
     end
   end
 
+  def media
+    # fetch media options
+    @media = Option.find_by_key('media_info')
+    if @media.nil?
+      @media = Option.new
+      @media.key = 'media_info'
+      @values = @media.value = {}
+    else
+      @values = ActiveSupport::JSON.decode(@media.value)
+    end
+    if request.post?
+      # save
+      params[:option].each do|key,value|
+        @values[key] = value
+      end
+      @media.value = @values.to_json
+      if @media.save
+        flash[:success] = "Saved"
+        redirect_to media_admin_options_path
+      end
+    end
+  end
+
   def writing
   end
 

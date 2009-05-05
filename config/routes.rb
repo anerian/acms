@@ -20,7 +20,12 @@ ActionController::Routing::Routes.draw do |map|
 
   map.namespace :admin do|admin|
     admin.resources :pages, :member => {:delete => :get}
-    admin.resources :options, :member => {:delete => :get}, :collection => { :general => [:get,:post], :writing => [:get,:post], :reading => [:get,:post]}
+    admin.resources :options, :member => {:delete => :get},
+                              :collection => { :general => [:get,:post],
+                                               :writing => [:get,:post],
+                                               :reading => [:get,:post],
+                                               :media => [:get,:post]
+                                             }
     admin.resources :categories, :member => {:delete => :get}
     admin.resources :tags, :member => {:delete => :get}
     admin.resources :assets, :member => {:delete => :get}

@@ -9,7 +9,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090504220401) do
+ActiveRecord::Schema.define(:version => 20090505195058) do
+
+  create_table "assets", :force => true do |t|
+    t.string   "key"
+    t.string   "ext"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "assets", ["key"], :name => "index_assets_on_key"
+
+  create_table "assets_pages", :id => false, :force => true do |t|
+    t.integer "asset_id"
+    t.integer "page_id"
+  end
+
+  add_index "assets_pages", ["asset_id", "page_id"], :name => "index_assets_pages_on_asset_id_and_page_id"
 
   create_table "categories", :force => true do |t|
     t.string   "name"

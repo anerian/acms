@@ -43,7 +43,7 @@
         <% end %>
         <% toolbar_section(:media, admin_assets_path, :match => true) do %>
           <%= tb_item :browse, admin_assets_path, :class => 'cfirst' %>
-          <%= tb_item :new, new_admin_asset_path, :class => 'clast' %>
+          <%= tb_item :upload, new_admin_asset_path, :class => 'clast' %>
         <% end %>
         <% toolbar_section(:appearance, admin_themes_path, :class => 'last', :match => true) do %>
           <%= tb_item :themes, admin_themes_path, :class => 'cfirst' %>
@@ -65,7 +65,8 @@
         <% toolbar_section(:settings, admin_options_path, :class => 'last', :match => true ) do %>
           <%= tb_item :general, general_admin_options_path, :class => 'cfirst' %>
           <%= tb_item :writing, writing_admin_options_path %>
-          <%= tb_item :reading, reading_admin_options_path, :class => 'last clast' %>
+          <%= tb_item :reading, reading_admin_options_path %>
+          <%= tb_item :media, media_admin_options_path, :class => 'last clast' %>
         <% end %>
       <% end %>
     <% end %>

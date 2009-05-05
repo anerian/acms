@@ -1,0 +1,15 @@
+<div class="body_content general">
+  <div class="title">
+    <div class="icon"></div>
+    <h2><%= t(:media_settings) %></h2>
+  </div>
+  <form class="inputs" method="post" action="<%= media_admin_options_path %>">
+    <div>
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>"/>
+      <%= render :partial => 'text_input', :locals => { :key => 'site_key' } %>
+      <%= render :partial => 'text_input', :locals => { :key => 'site_secret' } %>
+    </div>
+    <div class="clear"></div>
+    <p class="default"><input type="submit" class="default" value="<%= t(:save_changes) %>"/></p>
+  </form>
+</div>
