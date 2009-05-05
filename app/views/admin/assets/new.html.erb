@@ -1,2 +1,52 @@
-<h1>Admin::Assets#new</h1>
-<p>Find me in app/views/admin/assets/new.html.erb</p>
+<div class="body_content upload">
+  <div class="title">
+    <div class="icon"></div>
+    <h2><%= t(:media_upload) %></h2>
+  </div>
+  <form>
+    <div>
+      <div id="progress">
+      </div>
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>"/>
+    </div>
+    <p class="default"><input id="file-upload" type="submit" class="default" value="<%= t(:upload_files) %>"/></p>
+  </form>
+</div>
+<% content_for :foot do %>
+  <script src="http://anerian.ws/api/u/<%= @media_info.site_key %>.js" type="text/javascript"></script>
+  <script src="/javascripts/json2.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var uploader = new anerian.uploader("<%= @media_info.site_key %>");  
+
+    uploader.observe("file:start", function(fid, file) {
+      console.log(file.name + " uploading " + file.blob.length + " bytes");
+      $("#progress").append("<div id='status-" + fid + "'><h4 style='margin-top:10px;margin-bottom:0px'>" + file.name + "</h4><div id='progress-" + fid + "'></div></div>");
+      $('#progress-' + fid).progressbar({ value: 0 });
+    });
+    uploader.observe("file:progress", function(fid, file, progress, stage) {
+      var p = (progress*100);
+      console.log(file.name + " progress " + p + "% " + stage);
+      $('#progress-' + fid).progressbar('value', p); 
+    });
+    uploader.observe("file:ready", function(fid, file, details) {
+      console.log(file.name + " ready with url:" + details.url + " and id:" + details.urlId);
+      $('#progress-' + fid).progressbar('value', 100); 
+      console.log(JSON.stringify(details));
+      $.ajax({
+        type: "POST",
+        url: "<%= admin_assets_path %>",
+        data: "key=" + details.urlId + "info=" + JSON.stringify(details),
+        success: function(msg){
+          $("#status-" + fid + " h4").append(" ready");
+        }
+      });
+    });
+    // for each file uploaded we'll send a POST register the new file with our local db
+    $(document).ready( function() {
+      $("#file-upload").click( function(e) {
+        e.preventDefault();
+        uploader.showPicker();
+      });
+    });
+  </script>
+<% end %>
