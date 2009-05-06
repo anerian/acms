@@ -14,11 +14,8 @@ class Admin::PagesController < Admin::AdminController
   end
 
   def create
-    @page = current_user.pages.new(params[:page])
-    @page.published_at = Time.now unless params[:publish].blank?
-    
+    @page = Page.new(params[:page])
     if @page.save
-      
       respond_to do |t|
         t.html {flash[:success] = t(:page_created); redirect_to edit_admin_page_path(@page) }
         t.js { render :text => t(:page_created) }
@@ -32,12 +29,11 @@ class Admin::PagesController < Admin::AdminController
   end
 
   def edit
-    @page = Page.find_by_id(params[:id], :include => {:categories => [:children]})
+    @page = Page.find_by_id(params[:id])
   end
 
   def update
     @page = Page.find_by_id(params[:id])
-    
     if @page.update_attributes(params[:page])
       respond_to do|t|
         t.html {flash[:success] = t(:page_created); redirect_to edit_admin_page_path(@page) }
@@ -45,7 +41,7 @@ class Admin::PagesController < Admin::AdminController
       end
     else
       respond_to do|t|
-        t.html { flash.now[:error] = t(:page_errors); render :action => 'edit' }
+        t.html { flash.now[:error] = t(:page_errors); render :action => 'new' }
         t.js { render :status => 500, :text => t(:page_errors) }
       end
     end

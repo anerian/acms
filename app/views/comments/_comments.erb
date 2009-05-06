@@ -1,0 +1,17 @@
+<% item = object %>
+<ul>
+<% for comment in item.comments %>
+  <li>
+    <%= comment.comment %>
+  </li>
+<% end %>
+</ul>
+
+<h2>Comment on this <%= item.class %></h2>
+<% form_tag(comments_path) do -%>
+  <%= hidden_field_tag 'comment[commentable_id]', item.id %>
+  <%= hidden_field_tag 'comment[commentable_type]', item.class %>
+  <%= text_area_tag 'comment[comment]', nil, :style => 'width:100%;
+height:100px;' %>
+  <%= image_submit_tag ('post_comment_button.png') %>
+<% end %>

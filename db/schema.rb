@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090505195058) do
+ActiveRecord::Schema.define(:version => 20090505204729) do
 
   create_table "assets", :force => true do |t|
     t.string   "key"
@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(:version => 20090505195058) do
     t.integer  "commentable_id",                 :default => 0,  :null => false
     t.string   "commentable_type", :limit => 15, :default => "", :null => false
     t.integer  "user_id",                        :default => 0,  :null => false
+    t.integer  "comment_count",                  :default => 0
   end
 
   add_index "comments", ["user_id"], :name => "fk_comments_user"
@@ -65,14 +66,15 @@ ActiveRecord::Schema.define(:version => 20090505195058) do
 
   create_table "pages", :force => true do |t|
     t.string   "title"
-    t.string   "slug",         :limit => 128
+    t.string   "slug",          :limit => 128
     t.text     "content"
     t.integer  "user_id"
     t.integer  "parent_id"
-    t.integer  "status",                      :default => 0
+    t.integer  "status",                       :default => 0
     t.datetime "published_at"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "comment_count",                :default => 0
   end
 
   add_index "pages", ["slug"], :name => "index_pages_on_slug"
