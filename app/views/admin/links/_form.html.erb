@@ -1,8 +1,5 @@
-<p>
-  <%= f.label :url %><br />
-  <%= f.text_field :url %>
-</p>
-<p>
-  <%= f.label :title %><br />
-  <%= f.text_field :title %>
-</p>
+<% f.inputs do %>
+  <%= f.input :url %>
+  <%= f.input :title %>
+  <%= f.asset :asset_id, :basic_type => 'image', :label => 'Image:' -%>
+<% end %>

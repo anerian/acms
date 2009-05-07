@@ -57,4 +57,39 @@ module Admin::AdminHelper
     content_tag :li, link, options
   end
 
+  def button_save_or_cancel(title, cancel_path)
+    ret = content_tag(:button, title, :value => title, :name => 'submit', :type => 'submit')
+    ret << link_to('Cancel', cancel_path, :class => 'alt_button')
+    ret
+  end
+
+  class ActionView::Helpers::FormBuilder
+    def asset(method_name, options ={})
+      options[:title] ||= 'Choose an Image'
+      options[:id]    ||= "#{@object_name}_#{method_name}"
+      options[:name]  ||= "#{@object_name}[#{method_name}]"
+      options[:asset_name] ||= method_name.to_s.gsub(/_id/,'').to_sym
+      options[:object] = @object
+      options[:basic_type] ||= nil
+
+      @template.render(:partial => 'admin/widgets/asset_picker', :locals => options)
+    end
+    def rte(method_name, options={})
+      options[:textarea] = self.input method_name, :label => options[:label]
+      options[:id] ||= "#{@object_name}_#{method_name}"
+      
+      @template.render(:partial => 'admin/widgets/rich_text_field', :locals => options)
+    end
+    
+    def tags(method_name, options = {})
+      options[:id] ||= "#{@object_name}_#{method_name}"
+      options[:name]  ||= "#{@object_name}[#{method_name}]"
+      options[:input] = self.hidden_field method_name
+      options[:label] = self.label method_name
+      options[:tags] = @object.respond_to?(:tag_list) ? @object.tag_list.join(',') : ''
+      
+      @template.render(:partial => 'admin/widgets/tag_picker', :locals => options)
+    end
+  end
+
 end

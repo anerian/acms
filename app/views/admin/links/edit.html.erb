@@ -1,13 +1,14 @@
 <h1>Editing link</h1>
 
-<% form_for [:admin, @link] do |f| %>
-  <%= f.error_messages %>
+<% semantic_form_for [:admin, @link] do |f| %>
+  <%#= f.error_messages %>
 
   <%= render :partial => 'form', :locals => {:f => f} %>
 
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
+  <% f.buttons do %>
+    <%= content_tag :li, button_save_or_cancel('Save', admin_links_path) %>
+  <% end %>
+
 <% end %>
 
 <%= link_to 'Back', admin_links_path %>

@@ -1,0 +1,43 @@
+<style type="text/css" media="screen">
+  .thumb_wrapper {
+    float:left; margin:4px 0px 4px 4px; padding:5px; border: 1px solid silver; overflow:hidden;
+  }
+  .thumb_wrapper .thumb {
+    width:80px;height: 60px; overflow:hidden; text-align: center; background:#DDDDDD none repeat scroll 0 0;
+  }
+  .thumb_wrapper:hover {
+    border: 1px solid blue;
+    cursor: pointer;
+  }
+  .thumb_wrapper:hover .thumb {
+    background:blue;
+  }
+</style>
+
+<input type="hidden" id="<%= id %>" name="<%= name %>" value="<%= object.send("#{asset_name}_id") %>"/>
+
+<li id="<%= id %>_input" class="text">
+  <label for="<%= id %>"><%= label %></label>
+
+  <%= link_to image_tag(((object.send(asset_name) && object.send(asset_name).public_filename(:thumb)) || 'admin/avatar.png'), :height => 60), nil, :id => "#{id}_image_picker" -%>
+
+  <div id="<%= id %>_image_picker_wrapper" title="<%= title %>" class="image_picker">    
+    <div id="<%= id %>_image_picker_content"></div>
+    
+    <div class="image_picker_loader" style="display:none; position: absolute; top: 8px; right: 5px">
+      <%= image_tag 'admin/small_loader.gif' %>
+    </div>
+  </div>
+
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {  
+    
+      $('#<%= id %>_image_picker').imagePicker({
+        input     : $('#<%= id %>'),
+        imagesUrl : '<%= picker_admin_assets_path(:format => :js, :basic_type => basic_type) %>'
+      });
+    });
+    
+  </script>
+
+</li>

@@ -1,0 +1,186 @@
+<%= textarea -%>
+
+
+<% content_for :head do %>
+<!-- YUI RTE --> 
+<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/yui/2.7.0/build/editor/assets/skins/sam/simpleeditor.css"> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.7.0/build/yahoo-dom-event/yahoo-dom-event.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.7.0/build/element/element-min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.7.0/build/editor/simpleeditor-min.js"></script>
+
+<style type="text/css" media="screen">
+  .yui-skin-sam .yui-editor-container { border:1px solid #DFDFDF; display:inline; float:left;}
+
+  .yui-skin-sam .yui-editor-container .dompath { border-top:1px solid #DFDFDF; }
+  .yui-skin-sam .yui-toolbar-container .yui-toolbar-subcont { border-bottom:1px solid #DFDFDF; }
+  .yui-skin-sam .yui-toolbar-container .yui-toolbar-editcode span.yui-toolbar-icon {
+      background-image: url(http://docs.huihoo.com/yui/2.5.2/examples/editor/assets/html_editor.gif);
+      background-position: 0 1px;
+      left: 5px;
+  }
+  .yui-skin-sam .yui-toolbar-container .yui-button-editcode-selected span.yui-toolbar-icon {
+      background-image: url(http://docs.huihoo.com/yui/2.5.2/examples/editor/assets/html_editor.gif);
+      background-position: 0 1px;
+      left: 5px;
+  }
+  .yui-skin-sam .yui-editor-container .editor-hidden {
+    left:-9999px;
+    position:absolute;
+    top:-9999px;
+    visibility:hidden;
+  }
+  .yui-skin-sam .yui-editor-container textarea {
+    padding: 0px !important;
+    border: 0px !important;
+  }
+</style>
+<style type="text/css" media="screen">
+  .thumb_wrapper {
+    float:left; margin:4px 0px 4px 4px; padding:5px; border: 1px solid silver; overflow:hidden;
+  }
+  .thumb_wrapper .thumb {
+    width:80px;height: 60px; overflow:hidden; text-align: center; background:#DDDDDD none repeat scroll 0 0;
+  }
+  .thumb_wrapper:hover {
+    border: 1px solid blue;
+    cursor: pointer;
+  }
+  .thumb_wrapper:hover .thumb {
+    background:blue;
+  }
+</style>
+<% end %>
+<a style="display:block" id="<%= id %>_picker_target"><img/></a>
+<input type="hidden" id="<%= id %>" name="" value=""/>
+<div id="<%= id %>_picker_target_wrapper" class="track_description" style="display:none" title="Asset Picker">
+  <div class="image_picker_tabs">
+  	<ul>
+  	  <%= content_tag(:li, link_to('Images', picker_admin_assets_path(:basic_type => "image"))) %>
+      <%= content_tag(:li, link_to('Videos', picker_admin_assets_path(:basic_type => "video"))) %>
+      <%= content_tag(:li, link_to('New Asset', new_admin_asset_path)) %>
+  	</ul>
+  </div>
+  
+
+  <div class="track_description_loader" style="display:none; position: absolute; top: 8px; right: 5px">
+    <%= image_tag 'admin/small_loader.gif' %>
+  </div>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  var EditorConfig = {
+    width: '100%',
+    dompath: true,
+    handleSubmit: true,
+    autoHeight: true,
+    filterWord: true,
+    toolbar: {
+      titlebar: null,
+      collapse: true,
+      buttons: [
+        { group: 'textstyle',
+          buttons: [
+            { type: 'push', label: 'Bold', value: 'bold' },
+            { type: 'push', label: 'Italic', value: 'italic' },
+            { type: 'push', label: 'Underline', value: 'underline' },
+            { type: 'separator' },
+            { type: 'push', label: 'Link', value: 'createlink' },
+            { type: 'push', label: 'Picker', value: 'insertimage' },
+            { type: 'push', label: 'Edit HTML Code', value: 'editcode' },
+            { type: 'separator' }
+          ]
+        }
+      ]
+    }
+  };
+  
+  var Dom = YAHOO.util.Dom, Event = YAHOO.util.Event;
+  var state = 'off';
+
+	$(document).ready(function() {
+    var editor = new YAHOO.widget.SimpleEditor('<%= id %>', EditorConfig)
+    editor.on('toolbarLoaded', function() {
+      var codeConfig = {
+          type: 'push', label: 'Edit HTML Code', value: 'editcode'
+      };
+      this.toolbar.on('editcodeClick', function() {
+
+          var ta = this.get('element'),
+              iframe = this.get('iframe').get('element');
+
+          if (state == 'on') {
+              state = 'off';
+              this.toolbar.set('disabled', false);
+              this.setEditorHTML(ta.value);
+              if (!this.browser.ie) {
+                  this._setDesignMode('on');
+              }
+
+              Dom.removeClass(iframe, 'editor-hidden');
+              Dom.addClass(ta, 'editor-hidden');
+              this.show();
+              this._focusWindow();
+          } else {
+              state = 'on';
+              this.cleanHTML();
+              Dom.addClass(iframe, 'editor-hidden');
+              Dom.removeClass(ta, 'editor-hidden');
+              this.toolbar.set('disabled', true);
+              this.toolbar.getButtonByValue('editcode').set('disabled', false);
+              this.toolbar.selectButton('editcode');
+              this.dompath.innerHTML = 'Editing HTML Code';
+              this.hide();
+          }
+          return false;
+      }, this, true);
+
+      this.on('cleanHTML', function(ev) {
+        this.get('element').value = ev.html;
+      }, this, true);
+      
+      this.on('afterRender', function() {
+        var wrapper = this.get('editor_wrapper');
+        wrapper.appendChild(this.get('element'));
+        
+        this.setStyle('width', '100%');
+        this.setStyle('height', '100%');
+        this.setStyle('visibility', '');
+        this.setStyle('top', '');
+        this.setStyle('left', '');
+        this.setStyle('position', '');
+
+        this.addClass('editor-hidden');
+        
+      }, this, true);
+      
+      this.toolbar.on('insertimageClick', function() {
+        try  {
+          $("#<%= id %>_picker_target").assetpicker({
+            selected: function(event, asset) {
+              $.getJSON(asset.path, function(data) {
+                // switch(asset.basic_type) {
+                //   case 'image':
+                //     break;
+                //   case 'flash':
+                //     break;
+                // }
+
+                editor.execCommand('insertimage', asset.thumbPath); 
+                
+                // var html = $(editor.getEditorHTML()).find('img').each(function(){
+                //   console.info(this);
+                //   this.src = 'http://google.com'
+                // });
+                // console.info(html);
+                
+              });
+            }
+          });          
+        } catch(e) {}
+        return false;
+      }, this, true);
+    }, editor, true);
+    
+    editor.render();
+  });
+</script>

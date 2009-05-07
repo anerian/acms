@@ -38,6 +38,8 @@ ActionController::Routing::Routes.draw do |map|
     admin.import_tools 'admin/tools/import', :controller => 'tools', :action => 'import'
     admin.export_tools 'admin/tools/export', :controller => 'tools', :action => 'export'
     admin.resource :user_session
+    admin.resources :assets, :member => {:delete => :get, :hook_call => :post}, 
+          :collection => {:list => :get, :picker => :get, :upload_sign => :post}
   end
 
 

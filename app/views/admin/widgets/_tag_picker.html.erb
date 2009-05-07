@@ -1,0 +1,35 @@
+<input type="hidden" id="<%= id %>" name="<%= name %>" value="<%= tags %>"/>
+
+<li id="<%= id %>_input" class="string">
+  
+<%= label %>
+
+<div class="tag_picker" id="<%= id %>_container" style="width:70%; display:inline; float: left">
+  <div class="tagsdiv">
+	  <p class="jaxtag">	 
+	    <span class="ajaxtag">
+		    <input id="<%= id %>_entry" type="text" value="" autocomplete="off" size="16" style="width: 40%"/>
+		    <button id="<%= id %>_button" name="button" type="button">Add</button>
+	    </span>
+	  </p>
+	  <p class="howto">Separate tags with commas.</p>
+	  <div class="tagchecklist">
+    </div> 
+  </div> 
+  <% if false %>
+  <p class="tagcloud-link hide-if-no-js">
+    <a id="link-post_tag" class="tagcloud-link" href="#titlediv">Choose from the most used tags in Post Tags</a>
+    <p class="the-tagcloud" id="tagcloud-post_tag">
+
+    </p>
+  </p>
+  <% end %>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function(){
+    $('#<%= id %>').tagPicker();
+  });
+</script>
+
+</li>
