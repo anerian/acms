@@ -49,9 +49,49 @@ class Admin::OptionsController < Admin::AdminController
   end
 
   def writing
+    # fetch writing options
+    @writing = Option.find_by_key('writing')
+    if @writing.nil?
+      @writing = Option.new
+      @writing.key = 'writing'
+      @values = @writing.value = {}
+    else
+      @values = ActiveSupport::JSON.decode(@writing.value)
+    end
+    if request.post?
+      # save
+      params[:option].each do|key,value|
+        @values[key] = value
+      end
+      @writing.value = @values.to_json
+      if @writing.save
+        flash[:success] = "Saved"
+        redirect_to writing_admin_options_path
+      end
+    end
   end
 
   def reading
+    # fetch media options
+    @reading = Option.find_by_key('reading')
+    if @reading.nil?
+      @reading = Option.new
+      @reading.key = 'reading'
+      @values = @reading.value = {}
+    else
+      @values = ActiveSupport::JSON.decode(@reading.value)
+    end
+    if request.post?
+      # save
+      params[:option].each do|key,value|
+        @values[key] = value
+      end
+      @reading.value = @values.to_json
+      if @reading.save
+        flash[:success] = "Saved"
+        redirect_to reading_admin_options_path
+      end
+    end
   end
 
   def show
