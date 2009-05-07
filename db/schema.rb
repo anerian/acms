@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(:version => 20090507152634) do
     t.integer  "descendants_count"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "description"
   end
 
   create_table "categories_pages", :id => false, :force => true do |t|

@@ -13,6 +13,7 @@ class Admin::CategoriesController < Admin::AdminController
     
     respond_to do |format|
       format.html
+      format.json { render :json => @category }
       format.js
     end
   end

@@ -15,7 +15,7 @@
                   <select name="action">
                     <option selected="selected" value="">Bulk Actions</option>
                     <option value="delete">Delete</option>
-                  </select>
+                   </select>
                   <input type="submit" class="button-secondary action" id="doaction" name="doaction" value="Apply"/>
                 </div>
                 <br class="clear"/>
@@ -26,18 +26,22 @@
                   <tr>
                     <th style="" class="manage-column column-cb check-column" id="cb" scope="col"><input type="checkbox"/></th>
                     <th style="" class="manage-column column-name" id="name" scope="col">Name</th>
+                    <th style="" class="manage-column column-name" scope="col">Description</th>
                     <th style="" class="manage-column column-posts num" id="posts" scope="col">Pages</th>
                   </tr>
               	</thead>
                 <tbody>
-                  <% Category.all.each do |category| %>
+                  <% categories_list do |category, level| %>
                   <tr>
                     <th class="check-column"></th>
                     <td class="name column-name">
-                      <a><%= category.name %></a>
+                      <a><%= '—  ' * level %><%= category.name %></a>
                     </td>
                     <td class="name column-name">
-                      <a><%= category.name %></a>
+                      <%= category.description %>
+                    </td>
+                    <td class="name column-name">
+                      <a><%= category.pages.count %></a>
                     </td>
                   </tr>
                   <% end %>
@@ -46,11 +50,11 @@
                   <tr>
                     <th style="" class="manage-column column-cb check-column" scope="col"><input type="checkbox"/></th>
                     <th style="" class="manage-column column-name" scope="col">Name</th>
+                    <th style="" class="manage-column column-name" scope="col">Description</th>
                     <th style="" class="manage-column column-posts num" scope="col">Pages</th>
                   </tr>
               	</tfoot>
-              </table>
-              
+              </table>     
             </form>
           </div>
         </div>
@@ -60,10 +64,10 @@
           <div class="form-wrap">
             <h3>Add Category</h3>
             
-            <% form_for :category do |form| %>
+            <% form_for :category, :html => {:id => 'new-category'} do |form| %>
               <div class="form-field form-required">
-                <label for="cat_name">Category Name</label>
-                <input id="cat_name" type="text" aria-required="true" size="40" value="" name="cat_name"/>
+                <%= form.label :name, 'Category Name' %>
+                <%= form.text_field :name, :size => 40 %>
                 <p>The name is used to identify the category almost everywhere, for example under the post or in the category widget.</p>
               </div>
               
@@ -71,6 +75,12 @@
                 <%= form.label :parent_id, 'Category Parent' %>
                 <%= select_for_categories :name => 'category[parent_id]' %>
                 <p>Categories, unlike tags, can have a hierarchy. You might have a Jazz category, and under that have children categories for Bebop and Big Band. Totally optional.</p>
+              </div>
+              
+              <div class="form-field">
+                <%= form.label :description, 'Description' %>
+                <%= form.text_area :description, :cols => 40, :rows => 5 %>
+                <p>The description is not prominent by default, however some themes may show it.</p>
               </div>
               
               <p class="submit">
@@ -82,5 +92,15 @@
       </div>
     </div>
   </div>
+<% end %>
 
+<% content_for :foot do %>
+  <script type="text/javascript" charset="utf-8">
+    $(function(){
+      $('#new-category').submit(function(e){
+        e.preventDefault();
+        console.info($(this).serialize());
+      });
+    });
+  </script>
 <% end %>
