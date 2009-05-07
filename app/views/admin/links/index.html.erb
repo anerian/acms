@@ -1,2 +1,23 @@
-<h1>Admin::Links#index</h1>
-<p>Find me in app/views/admin/links/index.html.erb</p>
+<h1>Listing links</h1>
+
+<table>
+  <tr>
+    <th>Url</th>
+    <th>Title</th>
+    <th>Asset</th>
+  </tr>
+
+<% @links.each do |link| %>
+  <tr>
+    <td><%=h link.url %></td>
+    <td><%=h link.title %></td>
+    <td><%=h link.asset_id %></td>
+    <td><%= link_to 'Edit', edit_admin_link_path(link) %></td>
+    <td><%= link_to 'Destroy', admin_link_path(link), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New link', new_admin_link_path %>

@@ -1,2 +1,13 @@
-<h1>Admin::Links#new</h1>
-<p>Find me in app/views/admin/links/new.html.erb</p>
+<h1>New link</h1>
+
+<% form_for [:admin, @link] do |f| %>
+  <%= f.error_messages %>
+
+  <%= render :partial => 'form', :locals => {:f => f} %>
+
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', admin_links_path %>
